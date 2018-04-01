@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>Close_Circle_Button</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Car-Settings:-Add-place_1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-326.000000, -121.000000)">
+        <g id="Close_Circle_Button" transform="translate(323.000000, 118.000000)">
+            <g id="input_cancel_icon">
+                <g id="Group-8" transform="translate(3.000000, 3.000000)">
+                    <circle id="Oval-6" fill="#B6B6B6" cx="8.00122768" cy="7.91785714" r="7.61904762"></circle>
+                    <g id="Group" transform="translate(4.001228, 3.917857)" stroke="#FFFFFF" stroke-linecap="round" stroke-width="1.5">
+                        <g id="White_Close_Button" transform="translate(0.435481, 0.601224)">
+                            <polyline id="Triangle" transform="translate(1.849004, 3.235547) rotate(90.000000) translate(-1.849004, -3.235547) " points="-1.38654258 4.93035714 1.8490043 1.54073661 5.08455117 4.93035714"></polyline>
+                            <polyline id="Triangle-Copy" transform="translate(5.238625, 3.235547) scale(-1, 1) rotate(90.000000) translate(-5.238625, -3.235547) " points="2.00307796 4.93035714 5.23862483 1.54073661 8.47417171 4.93035714"></polyline>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

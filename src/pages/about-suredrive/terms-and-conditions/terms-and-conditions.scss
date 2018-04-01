@@ -1,0 +1,57 @@
+terms-and-conditions {
+    .scroll-content {
+        padding: 0 !important;
+        margin: 0 !important;
+      }
+    
+      .wrapper {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+    
+        .header {
+          height: 53px;
+          max-height: 53px;
+          width: 100%;
+          background-color: #000;
+          display: flex;
+          justify-content: center;
+    
+          .prev-icon {
+            padding: 15px 16px 23px 16px;
+            color: #fff;
+    
+            ion-img {
+              min-width: 8px !important;
+              min-height: 12px !important;
+              max-width: 8px;
+              max-height: 12px;
+              background: transparent;
+              pointer-events: auto;
+              transform: rotate(180deg);
+            }
+          }
+    
+          .header-text {
+            height: 14px;
+            width: 100%;
+            color: #fff;
+            font-size: 14px;
+            font-weight: bold;
+            letter-spacing: 1px;
+            line-height: 17px;
+            text-align: center;
+            text-transform: uppercase;
+            padding: 16px 38px 19px 0;
+          }
+        }
+        .myframe{
+          width:100%;
+          height:100%;
+          border:none;
+          padding: 16px 24px 0px 16px;
+        }
+    }
+    
+
+}

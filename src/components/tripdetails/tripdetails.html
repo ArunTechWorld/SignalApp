@@ -1,0 +1,32 @@
+<!-- Generated template for the TripdetailsComponent component -->
+<ion-content>
+  <div class="header">
+    <div class="prev-icon" (tap)="goToTrips()">
+      <ion-img src="assets/imgs/Push_Arrow_White.png"></ion-img>
+    </div>
+    <div class="header-text">{{title}}</div>
+  </div>
+  <div class="details-content">
+  <div class="details-content1">
+    <div class="map">
+      <div >
+      <div class="trip-history-map" id="tripHistoryMap">
+      </div>
+      <ion-img class="animated fadeIn centerMarker"  [src]="'assets/imgs/'+ zoom_center +'.png'"  (click)="centerMarker()" ></ion-img>
+    </div>
+    </div>
+    <div class="trip-info-block">
+      <div class="info-block"><!--getMomentTime(tripDetail[0].trip.durationInSecs)  getMomentDateTime(tripDetail[0].trip.startTimeUtc)}} - {{getMomentDateTime(tripDetail[0].trip.endTimeUtc) -->
+        <div class="date-time-block"><span class="title">{{durationInSecs}}</span><span class="sub-title"> ( {{startTimeUtc}} - {{endTimeUtc}} )</span></div>
+        <div class="distance-block"><span class="">{{totalMiles}}</span></div>
+      </div>
+      <div class="from-to-location">
+          <!-- <div class="from-toseparator">...</div> -->
+          <div><span class="title"><span class="from-img"></span>FROM</span><span class="sub-title">{{tripDetail[0].trip.startAddress.street}}, {{tripDetail[0].trip.startAddress.city}}, {{tripDetail[0].trip.startAddress.stateProvinceCd}}</span></div>
+          <div><span class="title to-addr"><span class="to-img"></span>TO</span><span class="sub-title">{{tripDetail[0].trip.endAddress.street}}, {{tripDetail[0].trip.endAddress.city}}, {{tripDetail[0].trip.endAddress.stateProvinceCd}}</span></div>
+          <div class="trip-dot-divider"><span>.</span><br><span>.</span><br><span>.</span><br></div>
+        </div>
+    </div>
+    </div>
+  </div>
+</ion-content>

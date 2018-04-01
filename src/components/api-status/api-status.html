@@ -1,0 +1,34 @@
+<!-- Generated template for the ApiStatusComponent component -->
+<div class="status-messages" tabindex="0">
+  <div class="grey-strip" *ngFor="let submitRequest of apiRequests.submit">
+    <div class="grey-strip-icon">
+      <div class="text"></div>
+    </div>
+    <div class="grey-strip-message">
+      {{submitRequest.message}}
+    </div>
+  </div>
+
+  <div class="blue-strip" *ngFor="let successRequest of apiRequests.success">
+    <div class="blue-strip-icon">
+      <!-- <ion-icon name="checkmark-circle-outline"></ion-icon> -->
+      <div class="text"></div>
+    </div>
+    <div class="blue-strip-message">
+       {{successRequest.message}}
+    </div>
+  </div>
+
+  <div class="red-strip" *ngFor="let failureRequest of apiRequests.failure">   
+    <div class="red-strip-icon">
+      <ion-icon name="warning"></ion-icon>
+    </div>
+    <div class="red-strip-message">
+        {{failureRequest.message}}
+      <button class="try-again" (click)="$event.stopPropagation();tryAgain(failureRequest)">TRY AGAIN</button>
+    </div>
+    <button class="close-icon" (click)="$event.stopPropagation();close(failureRequest)">
+      <div class="text"></div>
+    </button>
+  </div>
+</div>

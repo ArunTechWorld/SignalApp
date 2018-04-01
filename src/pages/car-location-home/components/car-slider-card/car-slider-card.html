@@ -1,0 +1,88 @@
+<!-- <div class="car-card-content" [ngClass]="{'slider-full-width' : itemsCount <= 1}">
+  <div class="car-status" [ngClass]="{'car-status-full-width' : itemsCount <= 1}"> -->
+<div class="car-card-content" [ngClass]="{'slider-full-width' : itemsCount <= 1}">
+  <div *ngIf=" !carDetailsItem.collisionsupport " class="car-status" [ngClass]="(carDetailsItem.status =='true') ? 'car-state-driving' : 'car-state-parked'" >
+    <img src="{{carDetailsItem.carImage}}" class="user-car-icon" />
+    <div class="car-status-text">
+      <span class="state">{{(carDetailsItem.status =='true')?'driving':'parked'}}  </span>
+    </div>
+   
+  </div>
+   <div *ngIf="carDetailsItem.collisionsupport " class="car-status" [ngClass]="'car-state-collision'" >
+    <img src="{{carDetailsItem.carImage}}" class="user-car-icon" />
+    <div class="car-status-text">
+      <span class="state">collision</span>
+    </div>
+  </div>
+
+  <div *ngIf= 'carDetailsItem.tripwireBreach&&!carDetailsItem.collisionsupport' class="car-status" [ngClass]="'car-state-collision'" >
+    <img src="{{carDetailsItem.carImage}}" class="user-car-icon" />
+    <div class="car-status-text">
+      <span class="state stateBreach">Tripwire breached</span>
+    </div>
+  </div>
+
+
+
+  <div class="car-name">{{(carDetailsItem.carName)?carDetailsItem.carName: carDetailsItem.year + " " + carDetailsItem.make + " " + carDetailsItem.model }}</div>
+  <div class="car-location"  *ngIf="!carDetailsItem.collisionsupport&&!carDetailsItem.tripwireBreach">
+    <span class="car-location-image" [ngClass]="(carDetailsItem.status =='true') ? 'car-location-driving' : 'car-location-parked'"></span>
+    <span class="car-location-text card-singleline-txt" [ngClass]="(carDetailsItem.status =='true') ? 'car-text-driving' : 'car-text-parked'">{{carDetailsItem.carLocation}} </span><!--since {{carDetailsItem.since}}-->
+  </div>
+
+  <div class="car-location"  *ngIf="carDetailsItem.collisionsupport ">
+    <span class="car-location-image car-location-collision" ></span>
+    <span class="car-location-text card-singleline-txt car-text-red" >{{carDetailsItem.carLocation}} </span><!--since {{carDetailsItem.since}}-->
+  </div>
+  <div *ngIf="carDetailsItem.collisionsupport || !carDetailsItem.tripwireBreach" class="car-last-updated">Last updated: {{carDetailsItem.lastUpdate}} </div>
+
+
+  <!--  Tripwire breach data -->
+
+  <div class="car-location"  *ngIf="carDetailsItem.tripwireBreach && carDetailsItem.tripwireModal && !carDetailsItem.collisionsupport">
+      <span [hidden]=true class="car-location-image" [ngClass]="(carDetailsItem.status =='true') ? 'car-location-driving' : 'car-location-parked'"></span>
+      <span class="car-location-text card-singleline-txt" class="car-text-breached-homepage"> Your vehicle has moved outside the 
+          Tripwire boundary at {{carDetailsItem.tripwireBreachData.address?carDetailsItem.tripwireBreachData.address.Street:''}}    {{carDetailsItem.tripwireBreachData.date}}</span><!--since {{carDetailsItem.since}}-->
+    </div>
+  
+    <div class="car-location"  *ngIf="carDetailsItem.tripwireBreach && !carDetailsItem.tripwireModal && !carDetailsItem.collisionsupport">
+        <span class="car-location-image" [ngClass]="(carDetailsItem.status =='true') ? 'car-location-driving' : 'car-location-parked'"></span>
+        <span class="car-location-text card-singleline-txt" class="car-text-breached"> For your safety, the location of your vehicle is currently hidden while it is reported stolen.</span><!--since {{carDetailsItem.since}}-->
+      </div>
+
+
+  <!-- End tripwire -->
+
+
+  <div  *ngIf="isShowDetail && carDetailsItem.collisionsupport " class="collisian-details-updated">
+<!--<div  *ngIf=false class="collisian-details-updated">-->
+    <div class="collisian-icon"></div>
+    <div  class="collisian-details-home">Possible collision detected {{carDetailsItem.iscolision.dateonly}} at {{carDetailsItem.iscolision.time}}</div>
+     <div  class="button-red">
+    <button class="red-btn" (click)="closecollisiondetails(carDetailsItem.iscolision)">DISMISS</button>
+   <button class="red-btn" (click)="collisionsupport(carDetailsItem.iscolision)">COLLISION SUPPORT</button>
+    </div>
+  </div> 
+
+
+  
+  <div  *ngIf=false  class="tripwire-details-updated">
+    <!--<div  *ngIf=false class="collisian-details-updated">-->
+    <div class="tripwire-icon"></div>
+    <div  class="tripwire-details-home">Your vehicle has moved outside the 
+Tripwire boundary at 1267 Norfolk St.
+</div>      
+<div  class="tripwire-details-time">
+  9:41 A.M
+</div>
+      
+     <div  class="tripwire-button-red">
+    <button class="red-btn" (click)="closetripbreachdetails()">DISMISS</button>
+   <button class="red-btn" (click)="tripwiresupport()">TRIPWIRE SUPPORT</button>
+    </div>
+  </div>
+  <div [ngClass]="(isShowDetail) ? 'isDetailUpdateBtn' :'' " >
+    <button *ngIf="!(!carDetailsItem.collisionsupport&&carDetailsItem.tripwireBreach&&!carDetailsItem.tripwireModal)" [disabled]=!carDetailsItem.collisionsupport&&carDetailsItem.tripwireBreach class="white-btn update-location-btn"  (click)="$event.stopPropagation();updateLocation()"  >UPDATE LOCATION</button>
+  </div>
+</div>
+<!--{'car-status-full-width' : carDetailsItem.status}--> 

@@ -1,0 +1,562 @@
+// $slider-width: 100%;
+// $slider-padding: 20px; // this value is same as slider spaceBetween 10 * 2
+app-page-car-location-home {
+  app-car-details-drawer-comp {
+    // background-color: rgba(0, 0, 0, 0.19);
+    // background-color: #fff; // background: transparent;
+    // background: transparent;
+    height: auto;
+    width: 100%; // background: transparent; // box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.19);
+    // color: #000;
+    box-shadow: none; // z-index: 10 !important;
+    .plain-bg {
+      background-color: transparent;
+      color: currentColor;
+    }
+    .details-main-content {
+      // padding: 20px;
+      height: 100%;
+      overflow: auto;
+      // padding-bottom: 90px;
+    }
+    .car-details-space {
+      // background-color: rgba(0, 0, 0, 0.19);
+      background: transparent;
+    }
+    .car-details {
+      position: absolute;      
+      padding-bottom: 90px;
+    }
+  }
+  .update-location-btn {
+    &:active,
+    &:focus,
+    &.activated {
+      background-color: #2B648F !important;
+      color: #fff !important;
+      font-size: 12px;
+      font-weight: 500;
+      line-height: 22px;
+      text-align: center;
+    }
+  }
+  .scroll-content {
+    margin-top: 0 !important;
+  }
+  #mapPane {
+    width: 100%;
+    height: 100%;
+    background-image: url("../assets/imgs/MapBackground.svg");
+    background-size: cover;
+    position: absolute;
+    bottom: 0;
+  }
+
+  .mapViewPane {
+    .scroll-content {
+      overflow: hidden;
+    }
+  }
+
+  .esri-ui-corner {
+    .esri-component {
+      box-shadow: none;
+    }
+  }
+  .menu-bar {
+    .header-icon {
+      height: 35px;
+      width: 35px;
+      box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.19);
+    }
+    .menu-icon {
+      float: left;
+      margin: 4px 0px 0px 19px;
+    }
+    .notification-icon {
+      float: right;
+      margin: 4px 19px 0px 0px;
+    }
+  }
+  .car-slider-up {
+    bottom: 48px !important;
+  }
+  .car-slider-down {
+    bottom: 18px !important;
+  }
+  .home-car-container {
+    position: absolute;
+    bottom: 18px;
+    width: 100%;
+    pointer-events: none;
+    .map-buttons {
+      position: relative;
+      bottom: -35px;
+      right: 15px;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      ion-img {
+        height: 36px;
+        width: 36px;
+        background: transparent;
+        pointer-events: auto;
+      }
+      div {
+        display: flex;
+        justify-content: center;
+        margin: 20px;
+      }
+      .map-layer-btn {
+        background-image: url("../assets/imgs/car_awareness/Map_Layers_Button.png");
+        background-size: cover;
+        /* display: inline-block; */
+        height: 36px;
+        width: 36px;
+        /* opacity: 0.25; */
+      }
+      .zoom-fit-button {
+        background-image: url("../assets/imgs/Zoom_Fit_Button.png");
+        margin-bottom: 18px;
+        background-size: cover;
+        height: 36px;
+        width: 36px;
+      }
+      .zoom-fit-button_selected {
+        background-image: url("../assets/imgs/Zoom_Out_Button.png");
+        margin-bottom: 18px;
+        background-size: cover;
+        height: 36px;
+        width: 36px;
+      }
+    }
+    .car-slider-container {
+      pointer-events: none;
+      height: auto;
+      width: 100%;
+      background: transparent;
+      box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.19);
+      color: #000;
+      box-shadow: none;
+      .slider-full-width {
+        width: 92%;
+      }
+    }
+    .esri-attribution {
+      display: none;
+    }
+  }
+
+  app-api-status {
+    position: absolute;
+    width: 100%;
+    z-index: $car-details-drawer-z-index;
+  }
+  
+  .car-details-header {
+    position: absolute;
+    width: 100%;
+    top: -90px;
+    color: #fff;
+    background-color: #000;
+    box-shadow: 0 0 7px 0 rgba(0, 0, 0, 0.1);
+    z-index: $car-details-drawer-z-index; // @include slide-down-animation(2300ms);
+    .car-name {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 50px;
+      width: 100%;
+      .close-ion {
+        /* position: absolute;
+        right: 0;
+        top: 0; */
+        padding: 18px;
+        background: transparent;
+      }
+      img {
+        height: 10px;
+        width: 11px;
+        // margin-right: 18px;
+      }
+      .label {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        font-size: 14px;
+        font-weight: bold;
+        letter-spacing: 1px;
+        line-height: 17px;
+        text-align: center;
+        text-transform: uppercase;
+        margin-left: 30px;
+      }
+    }
+    .car-tabs {
+      height: 40px;
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center;
+      .tab-label {
+        height: 20px;
+        width: 97.96px;
+        font-size: 12px;
+        font-weight: 500;
+        letter-spacing: 1px;
+        line-height: 14px;
+        text-transform: uppercase;
+        text-align: center;
+        &.selected {
+          border-bottom: 2px solid #fff;
+        }
+         &.tab-active {
+    border-bottom: 1px solid #FFFFFF;
+    opacity: 1;
+    color: #FFFFFF;
+  }
+  &.tab-inactive {
+    color: #D2D4D5;
+    opacity: 0.5;
+    border: none;
+  }
+      }
+    }
+
+  }
+  /*multi car repo*/
+   .multi-car-icons-place {
+       z-index: 99;
+        .arrow-marker {
+            position: absolute;
+            /* top: 10px; */
+            width: 13px;
+        }
+        .top-img {
+            .car-img {
+                top: 10px;
+                position: relative;
+                left: 10px
+            }
+        }
+        .right-top-img {
+            right: 14px;
+            .car-img {
+                top: 12px;
+                position: relative;
+                right: 5px;
+            }
+            .arrow-marker {
+                transform: rotate(90deg);
+                left: 10px;
+            }
+        }
+        .left-top-img {
+            .car-img {
+                top: 10px;
+                position: relative;
+                left: 10px;
+            }
+            .arrow-marker {
+                transform: rotate(10deg);
+            }
+        }
+        .bottom-img {
+            .car-img {
+                position: relative;
+                top: 0px;
+                left: 0px;
+            }
+            .arrow-marker {
+                bottom: -8px;
+                transform: rotate(225deg);
+                left: 3px;
+            }
+        }
+        .left-middle-img {
+            .car-img {
+                position: relative;
+                top: 0px;
+                left: 15px;
+            }
+            .arrow-marker {
+                transform: rotate(-45deg);
+                top: 0px;
+            }
+        }
+        .left-bottom-img {
+            .car-img {
+                left: 10px;
+                position: absolute;
+            }
+            .arrow-marker {
+                transform: rotate(-90deg);
+                top: 14px;
+            }
+        }
+        .right-bottom-img {
+            bottom: 320px;
+            right: 71px;
+            .car-img {
+                left: 10px;
+                position: absolute;
+            }
+            .arrow-marker {
+                transform: rotate(-180deg);
+                top: 0px;
+                left: 25px;
+            }
+        }
+        .right-middle-img {
+            right: 25px;
+            .car-img {
+                right: 5px;
+            }
+            .arrow-marker {
+                transform: rotate(133deg);
+                /* top: 3px; */
+                left: 22px;
+            }
+        }
+        .top-img {
+            top: 60px;
+            .car-img {
+                right: 5px;
+            }
+            .arrow-marker {
+                transform: rotate(45deg);
+                /* top: 14px; */
+                left: 13px;
+            }
+        }
+    }
+  .leftcar-top {
+    position: absolute;
+    top: 94px;
+    width:20px;
+    margin-left: 5px;
+}
+.leftcar-middle {
+    position: absolute;
+    top: 237px;
+    width:20px;
+    margin-left: 10px;
+}
+.leftcar-bottom {
+    position: absolute;
+    bottom: 358px;
+    margin-left: 14px;
+    width:20px;
+}
+.topcar-image{
+    position: absolute;
+    top: 9px;
+    margin-left: 150px;
+    width:20px;
+    display: flex;
+    justify-content: center;
+}
+.right{
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    width:20px;
+    margin-right: 10px;
+    justify-content: center;
+    right:0
+
+}
+.car-top{
+    top: 80px;
+}
+.car-middle{
+    top:220px;
+}
+.car-bottom{
+    bottom:180px;
+}
+
+.below{
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    bottom:260px;
+    margin-left: 190px;
+    width:20px;
+}
+.downArrow{
+    position: absolute;
+    display: flex;
+    flex-direction: column-reverse;
+    margin-top: 18px;
+}
+.leftBottom{
+    position: absolute;
+    display: flex;
+}
+.leftArrow{
+    position: absolute;
+    display: flex;
+    margin-top: 2px;
+    margin-left: -11px;
+}
+.topcarr{
+    position: absolute;
+    display: flex;
+    margin-top: -7px;
+    justify-content: center;
+}
+  /*multi car end*/
+}
+
+.car-state-driving {
+    img {
+        border: 2px solid #1661B1 !important;
+    }
+    .state {
+        background-color: #1661B1 !important;
+    }
+}
+
+.car-state-collision {
+    img {
+        border: 2px solid red !important;
+    }
+    .state {
+        background-color: red !important;
+    }
+}
+
+.car-state-parked {
+     img {
+        border: 2px solid #000000 !important;
+    }
+    .state {
+        background-color: #000000 !important;
+    }
+    
+}
+.tripwiremapwarn{
+    top:31%;
+ text-align:center;
+ width:73.87%;
+ height:19.12%;
+ margin:0 auto;
+ position:absolute ;
+ left:0;
+ right:0;
+ background-color: #FFFFFF;
+ box-shadow: 0 0 10px 0 rgba(0,0,0,0.19);
+ z-index:99999;
+ position:absolute;
+ padding: 0px 14px;
+ 
+
+}
+.tripwire-icon{
+    background-image: url(../assets/svg/Tooltips_Tripwire.svg);
+height: 24px;
+width: 39px;
+background-size: contain;
+background-repeat: no-repeat;
+margin: 0 auto;
+margin-top: 20px;
+    margin-bottom: 13px;
+   }
+.tabslideLeft {
+    -webkit-animation-name: tabslideLeft;
+    animation-name: tabslideLeft;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    }
+    @-webkit-keyframes tabslideLeft {
+    0% {
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+    visibility: visible;
+    }
+    100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    }
+    }
+    @keyframes tabslideLeft {
+    0% {
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+    visibility: visible;
+    }
+    100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    }
+    } 
+
+    .tabslideRight {
+        -webkit-animation-name: tabslideRight;
+        animation-name: tabslideRight;
+        -webkit-animation-duration: 1s;
+        animation-duration: 1s;
+        -webkit-animation-fill-mode: both;
+        animation-fill-mode: both;
+        }
+        @-webkit-keyframes tabslideRight {
+        0% {
+        -webkit-transform: translateX(100%);
+        transform: translateX(100%);
+        visibility: visible;
+        }
+        100% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+        }
+        }
+        @keyframes tabslideRight {
+        0% {
+        -webkit-transform: translateX(100%);
+        transform: translateX(100%);
+        visibility: visible;
+        }
+        100% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+        }
+        } 
+        .popup-custom{
+   
+            color:#44769c;
+            width: auto;
+            text-align: center;
+            font-family: "Neo Sans Std";
+            font-weight: 400 !important;
+         }
+         .esri-popup__feature-buttons {
+             display:none;
+         }
+         .esri-popup__header-buttons{
+             display:none;
+         }
+         .esri-popup__main-container {
+             text-align: center;
+             width: fit-content !important;
+             //max-width: 175px;
+         }
+         .esri-popup--shadow{
+             box-shadow: 0 0px 1px rgba(0, 0, 0, .8);
+         }
+         .esri-popup__position-container{
+             max-width: fit-content;
+             max-height: fit-content;
+         }
+         .esri-popup__header-title{
+              //max-width: 175px;
+              padding: 8px 11px !important;
+         }
+
+
+

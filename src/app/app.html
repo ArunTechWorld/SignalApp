@@ -1,0 +1,48 @@
+<ion-menu [content]="content" id="lojackMenu" class="lojack-menu-bar" side="left" type="overlay" (ionOpen)="menuOpened()">
+  <div class="menu-user-info">
+    <div class="user-name">{{ userName}}</div>
+  </div>
+  <div class="get-help-pane">
+    <button class="red-btn get-help-btn" (click)="openEmergencySupport()">EMERGENCY SUPPORT</button>
+  </div>
+  <div class="menu-options">
+    <ion-list class="">
+      <ion-item *ngFor="let ele of menuOptions" (click)="openPage(ele, $event)">
+        <div class="indicators {{ele.class}}" item-start></div>
+        <h2 class="title" [ngClass]="{'title-selected': selectedMenu === ele.title}">{{ele.title}}</h2>
+      </ion-item>      
+    </ion-list>
+  </div>
+
+  <div class="menu-logout">
+    <!-- <div class="menu-logo"></div>
+    <div class="sign-out">Sign Out</div> -->
+    <ion-row>
+      <ion-col col-6>
+        <div class="menu-logo"></div>
+      </ion-col>
+      <ion-col col-6>
+        <div class="sign-out" (click)="signOut()">Sign Out</div>
+      </ion-col>
+    </ion-row>
+  </div>
+
+</ion-menu>
+
+<div class="network-strip" [hidden]="!networkError || isInitialLoading">
+  <div class="network-icon">
+    <ion-icon name="warning"></ion-icon>
+  </div>
+  <div class="network-message">We can’t reach our network. Please check your connection.</div>
+</div>
+
+<div class="network-strip" [hidden]="!deviceError">
+  <div class="network-icon">
+    <ion-icon name="warning"></ion-icon>
+  </div>
+  <div class="network-message">Your LoJack device is disconnected.</div>
+</div>
+
+<!-- Disable swipe-to-go-back because it's poor UX to combine STGB with side menus -->
+<ion-nav [root]="rootPage" #content swipeBackEnabled="false" [ngClass]="((networkError || deviceError) && !isInitialLoading) ? 'nav-push' : 'nav-pop'"></ion-nav>
+

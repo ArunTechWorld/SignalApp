@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="81px" height="81px" viewBox="0 0 81 81" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>Personal_Information_Icon</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="My-Profile:-Default" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-147.000000, -90.000000)">
+        <g id="Personal-Information" transform="translate(0.000000, 89.000000)">
+            <g id="Personal_Information_Icon" transform="translate(147.000000, 0.000000)">
+                <g id="Your_Name_Icon" transform="translate(0.000000, 0.925781)" fill="#F4F4F4">
+                    <circle id="Oval-4" cx="40.5" cy="40.5" r="40"></circle>
+                </g>
+                <g id="user_Icon" transform="translate(22.000000, 21.925781)" stroke="#666666" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.75">
+                    <path d="M13.9878627,21.0399836 L13.9878627,26.1110501 L4.64583547,29.4476216 C2.41896773,30.2439973 0.932524182,32.3515019 0.932524182,34.7163832 L0.932524182,38.2338645 L36.3684431,38.2338645 L36.3684431,34.7163832 C36.3684431,32.3515019 34.8819995,30.2439973 32.6551318,29.4476216 L23.3131045,26.1110501 L23.3131045,20.6912195" id="Stroke-437"></path>
+                    <path d="M27.7425944,11.1902902 C27.7425944,17.3691954 23.5667511,22.3805804 18.4173526,22.3805804 C13.266089,22.3805804 9.09211077,17.3691954 9.09211077,11.1902902 C9.09211077,5.01138495 13.266089,0 18.4173526,0 C23.5667511,0 27.7425944,5.01138495 27.7425944,11.1902902 L27.7425944,11.1902902 Z" id="Stroke-438"></path>
+                    <path d="M27.6551236,10.1702952 C27.3417955,10.2075962 27.1254499,10.1964059 26.8102567,10.2579525 C23.6340794,10.8696884 21.5937165,9.71895352 19.8443011,6.65840916 C18.7961439,8.6689313 15.5155238,10.2579525 12.822394,10.2579525 C11.4963446,10.2579525 10.354935,9.98565544 9.21166037,9.38883996" id="Stroke-439"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,41 @@
+<!--
+  Generated template for the NotificationPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+  <div class='notificatio-page'>
+        <div class="header-text">NOTIFICATIONS</div>
+        <div class="close-icon" (tap)="backtohomepage()">
+            <img src="assets/imgs/White_Close_Button.png" />
+          </div>
+      <!-- <div class="text" (click)="backtohomepage()"></div> -->
+  </div>
+</ion-header>
+
+<ion-content>
+ <div class="notification-content">
+    <div *ngIf="hasNotificationData">
+      <ion-list class="" *ngFor="let alert of alertData; let i = index" >
+          <div class="yesterday" *ngIf="showHeader(i)">{{showHeader(i)}}</div>     
+          <ion-item class="notification-item" [ngStyle]= "{'background-color': (alert.alertType == 'SDCTC_TOWING_ALERT' || alert.alertType == 'SDCTC_ICN_ALERT' || alert.alertType == 'SDCTC_TRIPWIRE_ALERT') ? '#E2231A':'' }">
+              <div class="{{alert.alertType}}" item-start></div>
+              <h2 class="notification-title" [ngStyle]= "{'color': (alert.alertType == 'SDCTC_TOWING_ALERT' || alert.alertType == 'SDCTC_ICN_ALERT' || alert.alertType == 'SDCTC_TRIPWIRE_ALERT') ? 'white':'' }">{{ alert.alertDesc }}</h2>
+              <p class="date-time" [ngStyle]= "{'color': (alert.alertType == 'SDCTC_TOWING_ALERT' || alert.alertType == 'SDCTC_ICN_ALERT' || alert.alertType == 'SDCTC_TRIPWIRE_ALERT') ? 'white':'' }">{{ timeStampToTime(alert.eventTime) }}</p>
+              <div class="notification-forward" item-end></div>
+            </ion-item>
+      </ion-list>
+      <ion-infinite-scroll (ionInfinite)="doInfinite($event)">
+          <ion-infinite-scroll-content></ion-infinite-scroll-content>
+      </ion-infinite-scroll>
+    </div>
+    <div *ngIf="hasEmptyNotificationData" class="no-notification" >
+        <img class="image" src="assets/svg/Gray_BellNotification.svg" />
+         <div>YOU DON'T HAVE ANY NOTIFICATIONS  </div>
+    </div>
+     <div *ngIf="notificationeorr" class="no-notification-erorr" >
+      <div>We had an issue loading this data.<br> Trying again in 30 seconds. <span  class="trynow" (click)="loadNotifications()">TRY NOW</span></div>
+    </div>
+  </div>
+</ion-content>

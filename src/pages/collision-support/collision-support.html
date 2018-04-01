@@ -1,0 +1,99 @@
+<!--
+  Generated template for the CollisionSupportPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+ <ion-header>
+ <!--<div class="collision-text-button" >
+      <div class="collision-text">2017 Volkswagon Jetta</div>
+      <div class="close-button" (click)="backtohomepage()"></div>
+  </div>-->
+</ion-header> 
+
+<ion-content>
+<div  class="collision-support" >
+  <div class="collision-text-button" >
+      <div class="collision-text"> {{crashdetailsdata.carename}}
+        <div class="close-button" (click)="backtohomepage()"></div>
+      </div>
+      
+  </div>
+    <div class="collision-support-text">Collision Support</div>
+    <div class="collision-time">LoJack detected a possible collision at {{crashdetailsdata.time}}</div>
+    <div  class="button-red">
+    <button class="red-btn" (click)="collisiondetails(crashdetailsdata)">SEE COLLISION DETAILS </button>
+   <!--<button class="red-btn" >SEE COLLISION DETAILS </button>-->
+    </div>
+    </div>
+    <div class="collosian-slide"> 
+  <ion-slides class="collisian-page" (ionSlideDidChange)="slideChanged()" pager>
+    
+  <ion-slide >
+    <div class="collisan-details">
+      <div class="collisian-city"></div>
+      <div class="collisian-number-placing">
+          <div class="collisian-number"></div>
+      </div>
+      <div class="collisan-instruction">If possible, move your car to a safe, nearby location, and wait. We will be contacting you shortly.  Meanwhile, we suggest that you call 9-1-1 immediately. </div>
+     <div class="button-red">
+      <a href="tel:{{EmergencyPhone.phone}}"><button class="red-button" >{{EmergencyPhone.text}}</button></a>
+      </div>
+    </div>
+    
+  </ion-slide>
+  <ion-slide>
+      <div class="collisan-details">
+          <div class="collisian-city2"></div>
+          <div class="collisian-number-placing">
+              <div class="collisian-number2"></div>
+          </div>
+          <div class="collisan-instruction-wait">While you wait</div>
+          <div class="collisian-smallnumber"></div>
+          <div class="collect-insurance">Collect insurance information and Vehicle Registration from others involved</div>
+           <div class="collisian-smallnumber2"></div>
+          <div class="collect-insurance">Take photos of the scene</div>
+        
+            <div class="last-text">Still need help?<br/>
+            <a href="tel:{{lojackPhone.phone}}">{{lojackPhone.text2}}</a>
+            </div> 
+
+        </div>
+  </ion-slide>
+  <ion-slide>
+      <div class="collisan-details">
+          <div class="collisian-city3"></div>
+          <div class="collisian-number-placing">
+              <div class="collisian-number3"></div>
+          </div>
+          <div class="collisan-instruction">Need help moving your car?</div>
+          <div class="button-red" *ngIf = !preferedserviceshow>
+            <button class="white-btn" (click)="preferedservice()">SEARCH FOR A TOW SHOP</button>
+          </div>
+          <div *ngIf = preferedserviceshow>
+           <div class="button-red" >
+            <a href="tel:{{preferredServiceCenter}}"><button class="white-btn">CALL PREFERRED SERVICE CENTER</button></a>
+          </div>
+          <div class=preferedcentreName> {{preferredServiceCenterName}}</div>
+            <u >Search for a tow shop</u>
+          </div>
+        </div>
+  </ion-slide>
+  <ion-slide>
+      <div class="collisan-details">
+      <div class="collisian-city4"></div>
+          <div class="collisian-number-placing">
+              <div class="collisian-number4"></div>
+          </div>
+          <div class="collisan-instruction">Need a ride home? <br> Choose your preferred rideshare service.</div>
+            <div class="button-white">
+            <a href="#" (tap)="openUber()"><button class="white-btn">OPEN UBER</button></a>
+          </div>
+          <div class="button-white">
+            <a href="#" (tap)="openLyft()"><button class="white-btn">OPEN LYFT</button></a>
+          </div>
+        </div>
+  </ion-slide>
+</ion-slides>
+</div>    
+</ion-content>

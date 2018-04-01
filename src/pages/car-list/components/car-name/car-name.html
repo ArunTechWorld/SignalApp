@@ -1,0 +1,34 @@
+<!-- Generated template for the CarNameComponent component -->
+<ion-content>
+  <div class="wrapper">
+    <div class="header">     
+      <div class="prev-icon" (tap)="moveToPreviousPage()">
+        <ion-img src="assets/imgs/Push_Arrow_White.png"></ion-img>
+      </div>
+      <div class="header-text">{{selectedDevice.asset.name}}</div>
+      <div class="save" (tap)="saveCarName()">Save</div>
+    </div>
+    <div class="content">
+      <div class="car-icon">
+        <div class="car-placeholder">
+          <img class="image" src={{selectedDevice.asset.imageUrl}} onError="this.src='../assets/svg/default_Car.svg'"/>
+        </div>
+      </div>
+      <div class="title">Name Your Car</div>
+      <div class="sub-title">Make your car your own by <br/> giving it a name.</div>
+      <form novalidate class="lojack-form name-car-form">
+        <ion-item class="lojack-input input-icon">
+          <ion-label stacked>Car Name</ion-label>
+          <ion-input type="text" #carName name="carName" placeholder="{{placeHolder}}" [(ngModel)]="assetName"  (keyup)="showRemoveIcon($event)" ></ion-input>
+          <button clear class="btn-icon circle" item-right (tap)="hideRemoveIcon()">
+            <!-- <ion-icon name="close-circle" class="gray-icon"> </ion-icon> -->
+            <div [ngClass]="(isValidName) ? 'text-clear-icon' : ''"> </div>
+          </button>
+        </ion-item>
+        <div class="error-message" [hidden]="!errorMessage">
+          <ion-icon name="warning"></ion-icon>{{errorMessage}}
+        </div>
+      </form>
+    </div>
+  </div>
+</ion-content>

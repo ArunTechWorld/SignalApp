@@ -1,0 +1,32 @@
+app-place-icons {
+  .horizontal-list {
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    display: flex;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    margin: 0;
+    height: 50px;
+    background-color: #fff; // padding: 14px 16px;
+    .icon-pane {
+      // padding: 14px 16px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-width: 50px;
+      width: 12.5%;
+      .icon-item {
+        img {
+          padding: 10px;
+        }
+        // &.item-selected {
+        //   opacity: 0.6;
+        //   background-color: #2B648F; // color: #fff;
+        //   border-radius: 37.2px; // padding: 6px;
+        // }
+      }
+    }
+  }
+}
+

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="44px" height="44px" viewBox="0 0 44 44" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49 (51002) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 12</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <circle id="path-1" cx="18.078125" cy="18.0564453" r="18"></circle>
+        <filter x="-16.7%" y="-16.7%" width="133.3%" height="133.3%" filterUnits="objectBoundingBox" id="filter-3">
+            <feOffset dx="0" dy="0" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.158769248 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group-12" transform="translate(4.000000, 4.000000)">
+            <g>
+                <g id="Select_Shopping_Icon-Copy-6" transform="translate(0.000000, 0.042578)">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <g id="Oval-2-Copy-25">
+                        <use fill="black" fill-opacity="1" filter="url(#filter-3)" xlink:href="#path-1"></use>
+                        <use fill="#F4F4F4" fill-rule="evenodd" xlink:href="#path-1"></use>
+                    </g>
+                </g>
+                <g id="Park_Icon-Copy-2" transform="translate(7.500000, 9.042578)" stroke="#2B648F" stroke-linecap="round" stroke-linejoin="round" stroke-width="0.972">
+                    <path d="M13.5,14.5 L21.5,14.5" id="Stroke-5950"></path>
+                    <polygon id="Stroke-5953" points="21.5 10.5 13.5 10.5 13.5 16.5 21.5 16.5"></polygon>
+                    <path d="M14.5,16.5 L14.5,19" id="Stroke-5954"></path>
+                    <path d="M15.5,10.5 L15.5,14.5" id="Stroke-5955"></path>
+                    <path d="M17.5,10.5 L17.5,14.5" id="Stroke-5956"></path>
+                    <path d="M19.5,10.5 L19.5,14.5" id="Stroke-5957"></path>
+                    <path d="M20.5,16.5 L20.5,19" id="Stroke-5958"></path>
+                    <path d="M3.41845703,7.90058594 L7.41845703,9.90058594" id="Path-13"></path>
+                    <path d="M7.41845703,7.40058594 L9.91845703,5.40058594" id="Path-14"></path>
+                    <path d="M7.41845703,2.90058594 L7.58203125,18.9005859" id="Path-5"></path>
+                    <path d="M4.91845703,10.9005859 C2.25179036,12.2339193 0.751790365,11.4005859 0.418457031,8.40058594 C0.0851236979,5.40058594 1.41845703,4.23391927 4.41845703,4.90058594 C4.41845703,2.5672526 5.25179036,1.23391927 6.91845703,0.900585938 C8.5851237,0.567252604 9.75179036,1.23391927 10.418457,2.90058594 C12.0851237,2.90058594 12.918457,3.73391927 12.918457,5.40058594 C12.918457,7.0672526 12.418457,8.0672526 11.418457,8.40058594 C11.7517904,9.73391927 11.2517904,10.9005859 9.91845703,11.9005859 C8.5851237,12.9005859 6.91845703,12.5672526 4.91845703,10.9005859 Z" id="Path-15"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

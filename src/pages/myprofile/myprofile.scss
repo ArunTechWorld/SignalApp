@@ -1,0 +1,321 @@
+.platform-android page-myprofile .scroll-content {
+    padding: 0px !important;
+}
+
+page-myprofile {
+    .myprofile-page {
+        height: 50px;
+        width: 100%;
+        font-size: 14px;
+        font-weight: bold;
+        letter-spacing: 1px;
+        line-height: 17px; //text-align: center;
+        background-color: black;
+        padding: 22px 17px 18px 15px;
+        color: white;
+        .text {
+            background-image: url(../assets/imgs/White_Close_Button.png);
+            /* height: 15px; */
+            /* width: 15px; */
+            /* background-repeat: no-repeat; */
+            background-size: cover;
+            /* text-align: right; */
+            /* float: right; */
+            height: 12px;
+            width: 13px;
+            right: 0;
+            display: inline-block;
+            float: left;
+        }
+        .myprofile-text {
+            float: left;
+            /* text-align: center; */
+            padding: 0% 0% 0% 37%;
+        }
+        .myprofile-text-edit {
+            padding: 0% 0% 0% 33%;
+            float: left;
+        }
+        .edit-text {
+            float: right;
+            font-weight: 100;
+            color: white;
+            background-color: black;
+            font-size: 15px;
+        }
+    }
+    .profile-img {
+        padding: 10px 0px 36px 9px;
+        .image {
+            height: 53.72px;
+            width: 53.72px;
+            /* height: 80px; */
+            /* width: 80px; */
+            border-radius: 100%;
+        }
+        .car-text {
+            color: #c6c6c6;
+            padding: 0px 0px 9px 1px;
+            font-size: 14px;
+        }
+        .car-text1 {
+            color: #c6c6c6;
+            padding: 0px 0px 9px 1px;
+            font-size: 12px;
+        }
+        .profile-img {
+            padding: 10px 0px 36px 20px;
+            .image {
+                height: 53.72px;
+                width: 53.72px;
+                /* height: 80px; */
+                /* width: 80px; */
+                border-radius: 100%;
+            }
+            .car-text {
+                color: #c6c6c6;
+                padding: 0px 0px 9px 1px;
+                font-size: 14px;
+            }
+        }
+        .myprofile {
+            // background-color: #F9F9F9;
+            .slider-scroll-content {
+                margin-bottom: 10px;
+                padding: 0px 23px 0px 20px ;
+            }
+            .gray-shadows-icon {
+                position: relative;
+                width: 100%;
+                margin: 0 auto;
+                text-align: center;
+                .gray-shadows {
+                    height: 60px;
+                    background-color: #F9F9F9;
+                    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.05);
+                }
+                .person-icon {
+                    position: absolute;
+                    top: 21.5px;
+                    /* margin-top: -35px; */
+                    margin: 0 auto;
+                    text-align: center;
+                    width: 100%;
+                    .myprofile-icon {
+                        background-image: url(../assets/imgs/Personal_Information_Icon.svg);
+                        background-repeat: no-repeat;
+                        height: 81px;
+                        width: 81px;
+                        margin: 0px auto;
+                        /* background-color: white; */
+                        z-index: 599999999999999999999;
+                        background-size: cover;
+                        background-repeat: no-repeat;
+                    }
+                }
+            }
+        }
+        .separate-bar {
+            width: 100%;
+            height: 9px;
+            background-color: #f6f6f6;
+        }
+        .title {
+            text-align: center;
+            background-color: white;
+            padding-top: 57px;
+            font-size: 20px;
+            padding-bottom: 28px
+        }
+        .emergency-contact-title {
+            text-align: center;
+            background-color: white;
+            padding-top: 16px;
+            font-size: 20px;
+            margin-bottom: 24px;
+        }
+    }
+    .separate-bar {
+    width: 100%;
+    height: 9px;
+    background-color: #f6f6f6;
+}
+
+.title {
+    text-align: center;
+    background-color: white;
+    padding-top: 57px;
+    font-size: 20px;
+    padding-bottom: 28px
+}
+
+.emergency-contact-title {
+    text-align: center;
+    background-color: white;
+    padding-top: 16px;
+    font-size: 20px;
+    margin-bottom: 24px;
+}
+
+.emergency-contact {
+    padding-bottom: 25px;
+}
+.notfications-contact {
+    padding-bottom: 25px;
+    .text-notification{
+        text-align: start;
+        padding: 0% 3%;
+        color: #B6B6B6;	
+        font-family: "Neo Sans Std";	
+        font-size: 14px;	
+        line-height: 18px;
+    }
+       .item-actions {
+            width: 100%;
+               padding: 27px;
+
+            .item-check {
+              float: right;
+
+              .toggle-ios {
+                display: block;
+                padding-left: 0 !important;
+              }
+
+              .switch {
+                position: relative;
+                display: inline-block;
+                width: 43px;
+                height: 30px;
+              }
+
+              .switch input {
+                display: none;
+              }
+
+              .slider {
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                background-color: #e8e8e8;
+                -webkit-transition: 0.4s;
+                transition: 0.4s;
+              }
+
+              .slider::before {
+                position: absolute;
+                content: "";
+                height: 26px;
+                width: 26px;
+                top: 2px;
+                left: 2px;
+                background-color: #fff;
+                background-image: url("../assets/svg/White_Close_Icon.svg");
+                background-repeat: no-repeat;
+                background-size: 50% 50%;
+                background-position: center;
+                -webkit-transition: 0.4s;
+                transition: 0.4s;
+              }
+
+              input:checked + .slider {
+                background-color: #2b648f;
+              }
+
+              input:focus + .slider {
+                box-shadow: 0 0 1px #2b648f;
+              }
+
+              input:checked + .slider::before {
+                -webkit-transform: translateX(13px);
+                -ms-transform: translateX(13px);
+                transform: translateX(13px);
+                background-image: url("../assets/svg/Blue_Check_Icon.svg");
+                background-repeat: no-repeat;
+                background-size: 50% 50%;
+                background-position: center;
+              }
+
+              .slider.round {
+                border-radius: 15px;
+              }
+
+              .slider.round::before {
+                border-radius: 50%;
+              }
+            }
+
+            .item-role {
+                color: #666666;
+            	font-family: "Neo Sans Std";	
+                font-size: 14px;	
+                line-height: 17px;
+                padding-top: 5px;
+
+              .admin {
+                color: #37618d;
+              }
+
+              .non-admin {
+                opacity: 0.6;
+                color: #b6b6b6;
+              }
+            }
+          }
+    
+}
+
+
+.sign-out {
+    padding: 30px 19px 30px 19px;
+    background-color: #f6f6f6;
+}
+
+.editable-mode {
+    .item-inner {
+        border-bottom: 0px !important;
+        .gray-icon {
+            display: none;
+        }
+        .editprofile-push-arow {
+            background-image: none;
+        }
+        .input-wrapper {
+            pointer-events: none;
+        }
+    }
+}
+.changeopacity {
+    opacity: 0.5;
+}
+
+.editprofile-push-arow {
+    background-image: url(../assets/imgs/push_Arrow_gray.svg);
+    width: 10.5px;
+    height: 15.5px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: 9;
+    margin: 11px 16px 0px 0px;
+    float: right;
+}
+
+.not-editable {
+    pointer-events: none;
+}
+
+.input-wrapper {
+    padding: 0px 15px 8px 0px !important;
+}
+
+.item-inner {
+    border-bottom: 1px solid #E8E8E8 !important; //border: 1px solid #E8E8E8;
+}
+.item-input-has-focus{
+    border-bottom: 0.7px solid #666666 !important;
+}
+
+}
+

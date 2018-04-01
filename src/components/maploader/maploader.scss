@@ -1,0 +1,70 @@
+maploader {
+  .map-loading-spinner {
+    // position: fixed;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(241, 243, 245, 0.50);
+    height: 100%;
+    z-index: 9;
+
+    .loader-content {
+      // top: 30%;
+      // position: absolute;
+      position: relative;
+      top: -90px;
+      left: -1px;
+      margin: 0 auto;
+      text-align: center;
+      width: 100%;
+      .loder-text {
+        color: #E2231A;
+        font-size: 12px;
+        font-weight: 500;
+        line-height: 22px;
+        text-align: center;
+        padding-top: 15px;
+      }
+      .second-image {
+        position: absolute;
+        top: 0px;
+        width: 100%;
+        .load-svg {
+          overflow: hidden;
+          //transform: rotate(-180deg);
+          .animate-path {
+            stroke: red;
+            stroke-width: 3.02px;
+            stroke-dasharray: 300;
+            stroke-dashoffset: 10;
+            fill: none;
+            -webkit-animation: animateMapLoader 4s linear infinite;
+        -moz-animation:    animateMapLoader 4s linear infinite;
+    -o-animation:      animateMapLoader 4s linear infinite;
+    -ms-transition:   animateMapLoader 4s linear infinite;
+            animation: animateMapLoader 4s linear infinite;
+            animation-direction: reverse
+          }
+        }
+      }
+      .first-image {
+        //transform: rotate(-180deg);
+        .static-image-path {
+          stroke: rgba(255, 255, 255, 0.5);
+          stroke-width: 3.5px;
+          stroke-dasharray: 300;
+          stroke-dashoffset: 10;
+          fill: none;
+          border: 3.02px solid rgba(255, 255, 255, 0.5);
+        }
+      }
+    }
+  }
+}
+
+@keyframes animateMapLoader {
+  to {
+    stroke-dashoffset: 300;
+  }
+}

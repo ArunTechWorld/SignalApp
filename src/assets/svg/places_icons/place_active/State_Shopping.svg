@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="36px" height="36px" viewBox="0 0 36 36" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>Select_Shopping_Icon</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <circle id="path-1" cx="18.790625" cy="18" r="18"></circle>
+    </defs>
+    <g id="Select_Shopping_Icon" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g transform="translate(-0.790625, 0.000000)">
+            <mask id="mask-2" fill="white">
+                <use xlink:href="#path-1"></use>
+            </mask>
+            <use id="Oval-2-Copy-25" fill="#2B648F" opacity="0.6" xlink:href="#path-1"></use>
+            <g id="Shopping_Icon" transform="translate(9.578125, 5.556445)" stroke="#FFFFFF" stroke-linecap="round" stroke-linejoin="round">
+                <g id="Group" transform="translate(0.712500, 0.943555)">
+                    <path d="M14.6812436,20.6990285 L2.32472189,20.6990285 C1.22015239,20.6990285 0.324721892,19.803598 0.324721892,18.6990285 L0.324721892,9.78598505 C0.324721892,8.68141555 1.22015239,7.78598505 2.32472189,7.78598505 L14.6812436,7.78598505 C15.7858131,7.78598505 16.6812436,8.68141555 16.6812436,9.78598505 L16.6812436,18.6990285 C16.6812436,19.803598 15.7858131,20.6990285 14.6812436,20.6990285 Z" id="Stroke-1407"></path>
+                    <path d="M4.62906972,6.06424592 L4.62906972,4.77294158 C4.62906972,2.63368071 6.36372189,0.899028533 8.50298276,0.899028533 C10.6431045,0.899028533 12.3768958,2.63368071 12.3768958,4.77294158 L12.3768958,6.06424592" id="Stroke-1408"></path>
+                    <polygon id="Stroke-1409" points="17.1436167 1.6245694 18.969521 3.45219549 15.9263471 6.49450853 14.098721 6.49450853 14.098721 4.66860418"></polygon>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

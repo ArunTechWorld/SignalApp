@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="13px" height="13px" viewBox="0 0 13 13" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>White_Close_Button Copy</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round">
+        <g id="White_Close_Button-Copy" stroke="#666666" stroke-width="1.5">
+            <polyline id="Triangle" transform="translate(4.028402, 6.500000) rotate(90.000000) translate(-4.028402, -6.500000) " points="-0.690104167 8.97159831 4.02840169 4.02840169 8.74690755 8.97159831"></polyline>
+            <polyline id="Triangle-Copy" transform="translate(8.971598, 6.500000) scale(-1, 1) rotate(90.000000) translate(-8.971598, -6.500000) " points="4.25309245 8.97159831 8.97159831 4.02840169 13.6901042 8.97159831"></polyline>
+        </g>
+    </g>
+</svg>

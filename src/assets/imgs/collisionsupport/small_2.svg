@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>small_2</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Emergency-Support:-2nd-Step_instructions" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-41.000000, -537.000000)">
+        <g id="small_2" transform="translate(40.106445, 536.889172)">
+            <g id="Group-3" transform="translate(1.600000, 0.281640)" fill="#E14A43">
+                <g id="Personal_Information_Icon" transform="translate(0.000000, 0.031576)">
+                    <g id="Your_Name_Icon" transform="translate(0.000000, 0.170081)">
+                        <circle id="Oval-4" cx="7.44050264" cy="7.44050264" r="7.34864458"></circle>
+                    </g>
+                </g>
+            </g>
+            <text id="2" font-family="NeoSansStd-Bold, Neo Sans Std" font-size="8" font-weight="bold" line-spacing="8" fill="#FFFFFF">
+                <tspan x="6.42" y="8.31124002">2</tspan>
+            </text>
+        </g>
+    </g>
+</svg>

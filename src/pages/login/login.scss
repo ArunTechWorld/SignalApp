@@ -1,0 +1,210 @@
+@mixin loading-progress-init($duration) {
+    animation: slide80 $duration linear 1;
+}
+
+@mixin loading-progress-complete($duration) {
+    animation: slide100 $duration linear 1;
+}
+
+app-login {
+  .forgot-passwoerd-txt {
+    color: #8F8F8F;
+    font-size: 12px;
+    line-height: 0px;
+    text-align: center;
+    width: 100%;
+    margin: 73px 0 16px 0;
+    &.has-error-msg {
+        // padding: 28px 0px 16px 0px;
+        margin: 28px 0 16px 0;
+    }
+  }
+
+  .eye-btn {
+    margin: 8px !important;
+    background-color: transparent;
+  }
+
+  .background-img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+  }
+
+  .initial-loading-screen {
+    // background-image: url('../assets/imgs/loading/InitialLoadingBackground.svg');
+    // background-size: cover;
+    .progressBar {
+      height: 6.02px;
+      width: 100%;
+      background-color: #E7EAED;
+      position: relative;
+      top: 0;
+
+      .status {
+        height: 6.02px;
+        width: 0%;
+        background-color: #E2231A;
+        width: 0%;
+      }
+
+      .progress-bar-init {
+        width: 80%;
+        @include loading-progress-init(3000ms);
+      }
+
+      .progress-bar-complete {
+        width: 100%;
+        @include loading-progress-complete(1000ms);
+      }
+    }
+
+    .markers {
+            position: absolute;
+            bottom: 0px;
+            width: 100%;
+            #fisrtPin {
+                // position: absolute;
+                //bottom: 10px;
+                // float: left;
+                display: none;
+                min-width: 32%;
+                text-align: center;
+                img {
+                    width: 64px;
+                }
+            }
+            #secondPin {
+                // position: absolute;
+                // bottom: 20px;
+                // float: left;
+                display: none;
+                min-width: 32%;
+                text-align: center;
+            }
+            #thirdPin {
+                // position: absolute;
+                //  bottom: 30px;
+                // float: left;
+                display: none;
+                min-width: 32%;
+                text-align: center;
+                img {
+                    width: 50px;
+                }
+            }
+        }
+  /*   .scroll-content {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+  #myProgress {
+  width: 100%;
+  height: 10px;
+  background-color: #ddd;
+}
+
+#myBar {
+  width: 1%;
+  height: 10px;
+  background-color: #ff0000;
+}
+
+        .mdPin{
+            img{
+                width:85%;
+            }
+        }
+        #bars {
+            height: 80%;
+
+        .cls-1 {
+                opacity: 0;
+                transform: rotate3d(1, 1, 0, 50deg);
+                animation: 1s 0.2s ease loadingFadeInAndSpin;
+                animation-fill-mode: forwards;
+            }
+
+            .cls-2 {
+                opacity: 0;
+                transform: rotate3d(1, 1, 0, 50deg);
+                animation: 1s 0.4s ease loadingFadeInAndSpin;
+                animation-fill-mode: forwards;
+            }
+
+            .cls-3 {
+                opacity: 0;
+                transform: rotate3d(1, 1, 0, 50deg);
+                animation: 1s 0.6s ease loadingFadeInAndSpin;
+                animation-fill-mode: forwards;
+            }
+
+            .cls-4 {
+                opacity: 0;
+                transform: rotate3d(1, 1, 0, 50deg);
+                animation: 1s 0.8s ease loadingFadeInAndSpin;
+                animation-fill-mode: forwards;
+            }
+
+            .cls-5, .cls-6 {
+                opacity: 0;
+                animation: 2s 1.5s linear loadingFadeInAndSpin;
+                animation-fill-mode: forwards;
+            }
+
+        }
+}*/
+  }
+}
+
+.initial-network-alert {
+  .alert-message {
+    color: #000 !important;
+    font-size: 17px !important;
+    line-height: 20px !important;
+    text-align: center;
+  }
+
+  .alert-button-group {
+    margin: 0 auto;
+    text-align: center;
+    color: #007aff;
+    font-size: 17px;
+    line-height: 22px;
+  }
+}
+
+@keyframes slide80 {
+  from {
+    width: 0%;
+  }
+
+  to {
+    width: 80%;
+  }
+}
+
+@keyframes slide100 {
+  from {
+    width: 80%;
+  }
+
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes loadingFadeInAndSpin {
+  100% {
+    opacity: 1;
+    transform: rotate3d(1, 1, 0, 0deg);
+  }
+}
+
+@keyframes loadingFadeIn {
+  100% {
+    opacity: 1;
+  }
+}

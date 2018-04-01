@@ -1,0 +1,35 @@
+<div class="place">
+  <div class="place-icon">
+    <!-- <img src="assets/svg/places_icons/place_active/{{selectedPlaceIcon}}.svg" class="place-icon-img" /> -->
+    <img src="assets/svg/places_icons/place_active/{{selectedPlaceIcon}}.svg" id="placeIcon"/>
+  </div>
+  <div class="place-search">
+    <form novalidate class="lojack-form">
+      <ion-item class="lojack-input address-input-item">
+        <ion-label floating>Address</ion-label>
+        <ion-input type="text" name="selectedAddressName" #addressSearch clearInput [(ngModel)]="selectedAddressName" (keyup)="addressChange(addressSearch.value)"
+          (ngModelChange)="reSearch()" (ionFocus)="addressFocus()" (focusout)="addressFocusOut()" ></ion-input>
+      </ion-item>
+      <ion-item class="lojack-input place-input-item">
+        <ion-label floating>Place Name</ion-label>
+        <ion-input type="text" name="placeNameModel" #placeName clearInput (keyup)="changePlaceName($event.target.value)"
+        [(ngModel)]="placeNameModel" (ionFocus)="placeFocus()" (focusout)="placeFocusOut()" (ngModelChange)="placeNameChanged()"></ion-input>
+      </ion-item>
+    <div class="error-message" [hidden]="!showErrorMessage">
+      <ion-icon name="warning"></ion-icon>{{showErrorMessage}}</div>
+    </form>
+  </div>
+</div>
+<div #placeResults class="search-results">
+  <ion-list>
+    <div *ngFor="let item of searchResultsAddress | async" (click)="itemSelected(item)" class="address-list">
+      <div class="search-icon">
+        <img src="assets/svg/places_icons/State_Location.svg" />
+      </div>
+      <div class="place-address">
+        <div class="main">{{ item.placeName }}</div>
+        <div class="sub">{{ item.placeAddress }}</div>
+      </div>
+    </div>
+  </ion-list>
+</div>

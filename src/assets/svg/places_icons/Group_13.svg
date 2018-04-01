@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="44px" height="44px" viewBox="0 0 44 44" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49 (51002) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 13</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <circle id="path-1" cx="18.078125" cy="18.0564453" r="18"></circle>
+        <filter x="-16.7%" y="-16.7%" width="133.3%" height="133.3%" filterUnits="objectBoundingBox" id="filter-3">
+            <feOffset dx="0" dy="0" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.158769248 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group-13" transform="translate(4.000000, 4.000000)">
+            <g>
+                <g id="Select_Shopping_Icon-Copy-7" transform="translate(0.378125, 0.364844)">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <g id="Oval-2-Copy-25">
+                        <use fill="black" fill-opacity="1" filter="url(#filter-3)" xlink:href="#path-1"></use>
+                        <use fill="#F4F4F4" fill-rule="evenodd" xlink:href="#path-1"></use>
+                    </g>
+                </g>
+                <g id="Pet_Icon-Copy-2" transform="translate(10.238125, 10.224844)" stroke="#2B648F" stroke-linecap="round" stroke-linejoin="round" stroke-width="0.972">
+                    <path d="M3.96,7.368048 C3.96,8.947008 3.15432,10.227168 2.16,10.227168 C1.16568,10.227168 0.36,8.947008 0.36,7.368048 C0.36,5.789088 1.16568,4.508928 2.16,4.508928 C3.15432,4.508928 3.96,5.789088 3.96,7.368048 L3.96,7.368048 Z" id="Stroke-6433"></path>
+                    <path d="M7.787088,3.214008 C7.843968,4.648248 7.157808,5.839848 6.255648,5.874408 C5.352768,5.911128 4.575168,4.777848 4.518288,3.344328 C4.461408,1.910088 5.146848,0.719208 6.049728,0.683208 C6.952608,0.647928 7.730208,1.781208 7.787088,3.214008 L7.787088,3.214008 Z" id="Stroke-6434"></path>
+                    <path d="M13.111848,7.368048 C13.111848,8.947008 13.917528,10.227168 14.911848,10.227168 C15.906168,10.227168 16.711848,8.947008 16.711848,7.368048 C16.711848,5.789088 15.906168,4.508928 14.911848,4.508928 C13.917528,4.508928 13.111848,5.789088 13.111848,7.368048 L13.111848,7.368048 Z" id="Stroke-6435"></path>
+                    <path d="M9.28476,3.214008 C9.22788,4.648248 9.91404,5.839848 10.8162,5.874408 C11.71908,5.911128 12.49668,4.777848 12.55356,3.344328 C12.61044,1.910088 11.925,0.719208 11.02212,0.683208 C10.11924,0.647928 9.34164,1.781208 9.28476,3.214008 L9.28476,3.214008 Z" id="Stroke-6436"></path>
+                    <path d="M10.992672,9.904896 C10.746432,8.677296 10.009872,7.203456 8.536032,7.203456 C7.062192,7.203456 6.325632,8.677296 6.079392,9.904896 C5.814432,11.229696 3.622752,12.116016 3.622752,14.081616 C3.622752,17.866656 13.449312,17.866656 13.449312,14.081616 C13.449312,12.116016 11.257632,11.229696 10.992672,9.904896 L10.992672,9.904896 Z" id="Stroke-6437"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

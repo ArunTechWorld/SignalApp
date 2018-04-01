@@ -1,0 +1,306 @@
+tripdetails {
+  .scroll-content {
+      padding-top: 0px !important;
+      overflow: hidden;
+  }
+  .trip-dot-divider{
+          color: #648EAD;
+  position: absolute;
+  margin-top: -32px;
+  line-height: 3.2px;
+  margin-left: 2.5px;
+
+  }
+  .header {
+      height: 50px;
+      max-height: 53px;
+      width: 100%;
+      background-color: #000;
+      display: flex;
+      justify-content: center;
+      .prev-icon {
+          padding: 16px 16px 17px 16px;
+          color: #fff;
+          ion-img {
+              min-width: 6px !important;
+              min-height: 10px !important;
+              max-width: 6px;
+              max-height: 10px;
+              background: transparent;
+              pointer-events: auto;
+              transform: rotate(180deg);
+          }
+      }
+      .header-text {
+          height: 14px;
+          width: 100%;
+          color: #fff;
+          font-size: 14px;
+          font-weight: bold;
+          letter-spacing: 1px;
+          line-height: 17px;
+          text-align: center;
+          text-transform: uppercase;
+          padding: 16px 32px 17px 0;
+      }
+  }
+  .map {
+      padding: 10.9px 10px 10px 10px; // width: 100%;
+      // height: 100%;
+      background: #fff; // position: absolute;
+  }
+  .details-content {
+      position: relative;
+      height: calc(100vh - 55px);
+      width: 100%;
+      padding: 10.9px 10px 10px 10px;
+      .details-content1 {
+          // position: relative;
+          // width: 100%;
+          // height: calc(100vh - 40px - 50px);
+          background: #f6f6f6;
+          box-shadow: 0 0 7px 0 rgba(0, 0, 0, 0.1);
+      }
+  }
+  .trip-history-map {
+      // width: 100%;
+      // height: 100%;
+      height: calc(100vh - 200px);
+      background-image: url("../assets/imgs/MapBackground.svg");
+      background-size: cover;
+      box-shadow: inset 0 0 10px 0 rgba(216, 216, 216, 0.4); // width: 100%;
+      // height: calc(100% - 150px);
+      // background: #F1F3F5;
+      // position: absolute;
+  }
+  .trip-info-block {
+      width: 100%;
+      bottom: 0px;
+      padding: 13px 10px 10px 25px;
+      background: #fff;
+      .info-block {
+          padding: 0px 0px 13.17px 0px;
+          width: 100%;
+          .date-time-block {
+              display: inline-block; // float: left;
+          }
+          .distance-block {
+              display: inline-block;
+              float: right;
+              color: #2B648F;
+              font-size: 18px;
+              line-height: 22px;
+              text-align: center;
+          }
+          .title {
+              color: $blackColor;
+              font-size: 18px;
+              line-height: 22px;
+              margin-right: 4px;
+          }
+          .sub-title {
+              color: #666666;
+              font-size: 11px;
+              line-height: 15px;
+          }
+      }
+      
+      .from-to-location {
+          .title {
+              color: $blackColor;
+              font-size: 11px;
+              line-height: 22px;
+              margin-right: 10.99px;
+          }
+          .sub-title {
+              color: #666666;
+              font-size: 11px;
+              line-height: 15px;
+          }
+          .to-addr {
+              margin-right: 25.99px;
+          }
+          .from-toseparator {
+              color: #648EAD;
+              display: inline-block;
+              /* transition: tra; */
+              transform: rotate(90deg);
+              line-height: 5px;
+              font-size: 22px;
+              position: absolute;
+              left: 0px;
+          }
+          .to-img {
+              background-image: url(../assets/imgs/tripHistory/Mini_Finish_Point.svg);
+              height: 15px;
+              width: 15px;
+              background-repeat: no-repeat;
+              background-size: cover;
+              /* text-align: right; */
+              /* float: right; */
+              width: 8px;
+              height: 13px;
+              margin-right: 7px;
+              display: inline-block;
+          }
+          .from-img {
+              background-image: url(../assets/imgs/tripHistory/Mini_Starting_Point.svg);
+              height: 15px;
+              width: 15px;
+              ackground-repeat: no-repeat;
+              background-size: cover;
+              /* text-align: right; */
+              /* float: right; */
+              height: 6.94px;
+              width: 6.94px;
+              margin-right: 7px;
+              display: inline-block;
+          }
+      }
+  }
+    .esri-ui-inner-container {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.esri-popup--shadow {
+  box-shadow: none;
+}
+
+.esri-popup__main-container {
+  width: 225px !important;
+  height: 106px;
+  border-radius: 3.3px;
+  background-color: #FFFFFF; // box-shadow: inset 0 1px 3px 0 rgba(0, 0, 0, 0.5), 0 0 8px 0 rgba(0, 0, 0, 0.1);
+  .esri-widget {
+      border-radius: 3.3px;
+  }
+  .popup-custom {
+      display: flex;
+      .left {
+          padding-top: 15px;
+          width: 75px;
+      }
+      .right {
+          flex: 1;
+          padding-left: 0px;
+          .content {
+              padding-top: 30px;
+              .details-row {
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+                  .count {
+                    width: 50%;
+                    text-align:right;
+                  height: 14px;
+                  color: #000000;
+                  font-size: 10px;
+                  line-height: 14px;
+                  padding-right: 8px;
+                  border-right: 0.5px solid #666666;
+              }
+              .text {
+                  padding-left: 8px;
+                  height: 22px;
+                  color: #666666;
+                  font-size: 7px;
+                  line-height: 22px;
+                  padding-right: 2px
+              }
+              .dangerimg{
+                padding-bottom: 3px;
+              }
+          }
+          }
+          .time {
+              text-align: right;
+              padding-right: 3px;
+              padding-top: 5px;
+              color: #B6B6B6;
+          }
+      }
+  }
+}
+.centerMarker{
+    position: relative;
+    bottom: 0;
+    width: 38px;
+    height: 38px;
+    background: transparent;
+    float: right;
+    top: -51px;
+    margin-right: 20px;
+}
+.arc {
+  border: 3.92px solid #2B648F;
+  border-radius: 50%;
+  height: 60px;
+  width: 60px;
+  text-align:center;
+  border-bottom-color: transparent;
+ }.arc2 {
+  border: 3.92px solid #2B648F;
+  border-radius: 50%;
+  height: 60px;
+  width: 60px;
+  border-top-color: transparent;
+  transform: rotate(180deg)
+}
+.mphvalue{
+      color: #000000;	
+  font-family: "Neo Sans Std";	
+  font-size: 14px;	
+  line-height: 7px;	
+  text-align: center;
+  position:relative;
+   top: 40%;
+    left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+.mphtext{
+  position:absolute;
+  font-size: 15px;	
+  margin-top:27px;
+  margin-left:19px;
+  color: #000000;	
+  font-family: "Neo Sans Std";	
+  font-size: 7.26px;	
+  line-height: 7px;	
+  text-align: center;
+}
+.drivetext{
+  color: #37618D;
+  font-family: "Neo Sans Std";
+  font-size: 7.26px	;font-weight: 500	;
+  line-height: 8px;
+  margin-top:39px;
+  margin-left:2px;
+  font-weight:bold;
+  position: relative;
+}
+.drivetext2{
+  color: #37618D;
+  font-family: "Neo Sans Std";
+  font-size: 7.26px	;font-weight: 500	;
+  font-weight:bold;
+  line-height: 8px;
+  margin-left:4px;
+  margin-top:0px;
+  position: relative;
+}
+.esri-popup__feature-buttons {
+  display: none;
+}
+
+.esri-popup__header {
+  display: none;
+}
+
+.esri-popup__content {
+  margin: 4px;
+}
+}

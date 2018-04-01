@@ -1,0 +1,9 @@
+// create app fonts
+@mixin font-face($name, $weight, $src) {
+  @font-face {
+    font-family: $name;
+    font-style: normal;
+    font-weight: $weight;
+    src: url($src);
+  }
+}

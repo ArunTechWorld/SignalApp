@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="21px" height="21px" viewBox="0 0 21 21" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>Speeding_Point</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Trip-History:-List" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-115.000000, -215.000000)">
+        <g id="Card_1" transform="translate(18.000000, 160.000000)">
+            <g id="Speeding_Point" transform="translate(96.379492, 54.771720)">
+                <g id="Group-6-Copy" transform="translate(0.600000, 0.671720)" fill="#37618D">
+                    <g id="Group">
+                        <g id="Group-2">
+                            <circle id="Oval-14" opacity="0.199999988" cx="10.588272" cy="10.0670721" r="10"></circle>
+                            <circle id="Oval-14" opacity="0.199999988" cx="10.588272" cy="10.0670721" r="7.5"></circle>
+                            <circle id="Oval-14" stroke="#FFFFFF" cx="10.588272" cy="10.0670721" r="5"></circle>
+                        </g>
+                    </g>
+                </g>
+                <g id="Group-6-Copy-2" transform="translate(3.600000, 2.671720)"></g>
+                <g id="Group-6-Copy-3" transform="translate(5.800000, 5.497039)"></g>
+            </g>
+        </g>
+    </g>
+</svg>

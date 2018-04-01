@@ -1,0 +1,135 @@
+app-car-name {
+  /* .content {
+    background-color: #f9f9f9 !important;
+  } */
+
+  .scroll-content {
+    padding: 0 !important;
+    margin: 0 !important;
+    overflow: hidden;
+  }
+
+  .wrapper {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+
+    .header {
+      height: 50px;
+      max-height: 53px;
+      width: 100%;
+      background-color: #000;
+      display: flex;
+      justify-content: center;
+
+      .prev-icon {
+        padding: 16px 16px 23px 16px;
+        color: #fff;
+
+        ion-img {
+          min-width: 6px !important;
+          min-height: 11px !important;
+          max-width: 6px;
+          max-height: 11px;
+          background: transparent;
+          pointer-events: auto;
+          transform: rotate(180deg);
+        }
+      }
+
+      .header-text {
+        height: 14px;
+        width: 100%;
+        color: #fff;
+        font-size: 14px;
+        font-weight: bold;
+        letter-spacing: 1px;
+        line-height: 17px;
+        text-align: center;
+        text-transform: uppercase;
+        padding: 16px 0 19px 0;
+      }
+
+      .save {
+        height: 19px;
+        color: #fff;
+        font-size: 14px;
+        line-height: 19px;
+        text-align: right;
+        padding: 16px 17px 19px 0;
+      }
+    }
+
+    .content {
+      flex: 1;
+
+      .name-car-form {
+        padding-left: 18px;
+        padding-right: 18px;
+      }
+
+      .car-icon {
+        height: 81px;
+        width: 81px;
+        margin: 20px auto;
+
+        .car-placeholder {
+          pointer-events: auto;
+          box-sizing: border-box;
+          height: 80.85px;
+          width: 80.85px;
+          overflow: hidden;
+          background-color: #fff;
+          border: 0.85px solid #e8e8e8;
+          border-radius: 100%;
+          // padding: 2px;
+          // object-fit: cover;
+          object-fit: scale-down;
+
+          img {
+            height: 100%;
+          }
+        }
+      }
+
+      .title {
+        height: 22px;
+        color: #000;
+        font-size: 24px;
+        line-height: 22px;
+        text-align: center;
+      }
+
+      .sub-title {
+        height: 36px;
+        color: #8f8f8f;
+        font-size: 13px;
+        line-height: 18px;
+        text-align: center;
+        padding: 13px 0 43px 0;
+      }
+
+      .circle {
+        margin-top: 35px;
+        margin-right: 0 !important;
+        background: transparent;
+      }
+
+      .text-input::-moz-placeholder {
+        color: #b6b6b6;
+        opacity: 0.6;
+      }
+
+      .text-input:-ms-input-placeholder {
+        color: #b6b6b6;
+        opacity: 0.6;
+      }
+
+      .text-input::-webkit-input-placeholder {
+        color: #b6b6b6;
+        opacity: 0.6;
+      }
+    }
+  }
+}

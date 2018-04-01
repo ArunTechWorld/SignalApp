@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="15px" height="10px" viewBox="0 0 15 10" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.1 (47250) - http://www.bohemiancoding.com/sketch -->
+    <title>Show_PW_Icon</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linejoin="round">
+        <g id="Show_PW_Icon" stroke="#B6B6B6" stroke-width="0.75">
+            <path d="M0.8565,5.101 C0.8565,5.101 2.9565,1.022 7.5605,1.022 C12.1655,1.022 14.1435,5.101 14.1435,5.101 C14.1435,5.101 11.6795,8.978 7.5005,8.978 C3.3195,8.978 0.8565,5.101 0.8565,5.101 Z" id="Stroke-1"></path>
+            <path d="M10.2559,5.0004 C10.2559,6.5224 9.0219,7.7564 7.4999,7.7564 C5.9779,7.7564 4.7439,6.5224 4.7439,5.0004 C4.7439,3.4784 5.9779,2.2444 7.4999,2.2444 C9.0219,2.2444 10.2559,3.4784 10.2559,5.0004 Z" id="Stroke-3"></path>
+            <path d="M7.4482,3.8036 C7.4482,3.8036 6.2632,3.8036 6.2632,4.9886" id="Stroke-5" stroke-linecap="round"></path>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="44px" height="44px" viewBox="0 0 44 44" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49 (51002) - http://www.bohemiancoding.com/sketch -->
+    <title>Select_School_Icon Copy 2</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <circle id="path-1" cx="18" cy="18.5542969" r="18"></circle>
+        <filter x="-16.7%" y="-16.7%" width="133.3%" height="133.3%" filterUnits="objectBoundingBox" id="filter-3">
+            <feOffset dx="0" dy="0" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.158769248 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Select_School_Icon-Copy-2" transform="translate(3.000000, 3.000000)">
+            <g transform="translate(0.642857, 0.364844)">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <g id="Oval-2-Copy-21">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-3)" xlink:href="#path-1"></use>
+                    <use fill="#F4F4F4" fill-rule="evenodd" xlink:href="#path-1"></use>
+                </g>
+                <g id="School_Icon" transform="translate(6.357143, 9.519548)" stroke="#2B648F" stroke-linecap="round" stroke-linejoin="round" stroke-width="0.972">
+                    <polyline id="Stroke-5654" points="4.86508227 8.00568895 4.84100567 17.008464 9.14432613 17.008464 9.14432613 11.9879235 12.7304265 11.9879235 12.7304265 17.008464 17.033747 17.008464 17.033747 8.04321308"></polyline>
+                    <polyline id="Stroke-5655" points="4.84100567 8.00568895 10.9373763 1.58804887 17.033747 8.00568895"></polyline>
+                    <polyline id="Path-4" points="2.95129887 8.84775715 0.0691107625 8.84775715 0.0691107625 16.9821356 4.74436254 16.9821356"></polyline>
+                    <polyline id="Path-4" points="18.9277438 8.84775715 21.8099319 8.84775715 21.8099319 16.9821356 17.1346936 16.9821356"></polyline>
+                    <polyline id="Path-6" points="15.5209484 6.22362644 15.5209484 3.53405115 15.5209484 0.665170842 18.7484388 0.665170842 18.7484388 3.17544111 16.9553886 3.17544111"></polyline>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

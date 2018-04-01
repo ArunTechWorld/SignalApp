@@ -1,0 +1,79 @@
+<!-- Generated template for the PersonaldetailsComponent component -->
+<ion-header>
+  <div class='myprofile-page'>
+    <div class="text" (click)="moveToPreviousPage()"></div>
+  
+    <div *ngIf="!isEditProfille">
+      <!--   <div class="myprofile-text">Edit Profile </div>
+    <div class="edit-text"  (click)="editablemode()"> Save</div> -->
+  </div>
+  <div *ngIf="isEditProfille">
+      <div class="myprofile-text_person"> {{accountSetupInfo.name.firstName}} {{accountSetupInfo.name.lastName}} </div>
+    <!-- <div class="edit-text"  (click)="savemode()"> Edit </div>  -->
+  </div>
+    </div>
+</ion-header>
+<ion-content  class="myprofile">
+  <div class="gray-shadows-icon">
+    <div class="gray-shadows"> </div>
+    <div class="person-icon">
+    <div class="myprofile-icon"> </div>
+    </div>
+  </div>
+     <div>
+    <form novalidate class="lojack-form slider-scroll-content" [ngClass]="{'editable-mode':(isEditProfille)}">
+         <div class="title">Personal Information</div>
+          <ion-item class="lojack-input">
+            <ion-label class="text_size" stacked>First Name</ion-label>
+            <ion-input type="text" name="firstName"  [(ngModel)]="accountSetupInfo.name.firstName" ></ion-input>
+          </ion-item>
+          <ion-item class="lojack-input">
+            <ion-label class="text_size" stacked>Last Name</ion-label>
+            <ion-input type="text" name="lastName"   [(ngModel)]="accountSetupInfo.name.lastName" ></ion-input>
+          </ion-item>
+          <ion-item class="lojack-input">
+            <ion-label class="text_size" stacked>Cell Phone</ion-label>
+             <ion-input type="tel" name="PhoneNo"  [(ngModel)]="accountSetupInfo.phoneNo"></ion-input>
+          </ion-item>
+          <ion-item class="lojack-input">
+          <ion-label class="text_size" stacked>Email</ion-label>
+          <ion-input type="text" name="email" [(ngModel)]="accountSetupInfo.email"></ion-input>
+          </ion-item>
+      
+          <!--<div class="error-message" [hidden]="!errorMessage">
+            <ion-icon name="warning"></ion-icon>{{errorMessage}}</div>-->
+    </form>
+    <!--  <div class="profile-img">
+      <div class="car-text">Preferred Car</div>
+       <img class="image"  src="assets/imgs/car_awareness/tempCar.png" />
+        <img class="image"  src="assets/imgs/car_awareness/tempCar.png" />
+         <img class="image"  src="assets/imgs/car_awareness/tempCar.png" />
+          <img class="image"  src="assets/imgs/car_awareness/tempCar.png" />
+      <div class="car-text">This car will appear first on the home screen.</div>
+     </div> -->
+     </div>
+     <div class="separate-bar"></div>
+         <div class="emergency-contact">
+        <div class="title">Emergency Contact</div>
+        <form novalidate class="lojack-form slider-scroll-content" [ngClass]="{'editable-mode':(isEditProfille)}">
+          <ion-item class="lojack-input">
+            <ion-label class="text_size" stacked>First Name</ion-label>
+            <ion-input type="text" name="firstName" [(ngModel)]="accountSetupInfo.justInCase.firstName"></ion-input>
+          </ion-item>
+          <ion-item class="lojack-input">
+            <ion-label class="text_size" stacked>Last Name</ion-label>
+            <ion-input type="text" name="lastName"  [(ngModel)]="accountSetupInfo.justInCase.lastName"></ion-input>
+          </ion-item>
+          <ion-item class="lojack-input">
+            <ion-label class="text_size" stacked>Cell Phone</ion-label>
+             <ion-input type="tel" name="justInCasePhoneNo" (keyup)="formatPhoneNumber($event);" [(ngModel)]="accountSetupInfo.justInCase.phoneNo" maxlength=14 onselectstart="return false" onpaste="return false;" onCopy="return false" onCut="return false" onDrag="return false" onDrop="return false" autocomplete=off></ion-input>
+          </ion-item>
+          <!-- <div class="error-message" [hidden]="!errorMessage">
+            <ion-icon name="warning"></ion-icon>{{errorMessage}}</div> -->
+        </form>
+      </div>
+   
+      <div class="sign-out" *ngIf="userIsAdmin && !me"> 
+      <button class="red-btn" (click)="removeUser()">REMOVE PERSON</button>
+    </div>
+</ion-content>

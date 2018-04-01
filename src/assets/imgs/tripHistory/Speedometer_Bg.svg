@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="66px" height="72px" viewBox="0 0 66 72" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>Speednometer_Bg</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Trip-History:-Trip-Detail_General_Point" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-42.000000, -157.000000)">
+        <g id="Speed_Tooltip" transform="translate(29.213867, 143.000000)">
+            <g id="Group-9" transform="translate(11.000000, 16.000000)">
+                <g id="Speednometer_Bg">
+                    <path d="M54.7114346,53.3795613 C61.0054423,47.8128036 64.9738431,39.6763826 64.9738431,30.6130919 C64.9738431,13.8329691 51.3708659,0.229991892 34.5907431,0.229991892 C17.8106203,0.229991892 4.20764308,13.8329691 4.20764308,30.6130919 C4.20764308,39.6643521 8.16551561,47.7912016 14.4450001,53.35738" id="Oval-17" stroke="#DAE5EE" stroke-width="3.9204" stroke-linecap="round"></path>
+                    <text id="Driving-Speed" font-family="NeoSansStd-Medium, Neo Sans Std" font-size="7.26" font-weight="400" line-spacing="8.47" fill="#37618D">
+                        <tspan x="22.5935931" y="59.1118723">Driving</tspan>
+                        <tspan x="24.1653831" y="67.5818723">Speed</tspan>
+                    </text>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

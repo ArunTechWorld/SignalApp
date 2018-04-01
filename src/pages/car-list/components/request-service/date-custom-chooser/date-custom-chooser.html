@@ -1,0 +1,37 @@
+<div class="nav-icons left-arrow" (click)="prevDates()" [ngClass]="{'disabled' : isLeftDisabled}">
+  <ion-icon name="arrow-back" isActive="false"></ion-icon>
+</div>
+<ion-list class="horizontal-list" (scroll)=dateScroll($event) id=dateCustomField>
+  <!-- <ion-list> -->
+
+  <ion-item-group *ngFor="let dates of serviceCenterDates">
+    <!-- {{ item.date }}-{{ item.month }}-{{ item.day }} -->
+    <ion-item-divider sticky class="item-divider-style">
+      {{monthNameSplit(dates.monthYear)}}
+    </ion-item-divider>
+    <!-- <div style="display: flex; position: relative; left: -20px;"> -->
+        <div class="date-group">
+      <ion-item-sliding *ngFor="let item of dates.allDates">
+        <ion-item (click)="itemSelected(item)">
+          <!-- <div class="date-display" [ngClass]="{'left-border' : item.date == 1}"> -->
+              <div class="date-display">
+            <span class="day">
+              {{ item.day }}
+            </span>
+            <span class="date" [ngClass]="{'item-selected' : item.isSelected}">
+              <!-- <span class="date" [ngClass]="{'default-section' : (todayDate == item.dateObj && isFirstSelected) }"> -->
+              <!-- <span class="date" [ngClass]="{'default-section' : isFirstSelected(item.dateObj) }"> -->
+              {{ item.date }}
+            </span>
+            <!-- <span *ngIf="item.date == 1 || todayDate == item.dateObj" class="month">
+                {{ item.month }}
+              </span> -->
+          </div>
+        </ion-item>
+      </ion-item-sliding>
+    </div>
+  </ion-item-group>
+</ion-list>
+<div class="nav-icons right-arrow" (click)="nextDates()">
+  <ion-icon name="arrow-forward"></ion-icon>
+</div>

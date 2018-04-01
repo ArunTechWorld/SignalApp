@@ -1,0 +1,155 @@
+app-api-status {
+  .status-messages {
+    .grey-strip {
+      height: 30px;
+      width: 100%;
+      background-color: #b6b6b6;
+      box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.19);
+
+      .grey-strip-icon {
+        height: 17px;
+        width: 17px;
+        margin: 7px 11px 5px 19px;
+        float: left;
+        background-color: #fff;
+        border-radius: 100%;
+
+        .text {
+          background-image: url(../assets/svg/Pending_Update.svg);
+          height: 17px;
+          width: 17px;
+          background-repeat: no-repeat;
+          background-size: cover;
+          display: inline-block;
+          -webkit-animation: refreshing 2s linear infinite;
+          -moz-animation: refreshing 2s linear infinite;
+          -ms-animation: refreshing 2s linear infinite;
+          -o-animation: refreshing 2s linear infinite;
+          animation: refreshing 2s linear infinite;
+        }
+      }
+
+      .grey-strip-message {
+        height: 22px;
+        color: #fff;
+        font-size: 12px;
+        line-height: 22px;
+        padding-top: 4px;
+      }
+    }
+
+    .blue-strip {
+      height: 30px;
+      width: 100%;
+      background-color: #37618d;
+      box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.19);
+
+      .blue-strip-icon {
+        height: 17px;
+        width: 17px;
+        margin: 7px 11px 5px 19px;
+        float: left;
+
+        .text {
+          background-image: url(../assets/svg/successfully_update_circle.svg);
+          height: 17px;
+          width: 17px;
+          background-repeat: no-repeat;
+          background-size: cover;
+          display: inline-block;          
+        }
+      }
+
+      .blue-strip-message {
+        height: 22px;
+        color: #fff;
+        font-size: 12px;
+        line-height: 22px;
+        padding-top: 4px;
+      }
+    }
+
+    .red-strip {
+      height: 70px;
+      width: 100%;
+      background-color: #e2231e;
+      box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.19);
+      display: flex;
+
+      .red-strip-icon {
+        height: 15px;
+        width: 17px;
+        margin: 19px 12px 0 19px;
+        color: #fff;
+      }
+
+      .red-strip-message {
+        height: 36px;
+        color: #fff;
+        font-size: 12px;
+        line-height: 18px;
+        padding: 19px 7px 19px 0;
+
+        .try-again {
+          height: 17.57px;
+          color: #fff;
+          font-size: 10px;
+          font-weight: 500;
+          line-height: 14px;
+          display: inline-block;
+          text-decoration: underline;
+          background: transparent;
+        }
+      }
+
+      .close-icon {
+        padding: 19px 11px 18px 10px;
+        text-align: right;
+        background: transparent;
+
+        .text {
+          background-image: url(../assets/imgs/White_Close_Button.png);
+          height: 10px;
+          width: 11px;
+          background-repeat: no-repeat;
+          background-size: cover;
+          right: 0;
+          display: inline-block;
+        }
+      }
+    }
+  }
+}
+
+@-webkit-keyframes refreshing /* Safari and Chrome */ {
+  from {
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  to {
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes refreshing {
+  from {
+    -ms-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  to {
+    -ms-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+

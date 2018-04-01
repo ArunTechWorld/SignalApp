@@ -1,0 +1,228 @@
+app-personaldetails {
+    .myprofile-page {
+        height: 50px;
+        width: 100%;
+        font-size: 14px;
+        font-weight: bold;
+        letter-spacing: 1px;
+        line-height: 17px;
+        //text-align: center;
+        background-color: black;
+        padding: 22px 17px 18px 15px;
+        color: white;
+    
+         .text {
+        background-image: url(../assets/imgs/White_Close_Button.png);
+        /* height: 15px; */
+        /* width: 15px; */
+        /* background-repeat: no-repeat; */
+        background-size: cover;
+        /* text-align: right; */
+        /* float: right; */
+        height: 12px;
+        width: 13px;
+        right: 0;
+        display: inline-block;
+        float: left;
+      }
+        .myprofile-text_person{
+          
+          text-transform: uppercase;
+         text-align: center; 
+        //padding: 0% 0% 0% 33%;
+       }
+    
+        .edit-text{
+               float: right;
+       }
+      }
+      .profile-img{
+        padding: 10px 0px 36px 20px;
+          .image{
+        height: 53.72px;
+        width: 53.72px;
+        /* height: 80px; */
+        /* width: 80px; */
+        border-radius: 100%;
+        
+      }
+      .car-text{
+        color: #c6c6c6;
+        padding: 9px 0px 9px 1px;
+        }
+    
+      }
+      
+      .myprofile{
+    // background-color: #F9F9F9;
+       
+       .slider-scroll-content{
+           margin-bottom: 10px;
+           padding: 0px 10px 0px 10px;
+       }
+       .gray-shadows-icon{
+            position: relative;
+            width: 100%;
+            margin: 0 auto;
+            text-align: center;
+            .gray-shadows{
+                height: 60px;
+                background-color: #F9F9F9;
+                box-shadow: 0 2px 5px 0 rgba(0,0,0,0.05);
+    
+            }
+    
+            .person-icon{
+            position: absolute;
+            top: 21.5px;
+            /* margin-top: -35px; */
+            margin: 0 auto;
+            text-align: center;
+            width: 100%;
+                .myprofile-icon{
+                background-image: url(../assets/imgs/Personal_Information_Icon.svg);
+                background-repeat: no-repeat;
+                height: 81px;
+                width: 81px;
+                margin: 0px auto;
+                /* background-color: white; */
+                z-index: 599999999999999999999;
+                background-size: cover;
+                background-repeat: no-repeat;
+                }
+        }
+    
+       }
+      }
+    
+       
+      .separate-bar{
+        width: 100%;
+        height: 9px;
+        background-color: #f6f6f6;
+      }
+    
+      .title{
+          text-align: center;
+          background-color: white;
+        padding-top: 57px;
+        font-size: 20px;
+      }
+      .emergency-contact{
+        padding-bottom: 25px;
+      }
+       .sign-out{
+        padding: 23px 21px 27px 21px;
+        background-color: #f6f6f6;
+        }
+        .editable-mode{
+            .item-inner{
+                border-bottom:0px !important;
+                 .collision-push-arow{
+                        background-image:none;
+                    }
+                .input-wrapper{
+                    pointer-events: none;
+                   
+            }
+            }
+            
+        }
+        .collision-push-arow{
+          background-image: url(../assets/imgs/push_Arrow_gray.svg);
+             width: 10px;
+    height: 15px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: 9;
+    margin: 11px 16px 0px 0px;
+    float: right;
+    
+    }
+    .not-editable{
+       pointer-events: none;
+    }
+}
+.buttons-color-class{
+    .action-sheet-wrapper {
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      margin: auto;
+      -webkit-transform: translate3d(0, 100%, 0);
+      transform: translate3d(0, 100%, 0);
+      position: absolute;
+      z-index: 10;
+      display: block;
+      width: 100%;
+      max-width: 500px;
+      pointer-events: none;
+    }
+  
+      .action-sheet-container {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-flow: column;
+        -ms-flex-flow: column;
+        flex-flow: column;
+        -webkit-box-pack: end;
+        -webkit-justify-content: flex-end;
+        -ms-flex-pack: end;
+        justify-content: flex-end;
+        height: 100%;
+        max-height: 100%;
+      }
+        .action-sheet-group {
+          border-radius: 13px;
+             margin-bottom: 8px;
+             background: #f9f9f9;
+             width: 95%;
+             margin-left: 2.5%;
+             margin-right: 2.5%;
+             -webkit-justify-content: center !important; 
+      border-radius: 13px;
+           }
+           .action-sheet-group:first-child {
+            margin-top: 10px;
+        }
+  .action-sheet-button:last-child {
+    border-bottom-color: transparent;
+  }
+  .action-sheet-destructive {
+    color: #f53d3d;
+    margin-bottom: 2% !important;
+  }
+  .action-sheet-cancel {
+     font-weight: 400 !important; 
+    color: #007aff ;
+    margin-top: 2% !important;
+  }
+  .action-sheet-button {
+    text-align: center;
+    margin: 0;
+    padding: 18px;
+    min-height: 5.6rem;
+    border-bottom: 0.55px solid #d6d6da;
+    font-size: 2rem;
+  
+    background: transparent;
+    width: 100%;
+  }
+  .action-sheet-group .button-inner {
+    -webkit-box-pack: start;
+     -webkit-justify-content: center !important; 
+    -ms-flex-pack: start;
+  }
+  
+  
+  }
+  .text_size{
+    height: 22px;	
+    font-size: 10px !important;	
+    line-height: 22px;
+  }

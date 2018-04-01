@@ -1,0 +1,120 @@
+app-geo-zone {
+  display: flex;
+  flex-direction: column;
+  .header {
+    height: 50px;
+    max-height: 53px;
+    width: 100%;
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    .prev-icon {
+      padding: 16px 16px 17px 16px;
+      color: #fff;
+      img {
+        min-width: 6px !important;
+        min-height: 10px !important;
+        max-width: 6px;
+        max-height: 10px;
+        background: transparent;
+        pointer-events: auto;
+        transform: rotate(180deg);
+      }
+    }
+    .header-text {
+      height: 14px;
+      width: 100%;
+      color: #fff;
+      font-size: 14px;
+      font-weight: bold;
+      letter-spacing: 1px;
+      line-height: 17px;
+      text-align: center;
+      text-transform: uppercase;
+      padding: 16px 0px 17px 0;
+    }
+    .edit-text {
+      float: right;
+      font-weight: 100;
+      color: white;
+      background-color: black;
+      padding: 16px 32px 17px 0;
+    }
+  }
+  // .geozone-header {
+  //   height: 50px;
+  //   width: 100%;
+  //   font-size: 14px;
+  //   font-weight: bold;
+  //   letter-spacing: 1px;
+  //   line-height: 17px;
+  //   background-color: black;
+  //   padding: 22px 17px 18px 15px;
+  //   color: white;
+  //   .text {
+  //     background-image: url(../assets/imgs/Push_Arrow_White.png);
+  //     background-size: cover;
+  //     min-width: 6px !important;
+  //     min-height: 10px !important;
+  //     max-width: 6px;
+  //     max-height: 10px;
+  //     right: 0;
+  //     float: left;
+  //     transform: rotate(180deg);
+  //   }
+  //   .geozone-text {
+  //     float: left;
+  //     padding: 0% 0% 0% 37%;
+  //   }
+  //   .geozone-text-edit {
+  //     padding: 0% 0% 0% 33%;
+  //     float: left;
+  //   }
+  //   .edit-text {
+  //     float: right;
+  //     font-weight: 100;
+  //     color: white;
+  //     background-color: black;
+  //     font-size: 14px;
+  //   }
+  // }
+  .geo-zone-content {
+    top: 0;
+    margin: 0;
+    padding: 0; 
+    // position: relative;
+    // .geo-zone-map {
+    //   height: calc(100vh);
+    //   background-image: url("../assets/imgs/MapBackground.svg");
+    //   background-size: cover;
+    //   box-shadow: inset 0 0 10px 0 rgba(216, 216, 216, 0.4);
+    // }
+    .delete-button {
+      bottom: 60px;
+      position: absolute;
+      padding: 0 22px;
+      width: 100%;
+      button {
+        text-transform: uppercase;
+      }
+    }
+    #geoZoneMap {
+      width: 100%;
+      height: 100%;
+      background-image: url("../assets/imgs/MapBackground.svg");
+      background-size: cover;
+      position: absolute;
+      bottom: 0;
+    }
+  }
+  #geoZoneMap_graphics_layer {
+    path {
+      fill: #fff; //#2B648F;
+    }
+  }
+  .esriPopupHidden,
+  .esriControlsBR {
+    display: none;
+  }
+}
+

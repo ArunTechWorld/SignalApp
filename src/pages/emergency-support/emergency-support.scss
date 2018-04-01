@@ -1,0 +1,169 @@
+page-emergency-support {
+  ion-content{
+  background-color: #F9F9F9 !important;
+  }
+    .emergency_support_button{
+        background-color: #E2231a;
+        //width: 100%;;
+        width: 100%;
+        height: 41px;
+          padding-top: 16px;
+        .emergency_support_text{
+          height: 14px;
+          color: #FFFFFF;
+          font-size: 14px;
+          font-weight: bold;
+          float: left;
+          text-align: center;
+          /* padding-top: 30PX; */
+          font-size: 14px;
+          letter-spacing: 1px;
+          line-height: 17px;
+          margin-left: 30%;
+        }
+    
+         .close-button {
+        background-image: url(../assets/imgs/White_Close_Button.png);
+        background-size: cover;
+        width: 13px;
+        float: right;
+        margin-right: 17px;
+        height: 10px;
+        width: 11px;
+        margin-top: 3px;
+      }
+    }
+    .emergency_support {
+        background-color: #E2231a;
+       //width: 100%;
+      // height: 100%;   
+         height: 200px;
+    .help-here-text{
+        text-align: center;
+        color: white;
+        padding-top: 20px;
+        padding-left: 16px;
+        font-size: 30px;
+        line-height: 40px;
+    
+      }
+      .call-us-text{
+        color: #FFFFFF;	
+        font-family: "Neo Sans Std";	
+        font-size: 12px;	
+        line-height: 20px;	
+        text-align: center;
+        padding-top: 229px;
+      }
+    }
+    .emergencyimage{
+        background-color:  #E2231a;
+        background-image: url(../assets/imgs/emergency_support/emergencySupport.svg);
+  background-size: cover;
+  height: 342px;
+  width: 100%;
+  margin: 0px auto;
+  text-align: center;
+  position: absolute;
+ 
+    }
+    .inputemergency{
+        height:275px;
+    }
+    .notification-content {
+        padding: 0px 20px 0px 20px;
+        background-color:#F9F9F9;
+          .notification-item {
+            background-color:#F9F9F9;
+            width: 100%;
+            height:66px;
+            box-sizing: border-box;
+                
+            border-bottom: 1px solid #E8E8E8;
+            .notification1{
+              background-image: url(../assets/imgs/emergency_support/alert.svg);
+              height: 36px;
+              width: 36px;
+              background-size: cover;
+              background-repeat: no-repeat;
+              margin: 0;
+            }
+            .notification2{
+              background-image: url(../assets/imgs/emergency_support/enter.svg);
+              height: 36px;
+              width: 36px;
+              background-size: cover;
+              background-repeat: no-repeat;
+              margin: 0;
+            }
+            .notification3{
+              background-image: url(../assets/imgs/emergency_support/room.svg);
+              height: 36px;
+              width: 36px;
+              background-size: cover;
+              background-repeat: no-repeat;
+              margin: 0;
+            }
+            .notification4{
+              background-image: url(../assets/imgs/emergency_support/shops.svg);
+              height: 36px;
+              width: 36px;
+              background-size: cover;
+              background-repeat: no-repeat;
+              margin: 0;
+            }
+            .item-inner {
+              border-bottom: 0px !important;
+              margin: 10px 0px 10px 10px;
+              padding-left: 12px;
+              ion-label {
+                margin: 0;
+                .notification-title {
+                  color: #37618D;
+                      font-family: "Neo Sans Std";	
+                      font-size: 14px;
+                        line-height: 22px;
+                        text-decoration: underline;
+                }
+                a {
+                    color: #37618D;
+                  }
+                .date-time {
+                  color: #666666;
+                  font-family: "Neo Sans Std";
+                  font-size: 11px;
+                  line-height: 22px;
+                  margin: 0px;
+                }
+              }
+            }
+        }
+      }
+      .button-background{
+          background-color: #F9F9F9;
+      }
+
+      .button-red{
+        margin: 43px 38px 0px 38px;
+        position: relative;
+         .red-button{
+          height: 46.04px;
+          background-color: #FFFFFF;
+          width: 100%;
+          -webkit-box-shadow: none;
+          box-shadow: 0 2px 10px 0 rgba(0,0,0,0.19);
+          border-radius: 1px;
+          opacity: 1;
+          -webkit-transition: none;
+          transition: none;
+          color: #37618D;
+              font-family: "Neo Sans Std";
+                  font-size: 12px;
+                      font-weight: 500;	
+                      line-height: 24px;	
+                      text-align: center;
+         }
+       }
+
+
+}

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="44px" height="44px" viewBox="0 0 44 44" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49 (51002) - http://www.bohemiancoding.com/sketch -->
+    <title>Select_Home_Icon Copy 2</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <circle id="path-1" cx="18.4886364" cy="18" r="18"></circle>
+        <filter x="-16.7%" y="-16.7%" width="133.3%" height="133.3%" filterUnits="objectBoundingBox" id="filter-3">
+            <feOffset dx="0" dy="0" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.158769248 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Select_Home_Icon-Copy-2" transform="translate(3.000000, 3.000000)">
+            <g transform="translate(0.214286, 0.864844)">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <g id="Oval-2-Copy-19">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-3)" xlink:href="#path-1"></use>
+                    <use fill="#F4F4F4" fill-rule="evenodd" xlink:href="#path-1"></use>
+                </g>
+                <g id="Home_Icon" transform="translate(7.818182, 7.818182)" stroke="#2B648F" stroke-linecap="round" stroke-linejoin="round" stroke-width="0.972">
+                    <polyline id="Stroke-5654" points="3.13548029 10.9243455 3.13548029 19.3533227 8.19286665 19.3533227 8.19286665 13.4530386 12.4073553 13.4530386 12.4073553 19.3533227 17.4647417 19.3533227 17.4647417 11.3457943"></polyline>
+                    <polyline id="Stroke-5655" points="0.606787109 10.5028966 10.300111 0.809572727 19.9934348 10.5028966"></polyline>
+                    <polyline id="Stroke-5656" points="13.6717019 1.65247045 16.6218439 1.65247045 16.6218439 4.6026125"></polyline>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

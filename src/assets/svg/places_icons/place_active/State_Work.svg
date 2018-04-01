@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="36px" height="36px" viewBox="0 0 36 36" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>Select_Work_Icon</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <circle id="path-1" cx="18.68125" cy="18.5" r="18"></circle>
+    </defs>
+    <g id="Select_Work_Icon" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g transform="translate(-0.681250, -0.500000)">
+            <mask id="mask-2" fill="white">
+                <use xlink:href="#path-1"></use>
+            </mask>
+            <use id="Oval-2-Copy-20" fill="#2B648F" opacity="0.6" xlink:href="#path-1"></use>
+            <g id="Work_Icon" mask="url(#mask-2)" stroke="#FFFFFF" stroke-linecap="round" stroke-linejoin="round">
+                <g transform="translate(8.000000, 8.500000)">
+                    <path d="M19.8158203,7.10399414 C19.8158203,5.62079414 18.7012453,4.40399414 17.3408203,4.40399414 L3.31582031,4.40399414 C1.95457031,4.40399414 0.840820312,5.62079414 0.840820312,7.10399414 L0.840820312,16.1039941 C0.840820312,17.5889941 1.95457031,18.8039941 3.31582031,18.8039941 L17.3408203,18.8039941 C18.7012453,18.8039941 19.8158203,17.5889941 19.8158203,16.1039941 L19.8158203,7.10399414 L19.8158203,7.10399414 Z" id="Stroke-5556"></path>
+                    <path d="M7.44082031,4.40399414 L7.44082031,2.60399414 C7.44082031,1.61399414 8.18249531,0.803994141 9.09082031,0.803994141 L11.5658203,0.803994141 C12.4733203,0.803994141 13.2158203,1.61399414 13.2158203,2.60399414 L13.2158203,4.40399414" id="Stroke-5557"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,22 @@
+<!-- Generated template for the NotificationRecievedComponent component -->
+<div class="notification-content" (click)="closeModel()">
+  <!-- <ion-list [ngClass]="notificationInfo.type" class=" popup-content animated  slideInDown" (click)="notificationDetails()">
+    <ion-item class="notification-item " >
+      <div class="alarm-notification" item-start></div>
+      <h2 class="notification-title">{{notificationInfo.title}}</h2>
+      <p class="date-time">{{notificationInfo.time}}</p>
+      <div class="notification-forward" item-end></div>
+    </ion-item>
+  </ion-list> -->
+  <ion-scroll style="height: 480px">
+  <ion-list class="notification-content animated slideInDown" *ngFor="let push of pushData;" (click)="notificationDetails(push)">
+      <ion-item class="notification-item" [ngStyle]= "{'background-color': (push.alertType == 'SDCTC_TOWING_ALERT' || push.alertType == 'SDCTC_ICN_ALERT' || push.alertType == 'SDCTC_TRIPWIRE_ALERT') ? '#E2231A':'' }" >
+          <div class="{{push.alertType}}" item-start></div>
+          <h2 class="notification-title" [ngStyle]= "{'color': (push.alertType == 'SDCTC_TOWING_ALERT' || push.alertType == 'SDCTC_ICN_ALERT' || push.alertType == 'SDCTC_TRIPWIRE_ALERT') ? 'white':'' }">{{ push.alertDesc }}</h2>
+          <p class="date-time" [ngStyle]= "{'color': (push.alertType == 'SDCTC_TOWING_ALERT' || push.alertType == 'SDCTC_ICN_ALERT' || push.alertType == 'SDCTC_TRIPWIRE_ALERT') ? 'white':'' }">{{ timeStampToTime(push.eventTime) }}</p>
+          <div class="notification-forward-white" *ngIf= "(push.alertType == 'SDCTC_TOWING_ALERT' || push.alertType == 'SDCTC_ICN_ALERT' || push.alertType == 'SDCTC_TRIPWIRE_ALERT')" item-end></div>
+          <div class="notification-forward" *ngIf= "!(push.alertType == 'SDCTC_TOWING_ALERT' || push.alertType == 'SDCTC_ICN_ALERT' || push.alertType == 'SDCTC_TRIPWIRE_ALERT')" item-end></div>
+        </ion-item>
+  </ion-list>
+</ion-scroll>
+</div>

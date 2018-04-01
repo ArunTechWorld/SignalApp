@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="36px" height="36px" viewBox="0 0 36 36" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49 (51002) - http://www.bohemiancoding.com/sketch -->
+    <title>Group</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <circle id="path-1" cx="18" cy="18" r="18"></circle>
+    </defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="36x36_Email">
+            <g id="Group">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <use id="Oval-2-Copy-19" fill="#F4F4F4" xlink:href="#path-1"></use>
+                <path d="M25.8177671,21.7031529 C25.8177671,22.384533 25.264763,22.9375371 24.5833829,22.9375371 L11.4166171,22.9375371 C10.735237,22.9375371 10.1822329,22.384533 10.1822329,21.7031529 L10.1822329,14.2968471 C10.1822329,13.615467 10.735237,13.0624629 11.4166171,13.0624629 L24.5833829,13.0624629 C25.264763,13.0624629 25.8177671,13.615467 25.8177671,14.2968471 L25.8177671,21.7031529 Z" id="Stroke-1" stroke="#37618D" stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round" mask="url(#mask-2)"></path>
+                <polyline id="Stroke-3" stroke="#37618D" stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round" mask="url(#mask-2)" points="25.4063057 13.4739243 18 19.2343843 10.5936943 13.4739243"></polyline>
+            </g>
+        </g>
+    </g>
+</svg>

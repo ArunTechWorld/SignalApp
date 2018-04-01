@@ -1,0 +1,103 @@
+<ion-header>
+  <ion-navbar>
+    <button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Home</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding class="page-container">
+  <div class="logo-wrapper">
+    <div class="lojack-logo"></div>
+  </div>
+
+  <div class="error-message">Incorrect Password.</div>
+
+  <h3>Buttons</h3>
+  <button class="red-btn">Red Button</button>
+  <button class="gray-btn">Gray Button</button>
+  <button class="white-btn">white Button</button>
+  <button class="blue-btn">Gray Button</button>
+  <button class="red-nav-btn">Next</button>
+  <button class="gray-nav-btn">Next</button>
+  <h3>Buttons Grids</h3>
+  <ion-grid>
+    <ion-row>
+      <ion-col col-12>
+        <button class="red-btn">Red Button</button>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col col-6>
+        <button class="red-btn">Red Button</button>
+      </ion-col>
+      <ion-col col-6>
+        <button class="red-btn">Red Button</button>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col col-4>
+        <button class="red-btn">Red Button</button>
+      </ion-col>
+      <ion-col col-4>
+        <button class="red-btn">Red Button</button>
+      </ion-col>
+      <ion-col col-4>
+        <button class="red-btn">Red Button</button>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col col-3>
+        <button class="red-btn">Red Button</button>
+      </ion-col>
+      <ion-col col-3>
+        <button class="red-btn">Red Button</button>
+      </ion-col>
+      <ion-col col-3>
+        <button class="red-btn">Red Button</button>
+      </ion-col>
+      <ion-col col-3>
+        <button class="red-btn">Red Button</button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+
+  <form class="lojack-form">
+    <ion-item class="lojack-input">
+
+      <ion-label floating>Simple Input text</ion-label>
+      <ion-input type="text"></ion-input>
+    </ion-item>
+
+    <ion-item class="lojack-input">
+      <ion-label floating>Simple Input Password</ion-label>
+      <ion-input type="password"></ion-input>
+    </ion-item>
+
+    <ion-item class="lojack-input input-icon">
+      <ion-label floating>Input With Icon</ion-label>
+      <ion-input type="password"></ion-input>
+      <span clear class="btn-icon" item-right>
+        <ion-icon class="icon-show-password"> </ion-icon>
+      </span>
+    </ion-item>
+
+    <ion-item class="lojack-input input-icon">
+      <ion-label floating>Input With Icon functionality</ion-label>
+      <ion-input type="{{psswordType}}"></ion-input>
+      <div clear class="btn-icon" item-right (click)="showPassword()">
+        <div [ngClass]="(psswordType=='password') ? 'icon-show-password' : 'icon-hide-password'"> </div>
+      </div>
+    </ion-item>
+
+    <ion-item class="lojack-input" [ngClass]="(!isValidEmail) ? 'input-icon' : ''">
+      <ion-label floating>Input With conditional Icon</ion-label>
+      <ion-input type="text" (keyup)="isValidEmail=!isValidEmail"></ion-input>
+      <span clear class="btn-icon" item-right *ngIf="!isValidEmail">
+        <ion-icon name="checkmark" class="gray-icon"> </ion-icon>
+      </span>
+    </ion-item>
+  </form>
+</ion-content>

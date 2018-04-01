@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="44px" height="44px" viewBox="0 0 44 44" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49 (51002) - http://www.bohemiancoding.com/sketch -->
+    <title>Select_Gym_Icon Copy 2</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <circle id="path-1" cx="18.2033361" cy="18.6535262" r="18"></circle>
+        <filter x="-16.7%" y="-16.7%" width="133.3%" height="133.3%" filterUnits="objectBoundingBox" id="filter-3">
+            <feOffset dx="0" dy="0" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.158769248 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Select_Gym_Icon-Copy-2" transform="translate(4.000000, 3.000000)">
+            <g transform="translate(0.000000, 0.364844)">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <g id="Oval-2-Copy-24">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-3)" xlink:href="#path-1"></use>
+                    <use fill="#F4F4F4" fill-rule="evenodd" xlink:href="#path-1"></use>
+                </g>
+                <g id="Gym_Icon" mask="url(#mask-2)" stroke-linecap="round" stroke-linejoin="round">
+                    <g transform="translate(7.703336, 12.153526)" id="Group-3">
+                        <g transform="translate(0.000000, 0.810811)">
+                            <path d="M7.96811655,6.53701014 L12.3464949,6.53701014" id="Stroke-412" stroke="#2B648F" stroke-width="0.972"></path>
+                            <path d="M3.58973818,10.9153885 C3.58973818,11.3987615 3.98204088,11.7910642 4.46541385,11.7910642 L7.09244088,11.7910642 C7.57668953,11.7910642 7.96811655,11.3987615 7.96811655,10.9153885 L7.96811655,1.28295608 C7.96811655,0.798707432 7.57668953,0.407280405 7.09244088,0.407280405 L4.46541385,0.407280405 C3.98204088,0.407280405 3.58973818,0.798707432 3.58973818,1.28295608 L3.58973818,10.9153885 L3.58973818,10.9153885 Z" id="Stroke-413" stroke="#2B648F" stroke-width="0.972"></path>
+                            <path d="M0.962711149,8.28836149 C0.962711149,8.77173446 1.35501385,9.16403716 1.83838682,9.16403716 L3.58973818,9.16403716 L3.58973818,3.03430743 L1.83838682,3.03430743 C1.35501385,3.03430743 0.962711149,3.42573446 0.962711149,3.90998311 L0.962711149,8.28836149 L0.962711149,8.28836149 Z" id="Stroke-414" stroke="#2B648F" stroke-width="0.972"></path>
+                            <path d="M0.962711149,6.0991723 L0.087035473,6.0991723" id="Stroke-415" stroke="#2B648F" stroke-width="0.972"></path>
+                            <path d="M16.7248733,10.9153885 C16.7248733,11.3987615 16.3334463,11.7910642 15.8491976,11.7910642 L13.2221706,11.7910642 C12.7387976,11.7910642 12.3464949,11.3987615 12.3464949,10.9153885 L12.3464949,1.28295608 C12.3464949,0.798707432 12.7387976,0.407280405 13.2221706,0.407280405 L15.8491976,0.407280405 C16.3334463,0.407280405 16.7248733,0.798707432 16.7248733,1.28295608 L16.7248733,10.9153885 L16.7248733,10.9153885 Z" id="Stroke-416" stroke="#2B648F" stroke-width="0.972"></path>
+                            <path d="M19.3519003,8.28836149 C19.3519003,8.77173446 18.9604733,9.16403716 18.4762247,9.16403716 L16.7248733,9.16403716 L16.7248733,3.03430743 L18.4762247,3.03430743 C18.9604733,3.03430743 19.3519003,3.42573446 19.3519003,3.90998311 L19.3519003,8.28836149 L19.3519003,8.28836149 Z" id="Stroke-417" stroke="#2B648F" stroke-width="0.972"></path>
+                            <path d="M19.3519003,6.0991723 L20.227576,6.0991723" id="Stroke-418" stroke="#2B648F" stroke-width="0.972"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

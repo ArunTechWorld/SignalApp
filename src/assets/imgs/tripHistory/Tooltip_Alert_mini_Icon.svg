@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="12px" height="10px" viewBox="0 0 12 10" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>Alert_mini_Icon</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Trip-History:-Trip-Detail_Speeding-Point" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-234.000000, -220.000000)">
+        <g id="Speed-Tooltip" transform="translate(35.999103, 182.265975)">
+            <g id="Alert_mini_Icon" transform="translate(198.708000, 38.022210)">
+                <path d="M5.44911698,0.151317213 L10.6143139,8.63802265 C10.64527,8.68888532 10.6291326,8.75521257 10.5782699,8.78616872 C10.5613807,8.79644784 10.5419902,8.80188471 10.5222189,8.80188471 L0.191825086,8.80188471 C0.132282715,8.80188471 0.0840140862,8.75361608 0.0840140862,8.69407371 C0.0840140862,8.67430241 0.0894509569,8.65491182 0.0997300793,8.63802265 L5.26492696,0.151317213 C5.29588311,0.100454545 5.36221036,0.0843171206 5.41307303,0.115273267 C5.4277961,0.124234049 5.4401562,0.13659415 5.44911698,0.151317213 Z" id="Triangle-3" fill="#E2231A"></path>
+                <path d="M5.2772384,5.92719392 L5.2772384,3.25770803" id="Stroke-3" stroke="#FFFFFF" stroke-width="0.75" stroke-linecap="round" stroke-linejoin="round"></path>
+                <path d="M5.26684717,6.87398426 C4.98688981,6.8787061 4.76309155,7.09591054 4.76728253,7.3587594 C4.77231171,7.62003432 4.99862455,7.82858207 5.27606732,7.82858207 L5.28528748,7.82858207 C5.56524484,7.82386023 5.7890431,7.60586881 5.78485212,7.34301995 C5.77982294,7.08174504 5.5535101,6.87398426 5.27690552,6.87398426 L5.26684717,6.87398426 Z" id="Fill-5" fill="#FFFFFF"></path>
+            </g>
+        </g>
+    </g>
+</svg>

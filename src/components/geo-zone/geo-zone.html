@@ -1,0 +1,42 @@
+<!-- Generated template for the GeoZoneComponent component -->
+<!-- <ion-header>
+
+  <div class='geozone-header'>
+    <div class="text" (click)="gotoBack()"></div>
+
+    <div *ngIf="!isEditGeoZone">
+      <div class="geozone-text-edit">NEW PLACE</div>
+      <button class="edit-text" (click)="saveGeoZone()">Save</button>
+    </div> -->
+    <!-- <div *ngIf="isEditProfille">
+      <div class="geozone-text"> PROFILE</div>
+      <div class="edit-text" (click)="editMode()"> Edit </div>
+    </div>-->
+  <!-- </div>
+
+</ion-header> -->
+<ion-header>
+<div class="header">
+  <div class="prev-icon" (tap)="gotoBack()">
+    <img src="assets/imgs/Push_Arrow_White.png" />
+  </div>
+  <div class="header-text">
+    <span *ngIf="updateGeoZoneId != '0'">{{updateGeoZonePlaceName}}</span>
+    <span *ngIf="updateGeoZoneId == '0'">New Place</span>
+  </div>
+  <div class="edit-text" (click)="saveGeoZoneClick()">Save</div> 
+</div>
+</ion-header>
+<ion-content class="geo-zone-content">
+  <div class="geo-zone-map" id="geoZoneMap" #geoZoneMap>
+  </div>
+  <app-place-search
+  (isInputFocus)="inputFocus($event)"
+    [currentPlaceIcon]="currentPlaceIcon" [currentPlaceName]="updateGeoZonePlaceName"  [currentAddress]="updateGeoZoneAddress"
+    (selectedPlaceAddress)="selectedPlaceAddress($event)" (enteredPlaceName)="enteredPlaceName($event)" [errorMessage]="errorMessage">
+  </app-place-search>
+  <app-place-icons (selectedPlaceIcon)="selectedPlaceIcon($event)" *ngIf="isShowIconsList"></app-place-icons>
+  <div class="delete-button" *ngIf="isInputFocus">
+    <button class="red-btn" *ngIf="updateGeoZoneId != '0'" (click)="deleteGeoZone()">Remove place</button>
+  </div>
+</ion-content>

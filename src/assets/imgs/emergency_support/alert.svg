@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="36px" height="36px" viewBox="0 0 36 36" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49 (51002) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 3</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <circle id="path-1" cx="18.5" cy="18" r="18"></circle>
+    </defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="36x36_911-Alert">
+            <g id="Group-3" transform="translate(-2.000000, 0.000000)">
+                <g id="Group">
+                    <g id="Group-9-Copy-2" transform="translate(0.539022, 0.000000)">
+                        <g id="Select_Location_Icon-Copy-18" transform="translate(0.954504, 0.006846)">
+                            <mask id="mask-2" fill="white">
+                                <use xlink:href="#path-1"></use>
+                            </mask>
+                            <use id="Oval-2-Copy-19" fill="#F4F4F4" xlink:href="#path-1"></use>
+                        </g>
+                    </g>
+                    <g id="Group-2" transform="translate(9.000203, 6.000000)" stroke="#37618D" stroke-linecap="round" stroke-linejoin="round" stroke-width="0.8">
+                        <g id="Alarm_Icon" transform="translate(0.039022, 0.255127)">
+                            <path d="M16.3496479,17.1809369 L16.3496479,11.1317951 C16.3496479,8.39149436 14.1280709,6.16991739 11.3877702,6.16991739 C8.64746941,6.16991739 6.42549707,8.39149436 6.42549707,11.1317951 L6.42549707,17.1809369" id="Stroke-3"></path>
+                            <path d="M7.89120218,11.033032 C7.89120218,9.24240697 9.3429962,7.79061295 11.1332259,7.79061295" id="Stroke-5"></path>
+                            <path d="M3.02647451,11.1288003 L0.244250024,11.1288003" id="Stroke-7"></path>
+                            <path d="M5.425533,5.37657561 L3.45845147,3.40949409" id="Stroke-9"></path>
+                            <path d="M22.0136435,11.1288003 L19.231419,11.1288003" id="Stroke-11"></path>
+                            <path d="M11.128898,0.24405478 L11.128898,3.02627927" id="Stroke-13"></path>
+                            <path d="M16.7759839,5.37657561 L18.7430654,3.40949409" id="Stroke-15"></path>
+                            <rect id="Rectangle" x="4.56031321" y="17.415732" width="13.6545185" height="3.03433745" rx="0.879465568"></rect>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

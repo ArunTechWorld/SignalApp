@@ -1,0 +1,72 @@
+<!--
+  Generated template for the LoginPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-content class="initial-loading-screen"  [hidden]="loadingSuccess">
+  <img src="assets/imgs/loading/InitialLoadingBackground.svg" class="background-img"/>
+  <div class="progressBar">
+    <div class="status" [ngClass]="{'progress-bar-init': animateClass==1, 'progress-bar-complete': animateClass==2}"></div>
+  </div>
+   <div class="markers">
+    <div  id="fisrtPin">
+      <img src="assets/imgs/loading/initialLoadingRedCarPinIcon.svg" />
+    </div>
+    <div  id="secondPin">
+      <img src="assets/imgs/loading/initialLoadingRedCarPinIcon.svg"/>
+    </div>
+    <div  id="thirdPin">
+      <img src="assets/imgs/loading/initialLoadingRedCarPinIcon.svg"/>
+    </div>
+  </div>
+<!--<div> 
+<img src="assets/imgs/loading/InitialLoadingBackground.svg" />
+<div id="myProgress" style="display:none;position:relative;bottom:611px">
+  <div id="myBar"></div>
+</div>
+
+<br><br><br>
+  <div style="text-align:center">
+    <span  id="mdPin" style="position: relative;bottom:230px;float:left;left: 40px;display:none;">
+      <img src="assets/imgs/loading/initialLoadingRedCarPinIcon.svg" />
+    </span>
+    <span  id="smPin" style="position: relative;bottom:250px;float:right;display:none">
+      <img src="assets/imgs/loading/initialLoadingRedCarPinIcon.svg"  style="width:60%" />
+    </span>
+    <span  id="lgPin" style="position: relative;bottom: 210px;left:10px;display:none">
+      <img src="assets/imgs/loading/initialLoadingRedCarPinIcon.svg" style="width:20%" />
+    </span>
+  </div>
+</div>-->
+</ion-content>
+ <ion-content [hidden]="!loadingSuccess">
+  <div class="page-container">
+  <div class="logo-wrapper">
+    <div class="lojack-logo"></div>
+  </div>
+  <form novalidate class="lojack-form fadeIn-300ms">
+    <ion-item class="lojack-input" [ngClass]="{'invalid-input':(errorMessageInput),'input-icon':(isValidEmail)}">
+      <ion-label floating>Email</ion-label>
+      <ion-input tabindex="1" type="text" #userName (focusout)="validateForm('email',$event)" 
+      (focusout)="validateForm('emailError',$event)" (keyup)="validateForm('email',$event)" [(ngModel)]="userInput.email" name="email"></ion-input>
+      <span clear class="btn-icon" item-right *ngIf="isValidEmail">
+        <ion-icon name="checkmark" class="gray-icon"> </ion-icon>
+      </span>
+    </ion-item>
+
+    <ion-item class="lojack-input input-icon" [ngClass]="{'invalid-input':(errorMessageInput)}">
+      <ion-label floating>Password</ion-label>
+      <ion-input tabindex="2" clearOnEdit="false" type="{{passwordType}}" type="{{showpassword ? 'text' : 'password'}}" (keyup)="validateForm('password',$event)"
+        [(ngModel)]="userInput.password" name="password"></ion-input>
+      <button clear class="btn-icon eye-btn "  tabindex="4" item-right (click)="showPassword()">
+        <div [ngClass]="(passwordType=='password') ? 'icon-show-password' : 'icon-hide-password'"> </div>
+      </button>
+    </ion-item>
+    <div class="error-message" [hidden]="!errorMessage">
+      <ion-icon name="warning"></ion-icon>{{errorMessage}}.</div>
+    <div class="forgot-passwoerd-txt" (click)="forgotpassword()"[ngClass]="(errorMessage) ? 'has-error-msg' : ''">Forgot Your Password?</div>
+    <button class="red-btn" tabindex="3" type="submit" [disabled]="!isValidEmail || !userInput.password || errorMessageInput " (click)="signIn(1)">SIGN IN</button>
+  </form>
+</div>
+</ion-content> 

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="53px" height="53px" viewBox="0 0 53 53" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>Red_Accident</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <circle id="path-1" cx="13.6835195" cy="14.1735215" r="13.5"></circle>
+        <filter x="-57.5%" y="-57.5%" width="215.1%" height="215.1%" filterUnits="objectBoundingBox" id="filter-2">
+            <feMorphology radius="0.5324" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="0" dy="0" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.1 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Red_Accident" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g>
+            <circle id="Oval-14" fill="#E2231A" opacity="0.199999988" cx="26.4692961" cy="26.3362205" r="26"></circle>
+            <circle id="Oval-14" fill="#E2231A" opacity="0.2" cx="26.1516189" cy="26.7243858" r="20"></circle>
+            <g id="Group-6" transform="translate(12.469296, 12.336221)">
+                <g id="Oval-14">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                    <use stroke="#FFFFFF" stroke-width="1.0648" fill="#E2231A" fill-rule="evenodd" xlink:href="#path-1"></use>
+                </g>
+            </g>
+            <g id="Collision_Icon-Copy" transform="translate(16.683612, 19.653950)" stroke="#FFFFFF" stroke-width="0.6655">
+                <g id="Group-2">
+                    <polyline id="Page-1" stroke-linecap="round" stroke-linejoin="round" points="14.0372667 2.90960739 12.8570268 1.12345522 14.3999427 1.30497475 15.3801482 0.193167637 16.3285877 1.30497475 17.8715037 1.14614516 16.8277665 2.90960739"></polyline>
+                    <g id="Page-1" transform="translate(9.322341, 7.280482) scale(-1, 1) rotate(-7.000000) translate(-9.322341, -7.280482) translate(0.822341, 3.780482)">
+                        <path d="M6.59659575,5.26406634 L10.2275874,5.26406634" id="Stroke-7" stroke-linecap="round" stroke-linejoin="round"></path>
+                        <path d="M15.5442527,5.44558587 C15.7821431,5.44558587 16.1389787,5.44558587 16.6147595,5.44558587 C17.3284308,5.44558587 16.5234907,2.33450234 15.2146561,2.33450234 L13.4399929,2.33450234 C12.5892777,0.778167448 11.768074,2.31737248e-13 10.976382,1.68861082e-13 C8.40694575,-3.54530957e-14 9.66502056,-4.31358864e-14 7.92374456,8.5659083e-14 C6.76289389,1.71522102e-13 5.65655786,0.778167448 4.60473648,2.33450234 L2.10369553,2.33450234 C0.674551414,2.33450234 -0.0264266437,3.37153019 0.000761351495,5.44558587 L1.41541731,5.44558587" id="Stroke-9" stroke-linecap="round" stroke-linejoin="round"></path>
+                        <path d="M14.5215623,5.26406634 C14.5215623,6.16585537 13.7896756,6.89774211 12.8878866,6.89774211 C11.9860975,6.89774211 11.2542108,6.16585537 11.2542108,5.26406634 C11.2542108,4.36227732 11.9860975,3.63039058 12.8878866,3.63039058 C13.7896756,3.63039058 14.5215623,4.36227732 14.5215623,5.26406634 Z" id="Stroke-1" stroke-linecap="round" stroke-linejoin="round"></path>
+                        <path d="M5.44558587,5.26406634 C5.44558587,6.16585537 4.71369913,6.89774211 3.81191011,6.89774211 C2.91012109,6.89774211 2.17823435,6.16585537 2.17823435,5.26406634 C2.17823435,4.36227732 2.91012109,3.63039058 3.81191011,3.63039058 C4.71369913,3.63039058 5.44558587,4.36227732 5.44558587,5.26406634 Z" id="Stroke-5" stroke-linecap="round" stroke-linejoin="round"></path>
+                        <path d="M8.53141787,1.08911717 C7.9079138,1.08911717 7.47861567,1.11992624 7.24352348,1.18154436 C7.00843128,1.24316248 6.59063828,1.57539248 5.99014446,2.17823435" id="Path-2"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

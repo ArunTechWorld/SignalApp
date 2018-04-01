@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="18px" height="17px" viewBox="0 0 18 17" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>Car Settings_Icon</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Main-Nav-Pane-" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-26.000000, -282.000000)" stroke-linecap="round" stroke-linejoin="round">
+        <g id="Car-Settings" transform="translate(26.000000, 276.879531)" stroke="#37618D" stroke-width="0.7">
+            <g id="Car-Settings_Icon" transform="translate(9.000000, 13.500000) rotate(-180.000000) translate(-9.000000, -13.500000) translate(0.000000, 5.000000)">
+                <path d="M11,2.5 C11,3.604 10.104,4.5 9,4.5 C7.896,4.5 7,3.604 7,2.5 C7,1.396 7.896,0.5 9,0.5 C10.104,0.5 11,1.396 11,2.5 L11,2.5 Z" id="Stroke-1101"></path>
+                <path d="M10.998,2.5 L17.521,2.5" id="Stroke-1102"></path>
+                <path d="M0.5205,2.5 L6.9965,2.5" id="Stroke-1103"></path>
+                <path d="M7,8.5 C7,9.604 6.104,10.5 5,10.5 C3.896,10.5 3,9.604 3,8.5 C3,7.396 3.896,6.5 5,6.5 C6.104,6.5 7,7.396 7,8.5 L7,8.5 Z" id="Stroke-1104"></path>
+                <path d="M6.9961,8.5 L17.5201,8.5" id="Stroke-1105"></path>
+                <path d="M0.5205,8.5 L2.9965,8.5" id="Stroke-1106"></path>
+                <path d="M9,14.5 C9,15.604 8.104,16.5 7,16.5 C5.896,16.5 5,15.604 5,14.5 C5,13.396 5.896,12.5 7,12.5 C8.104,12.5 9,13.396 9,14.5 L9,14.5 Z" id="Stroke-1107"></path>
+                <path d="M8.9961,14.5 L17.5201,14.5" id="Stroke-1108"></path>
+                <path d="M0.5205,14.5 L4.9995,14.5" id="Stroke-1109"></path>
+            </g>
+        </g>
+    </g>
+</svg>

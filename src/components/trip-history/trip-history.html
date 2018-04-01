@@ -1,0 +1,81 @@
+<!-- Generated template for the TripHistoryComponent component -->
+<ion-content style="position:absolute" id="tripListScroll">
+      <!-- <ion-refresher (ionRefresh)="doRefresh($event,1)">
+    <ion-refresher-content
+      pullingIcon="circles"
+      pullingText=""
+      refreshingSpinner="circles"
+      refreshingText="">
+    </ion-refresher-content>
+  </ion-refresher>  -->
+<div class="trip-history-list-container" >
+    
+
+
+  <!-- {{text}} Trip TripHistoryComponent
+   <div class="trip-history-list-map" id="tripHistiryList0" #tripHistiryList0></div> 
+   <div class="trip-history-list-map" ngFor="let trip in tripHistory.response.results"  id="{tripHistiryList}" #tripHistiryList1></div> 
+   <div class="trip-history-list-map" id="tripHistiryList2" #tripHistiryList2></div> 
+   -->
+
+   <div class="no-trips" *ngIf="isLoading">
+      <!-- <div class="trip-content" [hidden]="tripHistory.length>=0 && isApiResponded"> -->
+          <div class="trip-content">
+      </div>
+    </div>
+    <div class="no-trips" *ngIf="tripHistory.length<=0 && !isLoading && !isApiResponded">
+        <!-- <div class="trip-content" [hidden]="tripHistory.length>=0 && isApiResponded"> -->
+            <div class="trip-content">
+             You don’t have <br/>any Trips Yet
+        </div>
+      </div>
+   <div class="no-trips" *ngIf="tripHistory.length<=0 && isApiResponded && !isLoading">
+    <!-- <div class="trip-content" [hidden]="tripHistory.length>=0 && isApiResponded"> -->
+        <div class="trip-content">
+         You don’t have <br/>any Trips Yet
+    </div>
+  </div>
+   <div class="trips-list" *ngIf="tripHistory.length>=1 && isApiResponded && !isLoading">  
+    <div class="trip-content" *ngFor="let item of tripHistory; let i = index" >
+         <div class="subtitle" *ngIf="showHeader(i)">{{showHeader(i)}}</div>         
+          <div class="list-element">
+              <div class="map-view" (click)="showTripDetails(item,i)">
+              <div class="map">
+                <div class="trip-history-list-map"  [attr.id]="'tripHistory'+i" ></div>
+              </div>
+              <div class="info-block"><!--( {{getMomentDateTime(item.trip.startTimeUtc)}} - {{getMomentDateTime(item.trip.endTimeUtc)}} )-->
+                  <div class="date-time-block"><span class="title">{{item.durationHHMM}}</span><span class="sub-title"> ( {{ item.startTimeUtc }} - {{ item.endTimeUtc }} )</span></div>                    
+                  <div class="distance-block"><span class="title">{{item.distanceInMeters}}</span><div class="forward-arrow"></div></div>
+              </div>                              
+              </div>
+              <div class="trip-overlay"></div>
+          </div>
+            
+    </div>
+        
+  </div> 
+  <!-- <div class="trips-list">
+    <div class="trip-content">
+         <div class="subtitle">EARLIER TODAY</div>         
+          <div class="list-element">
+              <div class="map-view">
+              <div class="map">
+                <div class="trip-history-list-map"  id="testDiv0" ></div>
+              </div>
+              <div class="info-block">
+                  <div class="date-time-block"><span class="title">24 mins</span><span class="sub-title"> ( 5:08 PM - 5:32 PM )</span></div>                    
+                  <div class="distance-block"><span class="title">11.3 mi</span><div class="forward-arrow"></div></div>
+              </div>                              
+              </div>
+          </div>
+    </div>
+  </div> -->
+
+</div>
+ <!-- <ion-infinite-scroll (ionInfinite)="doRefresh($event,2)">
+          <ion-infinite-scroll-content></ion-infinite-scroll-content>
+      </ion-infinite-scroll>  -->
+       <!-- <ion-infinite-scroll (ionInfinite)="doInfinite($event,2)">
+          <ion-infinite-scroll-content></ion-infinite-scroll-content>
+      </ion-infinite-scroll>  -->
+</ion-content>

@@ -1,0 +1,113 @@
+app-request-service {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  .header {
+    background-color: #000000;
+    height: 50px;
+  }
+
+  .header-text-container {
+    display: flex;
+    justify-content: center;
+    padding-top: 16px;
+    padding-bottom: 17px;
+    .prev-icon {
+      text-align: left;
+      color: #fff;
+      position: absolute;
+      top: 0;
+      left: 0;
+      padding: 18px;
+
+      ion-img {
+        min-width: 6px !important;
+        min-height: 10px !important;
+        max-width: 6px;
+        max-height: 10px;
+        background: transparent;
+        pointer-events: auto;
+        transform: rotate(180deg);
+      }
+    }
+    .header-text {
+      height: 14px;
+      width: 100%;
+      color: #fff;
+      font-size: 14px;
+      font-weight: bold;
+      letter-spacing: 1px;
+      line-height: 17px;
+      text-align: center;
+      text-transform: uppercase;
+      // padding-right: 22px;
+    }
+  }  
+  .service-request-pane {
+    // display: flex;
+    // flex-direction: column;
+    // align-items: center;
+    // height: 100%;
+    // background-color: red;
+    // width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    
+    justify-content: flex-start; /* align items in Main Axis */
+    align-items: center; /* align items in Cross Axis */
+    align-content: stretch; /* Extra space in Cross Axis */
+            
+    // background: rgba(255, 255, 255, .1);    
+    .info-text {
+      height: 22px;
+      color: #B6B6B6;
+      font-size: 12px;
+      line-height: 22px;
+      margin-top: 22.5px;
+    }
+    .car-name {
+      height: 22px;
+      color: #000000;
+      font-size: 24px;
+      line-height: 22px;
+      margin-top: 2px;
+    }
+    .item-ios {
+      padding: 0;
+    }
+    .date-spaceer {
+      margin-bottom: 4px;
+      min-height: 10px;
+      background-color: #ffffff; // min-height: 10px;
+      box-shadow: 0 20px 0 0 rgba(0, 0, 0, 0.05);
+      width: 100%;
+      float: left;
+      clear: both;
+      margin: 20px 0;
+    }
+    .down-pane {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;      
+      flex: 1;
+      background-color: #f9f9f9;
+      .selected-date-time {
+        height: 11.37px;
+        color: #37618D;
+        font-size: 12px;
+        line-height: 14px;
+        margin-top: 26.28px;
+        margin-bottom: 12.35px;
+        text-transform: uppercase;
+      }
+      .send-buttton {
+        padding: 0 18px;
+        width: 100%;
+      }
+    }
+  }
+}
+

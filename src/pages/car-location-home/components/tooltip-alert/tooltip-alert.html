@@ -1,0 +1,15 @@
+<div class="tooltip" (click)="dismiss()">
+<div class="request-modal" (click)="onEvent($event);">
+      <div class="image-pane">
+          <img class="image" [src]= "picture" />
+      </div>
+       <img class="text" src="assets/svg/Black_Close_Icon.svg" (click)="dismiss()" />
+
+      <div class="content">
+          <span> {{title}}</span>
+      </div>
+    <div class="sub-content">
+      <span> {{message}}</span>
+    </div>
+  </div>
+</div>

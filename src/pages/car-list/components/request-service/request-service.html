@@ -1,0 +1,27 @@
+<ion-content>
+  <div class="header">
+    <div class="header-text-container">
+      <div class="prev-icon" (tap)="dismiss()">
+        <ion-img src="assets/imgs/Push_Arrow_White.png"></ion-img>
+      </div>
+      <div class="header-text">request Service</div>
+    </div>
+  </div>
+  <!-- <div class="header">
+  Headerrr
+  <button ion-button (click)="dismiss()">Close</button>
+</div> -->
+  <div class="service-request-pane">
+    <div class="info-text">Preferred Service Center</div>
+    <div class="car-name">{{assetName}}</div>
+    <app-date-custom-chooser (selectedDate)="selectedDate($event)"></app-date-custom-chooser>
+    <div class="date-spaceer"></div>
+    <app-time-custom-chooser [selectedDate]=selectedMoment (selectedTime)="selectedTime($event)"></app-time-custom-chooser>
+    <div class="down-pane">
+      <div class="selected-date-time">{{selectedDateTime}}</div>
+      <div class="send-buttton">
+        <button class="blue-btn" (click)="sendServiceRequest()" [disabled]="!isSendRequestEnabled">SEND</button>
+      </div>
+    </div>
+  </div>
+</ion-content>

@@ -1,0 +1,8 @@
+<ion-list class="horizontal-list" no-lines>
+  <div *ngFor="let item of iconList" (click)="itemSelected(item)" class="icon-pane">
+    <span class="icon-item">
+      <img src="{{iconsPath}}/{{item.icon}}.svg" *ngIf="!item.isSelected"/>
+      <img src="{{iconsPath}}/place_active/{{item.icon}}.svg" *ngIf="item.isSelected"/>
+    </span>
+  </div>
+</ion-list>

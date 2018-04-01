@@ -1,0 +1,74 @@
+//first time account setup success screen
+@mixin slide-down-animation($duration) {
+    animation: slideDown $duration ease 1;
+}
+
+.account-setup-success {
+    width: 100%;
+    background: #000;
+    position: absolute;
+    z-index: $account-setup-success-z-index;
+    color: #fff;
+    opacity: 0.95;
+    min-height: 68%;
+    @include slide-down-animation(600ms);
+    clip-path: polygon(66% 0%, 264% 0%, 0% 100%, 0 0);
+    .close-icon {
+            padding: 18px 18px 10px 0px;
+    text-align: right;
+        .text {
+                background-image: url(../assets/imgs/White_Close_Button.png);
+                height: 15px;
+                width: 15px;
+                background-repeat: no-repeat;
+                background-size: cover;
+                /* text-align: right; */
+                /* float: right; */
+                height: 12px;
+                width: 13px;
+                right: 0;
+                display: inline-block;
+        }
+    } 
+    .information {
+        color: #FFFFFF;
+        font-family: "Neo Sans Std";
+        text-align: center;
+        padding: 0px 51px;
+        .setup-success-title { 
+            font-size: 36px;
+            font-weight: 300;
+            line-height: 43px;
+            padding: 0px 9px;
+        }
+        .setup-success-description {
+            font-size: 14px;
+            line-height: 19px;
+        }
+        .separator {
+            box-sizing: border-box;
+            width: 34px;
+            border: 1px solid #E2231A;
+            margin: 18px auto;
+        }
+    }
+    .cross-border {
+        height: 100px;
+        background: transparent;
+    }
+}
+
+.account-setup-hide {
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.6s ease-in-out;
+}
+
+@keyframes slideDown {
+    from {
+        transform: translateY(-100%);
+    }
+    to {
+        transform: translateY(0);
+    }
+}

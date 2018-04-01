@@ -1,0 +1,5 @@
+$neosansstd-font-path: $font-path;
+
+@include font-face("Neo Sans Std", 300, $font-path+"/neosansstd-light.otf");
+@include font-face("Neo Sans Std", normal, $font-path+"/neosansstd-regular.otf");
+@include font-face("Neo Sans Std", 500, $font-path+"/neosansstd-medium.otf");

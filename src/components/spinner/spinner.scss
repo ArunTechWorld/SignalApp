@@ -1,0 +1,87 @@
+spinner {
+    .spinner-overlay {
+        width: 100%;
+        opacity: 0.4;
+        background-color: #000;
+        position: fixed;
+        height: 100%;
+        z-index: -1;
+    }
+    .map-loading-spinner {
+        // position: fixed;
+        width: 100%;
+        background: transparent;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        z-index: 9;
+        .loader-content {
+            // top: 30%;
+            // position: absolute;
+            height: 84px;
+            width: 122.2px;
+            border-radius: 2px;
+            background-color: #fff;
+            position: relative; // top: -90px;
+            left: -1px;
+            margin: 0 auto;
+            text-align: center;
+            padding: 7.95px 0;
+            .loder-text {
+                color: #E2231A;
+                text-align: center;
+                font-size: 7.92px;
+                font-weight: 500;
+                line-height: 14px;
+            }
+            .second-image {
+                position: absolute;
+                top: 7.95px;
+                width: 100%;
+                .load-svg {
+                    overflow: hidden; //transform: rotate(-180deg);
+                    .animate-path {
+                        stroke: red;
+                        stroke-width: 3.02px;
+                        stroke-dasharray: 300;
+                        stroke-dashoffset: 10;
+                        fill: none;
+                        -webkit-animation: animateMapLoader 4s linear infinite;
+                        -moz-animation: animateMapLoader 4s linear infinite;
+                        -o-animation: animateMapLoader 4s linear infinite;
+                        -ms-transition: animateMapLoader 4s linear infinite;
+                        animation: animateMapLoader 4s linear infinite;
+                        animation-direction: reverse;
+                    }
+                }
+            }
+            .first-image {
+                //transform: rotate(-180deg);
+                .static-image-path {
+                    stroke: rgba(192, 192, 192, 0.8);
+                    stroke-width: 3.5px;
+                    stroke-dasharray: 300;
+                    stroke-dashoffset: 10;
+                    fill: none;
+                    border: 3.02px solid rgba(192, 192, 192, 0.8);
+                }
+            }
+        }
+    }
+}
+
+@keyframes animateMapLoader {
+    to {
+        stroke-dashoffset: 300;
+    }
+}
+
+.spinner-popup {
+  .modal-wrapper {
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+  }
+}

@@ -1,0 +1,460 @@
+acc-setup-steps {
+  overflow-y:scroll;
+  background: #fff; // padding: 0px 16px;
+  overflow-x: hidden;
+  .lojack-form{
+    padding-bottom: 20px;
+  }
+  .progress-buttons {
+    //  padding: 16px 18px 0px 18px;
+    .red-nav-btn {
+      float: right;
+    }
+    .acc-prev-next-btn {
+      padding: 16px 18px 0px 18px;
+    }
+  }
+  .slider-scroll-content{
+    overflow-y: scroll;
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+  }
+
+  .step-image {
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
+    .border-img {
+      border: 2px solid #E86056;
+    }
+    .image {
+      height: 80px;
+      width: 80px;
+      border-radius: 100%;
+    }
+  }
+  ion-slide {
+    padding: 0px 10px;
+  }
+  .scroll-content
+  {
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+  .progress-form {
+    .title {
+      color: #000000;
+      font-family: "Neo Sans Std";
+      font-size: 24px;
+      line-height: 22px;
+      text-align: center;
+      padding: 14px 0px;
+    }
+    .sub-title {
+      color: #8F8F8F;
+      font-family: "Neo Sans Std";
+      font-size: 13px;
+      line-height: 18px;
+      text-align: center;
+      padding-bottom: 22px;
+    }
+  }
+  .notification-btns {
+    padding-top: 18px;
+    .white-btn {
+      border: 0px;
+      color: #666;
+    }
+  }
+  .main {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+   
+  }
+  // .myframe {
+  //   //flex: 1;
+  //   height: 100%;
+  //   overflow: auto;
+  //   overflow-x: hidden;
+  //   .myiframe {
+  //     height: 100%;
+  //     width: 100%;
+  //     padding: 0 30px;
+  //     border: none
+  //   }
+
+  // }
+  .terms-frame {
+       flex: 1;
+        // height: 100%;
+        // overflow: auto;
+       overflow: auto;
+        overflow-x: hidden;
+        -webkit-overflow-scrolling: touch;
+        // .myiframe {
+       //   height: 100%;
+        //   width: 100%;
+        //   padding: 0 30px;
+        //   border: none
+        // }
+       }
+  .mybuttons {
+    height: 100px;
+   
+    .terms-btns{
+      padding-top: 13px;
+      padding-bottom: 15px;
+    }
+    [col-6] {
+      padding: 12px;
+  }
+  }
+
+  .titleTerms{
+    height: 22px;	
+    padding-top: 20px;
+    padding-bottom: 48px;
+    color: #000000;	
+    font-family: "Neo Sans Std";
+      font-size: 24px;	
+      line-height: 22px;
+      	text-align: center;
+  } 
+  .line{
+    box-sizing: border-box;	
+    height: 2px;
+      width: 400.98px;	
+      border: 0.7px solid #B6B6B6;
+  }
+
+  .scroll-item {
+    display: inline-block;
+    height: 430.5px;	
+    width: 315.78px;	
+    color: #666666;	
+    font-family: "Neo Sans Std";
+    font-size: 11px;	
+    line-height: 14px;
+  }
+
+  .name-car-form {
+    padding-top: 51px;
+  }
+  .eye-btn {
+    margin:8px !important;
+    background-color: transparent;
+}
+
+.text-input::-moz-placeholder {
+  color: #b6b6b6;
+  opacity: 0.6;
+  font-size: 14px;
+}
+
+.text-input:-ms-input-placeholder {
+  color: #b6b6b6;
+  opacity: 0.6;
+  font-size: 14px;
+}
+
+.text-input::-webkit-input-placeholder {
+  color: #b6b6b6;
+  opacity: 0.6;
+  font-size: 14px;
+}
+}
+
+.progress-form {
+  padding: 0px 13px;
+  opacity: 0;
+}
+
+//Progress scrolbar
+@mixin animate-width($duration) {
+  -webkit-transition: width $duration;
+  transition: width $duration;
+}
+
+@mixin slide-width-animation($duration) {
+  animation: slideRight $duration linear 1;
+}
+
+@keyframes slideRight {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+.progress-bar {
+  background: #F4F4F4;
+  height: 5px;
+  margin-top: 12px;
+  .step1 {
+    background: #000;
+    height: 5px;
+    width: 100%;
+    @include slide-width-animation(2000ms);
+  }
+  .stepNo1 {
+    width: 12.5%;
+    @include animate-width(400ms);
+  }
+  .stepNo2 {
+    width: 25%;
+    @include animate-width(400ms);
+  }
+  .stepNo3 {
+    width: 37.5%;
+    @include animate-width(400ms);
+  }
+  .stepNo4 {
+    width: 50%;
+    @include animate-width(400ms);
+  }
+  .stepNo5 {
+    width: 62.5%;
+    @include animate-width(400ms);
+  }
+  .stepNo6 {
+    width: 75%;
+    @include animate-width(400ms);
+  }
+  .stepNo7 {
+    width: 87.5%;
+    @include animate-width(400ms);
+  }
+  .stepNo8{
+    width: 100%;
+    @include animate-width(400ms);
+  }
+}
+
+@mixin slide-to-progressbar($duration) {
+  width: 14.28%;
+  height: 0px;
+  top: 12px;
+  overflow: hidden;
+  -webkit-transition: width 400ms, height 300ms;
+  /* Safari */
+  transition: width 400ms, height 300ms;
+  -moz-transition: width 400ms, height 300ms;
+  -ms-transition: width 400ms, height 300ms;
+  -o-transition: width 400ms, height 300ms; //animation: slideToProgressBar $duration linear 1;
+}
+
+@keyframes slideToProgressBar {
+  0% {
+    height: 100%;
+  }
+  100% {
+    height: 0%;
+  }
+}
+
+//aaaa
+//account setup
+//account setup
+// @mixin animate-accountsetup-progress-bar{
+//     animation: animateToNextStep $duration linear1;
+// }
+@mixin slide-up-animation($duration) {
+  animation: slideUp $duration ease-in-out 1; // animation-direction: reverse;
+}
+
+.account-setup-Progress-bar {
+  z-index: 1;
+  .progress-content {
+    width: 100%;
+    position: absolute;
+    color: #fff;
+    padding: 0px;
+    margin: 0px;
+    z-index: 9;
+    height: 100%;
+    background: #fff;
+    .accsetup-blockstrip-slide {
+      @include slide-width-animation(400ms);
+    }
+    .block-strip {
+      // height: 285px;
+      // background-color: #000000;
+      // background-image: url("../assets/imgs/accountsetupBG.png");
+      // background-size: cover;
+      .prev-icon {
+        padding: 20px 16px;
+        text-align: left;
+        color: #fff;
+        .back-icon {
+          height: 15px;
+          width: 8px;
+          background-image: url('../assets/imgs/Push_Arrow_White.png');
+          background-size: cover;
+          transform: rotate(180deg);
+        }
+      }
+      .poly-div {
+        position: absolute;
+        margin: 0 auto;
+        text-align: center;
+        width: 104%;
+        top: 274px;
+        height: 36px;
+        background: #fff;
+        transform: rotate(-2deg);
+        z-index: 2;
+        overflow: hidden;
+      }
+      .information {
+        color: #FFFFFF;
+        font-family: "Neo Sans Std";
+        text-align: center;
+        padding: 0px 0px;
+        .setup-start-title {
+                padding-top: 52px;
+                padding-right: 36px;
+                padding-bottom: 42px;
+                 padding-left: 36px;
+          color: #FFFFFF;
+          font-family: "Neo Sans Std";
+          font-size: 40px;
+          line-height: 43px;
+          text-align: center;
+        }
+      }
+      .car-placeholder {
+        z-index: 3;
+        position: absolute;
+        margin: 0 auto;
+        text-align: center;
+        width: 100%;
+        top: 234px;
+        .image {
+          border-radius: 100%;
+          // height: 80px;
+          // width: 80px;
+          height: 84px;
+          width: 84px;
+          box-shadow: 0 0 4px 0 rgba(0,0,0,0.16);
+          max-width: 84px;
+          max-height: 84px;
+          overflow: hidden;
+          background: #fff;
+          padding: 0px;
+          object-fit:scale-down;
+        }
+      }
+    }
+    &::before {
+      height: 385px;
+      background-color: #000000;
+      background-image: url(../assets/imgs/accountsetupBG.png);
+      background-size: cover;
+      content: "";
+      position: absolute;
+      width: 200%;
+      top: -106px;
+      left: -50%;
+      z-index: -1;
+      -webkit-transform: rotate(177deg);
+      -moz-transform: rotate(177deg);
+      -ms-transform: rotate(177deg);
+      -o-transform: rotate(177deg);
+      transform: rotate(177deg);
+    }
+    .block-content {
+      position: absolute;
+      top: 318px;
+      width: 100%;
+      .static-info {
+        text-align: center;
+        color: #000;
+        .setup-start-subtitle {
+          font-size: 24px;
+          line-height: 22px;
+          padding: 18px 58px;
+        }
+        .setup-start-description {
+          font-size: 14px;
+          line-height: 19px;
+          color: #666666;
+          padding: 18px 49px;
+        }
+        .separator {
+          box-sizing: border-box;
+          width: 34px;
+          border: 1px solid #E2231A;
+          margin: 18px auto;
+        }
+      }
+      .start-button {
+        bottom: 0;
+        padding: 18px 19px 25px 19px;
+        width: 100%;
+        position: fixed;
+        margin: 0px;
+        .red-button{
+          padding: 18px;
+          width: 100%;
+        }
+      }
+    }
+  }
+  .hide-progress-bar {
+    top: 0%;
+    background: #fff;
+  }
+  .show-progress-bar {
+    // @include slide-up-animation(500ms);
+    // top: -100%;
+    @include slide-to-progressbar(1500ms);
+  } // .accout-setup {
+  //     .background-layer {
+  //         height: 324px;
+  //         background-color: #000000;
+  //         clip-path: polygon(66% 0%, 610% 0%, 0% 100%, 0 0);
+  //     }
+  //     width: 100%;
+  // }
+}
+
+@mixin slide-right-animation($duration) {
+  animation: slideRight $duration linear 1;
+}
+
+.animate-accsetup-slider {
+  opacity: 1;
+  @include slide-right-animation(400ms);
+  -webkit-transition: opacity 600ms;
+  /* Safari */
+  transition: opacity 600ms;
+  -moz-transition: opacity 600ms;
+  -ms-transition: opacity 600ms;
+  -o-transition: opacity 600ms;
+}
+
+@keyframes slideRight {
+  0% {
+    margin-left: 100%;
+  }
+  100% {
+    margin-left: 0%;
+  }
+}
+
+@keyframes slideUp {
+  0% {
+    left: 0%;
+    top: 0%; // transform: translateX(0%);
+  }
+  50% {}
+  100% {
+    left: -90%;
+    top: -100%; // transform: translateX(-100%);
+  }
+  
+}
+

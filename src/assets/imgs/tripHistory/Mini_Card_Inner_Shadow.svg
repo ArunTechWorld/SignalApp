@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="320px" height="110px" viewBox="0 0 320 110" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>Rectangle 13</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="9.43229605" y="10" width="319" height="110"></rect>
+        <filter x="-1.6%" y="-4.5%" width="103.1%" height="109.1%" filterUnits="objectBoundingBox" id="filter-3">
+            <feGaussianBlur stdDeviation="5" in="SourceAlpha" result="shadowBlurInner1"></feGaussianBlur>
+            <feOffset dx="0" dy="0" in="shadowBlurInner1" result="shadowOffsetInner1"></feOffset>
+            <feComposite in="shadowOffsetInner1" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0.847058824   0 0 0 0 0.847058824   0 0 0 0 0.847058824  0 0 0 0.4 0" type="matrix" in="shadowInnerInner1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Trip-History:-List" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-27.000000, -170.000000)">
+        <g id="Card_1" transform="translate(18.000000, 160.000000)">
+            <mask id="mask-2" fill="white">
+                <use xlink:href="#path-1"></use>
+            </mask>
+            <g id="Rectangle-13" fill="black" fill-opacity="1">
+                <use filter="url(#filter-3)" xlink:href="#path-1"></use>
+            </g>
+        </g>
+    </g>
+</svg>

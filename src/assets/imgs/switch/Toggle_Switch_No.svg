@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="44px" height="31px" viewBox="0 0 44 31" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>Switch_NO</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0.5" y="0.75" width="43" height="30" rx="15"></rect>
+        <filter x="-10.5%" y="-15.0%" width="120.9%" height="130.0%" filterUnits="objectBoundingBox" id="filter-2">
+            <feGaussianBlur stdDeviation="4" in="SourceAlpha" result="shadowBlurInner1"></feGaussianBlur>
+            <feOffset dx="0" dy="1" in="shadowBlurInner1" result="shadowOffsetInner1"></feOffset>
+            <feComposite in="shadowOffsetInner1" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0.761904762   0 0 0 0 0.761904762   0 0 0 0 0.761904762  0 0 0 0.5 0" type="matrix" in="shadowInnerInner1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="My-Family:-Admin-List" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-292.000000, -286.000000)">
+        <g id="Group" transform="translate(-1.000000, 6.762741)">
+            <g id="Switch_NO" transform="translate(293.000000, 279.250000)">
+                <g id="Group-21">
+                    <g id="Rectangle-9-Copy">
+                        <use fill="#E8E8E8" fill-rule="evenodd" xlink:href="#path-1"></use>
+                        <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                    </g>
+                    <circle id="Oval-10-Copy" fill="#FFFFFF" cx="16" cy="15.75" r="13.5"></circle>
+                    <g id="White_Close_Button" transform="translate(12.500000, 12.250000)" stroke="#B6B6B6" stroke-linecap="round" stroke-width="1.5">
+                        <polyline id="Triangle" transform="translate(1.724004, 3.360547) rotate(90.000000) translate(-1.724004, -3.360547) " points="-1.51154258 5.05535714 1.7240043 1.66573661 4.95955117 5.05535714"></polyline>
+                        <polyline id="Triangle-Copy" transform="translate(5.113625, 3.360547) scale(-1, 1) rotate(90.000000) translate(-5.113625, -3.360547) " points="1.87807796 5.05535714 5.11362483 1.66573661 8.34917171 5.05535714"></polyline>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,95 @@
+@mixin lojackButton($bgColor,
+$txtColor,
+$borderColor,
+$activeBGColor) {
+  height: 46.04px;
+  background-color: $bgColor;
+  width: 100%;
+  box-shadow: none;
+  border: 1px solid $borderColor;
+  opacity: 1;
+  box-shadow: none;
+  transition: none;
+  color: $txtColor;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 14px;
+  text-align: center;
+  text-shadow: none;
+  &:hover:not(.disable-hover) {
+    background-color: $bgColor;
+  }
+  &:active,
+  &.activated {
+    background-color: $activeBGColor;
+    box-shadow: none;
+  }
+}
+// background-color,color,bordercolor,activeBackgroundcolor
+.red-btn {
+  @include lojackButton(#E2231A,
+    #FFFFFF,
+    #E2231A,
+    #BF382E);
+  &[disabled] {
+    @include lojackButton(#B2B2B2,
+        #FFFFFF,
+        #B2B2B2,
+        #666666);
+  }
+}
+.gray-btn {
+  @include lojackButton(#B2B2B2,
+    #FFFFFF,
+    #B2B2B2,
+    #666666);
+}
+.blue-btn {
+  @include lojackButton(#2b648f,
+    #FFFFFF,
+    #2b648f,
+    #325171);
+  border-radius: 1px;
+  
+  &[disabled] {
+    @include lojackButton(#B2B2B2,
+        #FFFFFF,
+        #B2B2B2,
+        #666666);
+  }
+}
+
+.white-btn {
+  @include lojackButton(#FFFFFF,
+    #37618d,
+    #E8E8E8,
+    #F9F9F9);
+}
+// Navigation Buttons
+@mixin lojackNavButton($txtColor,
+$activeTxtColor,
+$disabledColour) {
+  color: $txtColor;
+  font-size: 18px;
+  line-height: 19px;
+  background: none;
+  &:active,
+  &:focus,
+  &.activated {
+    color: $activeTxtColor;
+  }
+  &[disabled] {
+    color: $disabledColour;
+    opacity: 0.1;
+  }
+}
+.red-nav-btn {
+  @include lojackNavButton(#E86056,
+    #BF382E,
+    #000000);
+}
+.gray-nav-btn {
+  @include lojackNavButton(#8f8f8f,
+    #666666,
+    #000000);
+}

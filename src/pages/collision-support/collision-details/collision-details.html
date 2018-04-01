@@ -1,0 +1,107 @@
+<!-- Generated template for the CollisionDetailsComponent component -->
+ <ion-header>
+<div class="collision-text-button" >
+      <div class="collision-text">{{crashdetailsdata.carename}}</div>
+       <div class="push_arrow" (click)="backtocollisian()"></div>
+      <div class="collision-details">COLLISION DETAILS</div>
+  </div>
+</ion-header> 
+<ion-content>
+<div class="collision-detail-map ">
+  <div class="coll-on-map-details">
+    <div id="map">
+    <div class="collision-occurred ">
+   <div class="collision-occurred-text ">Collision occurred </div>
+    <div  class="collision-day">{{crashdetailsdata.date}}</div>
+    <div class="collision-day">{{crashdetailsdata.time}} </div>
+    <div>{{crashdetailsdata.address}} </div>
+ </div>
+ </div>
+  </div>
+ 
+ <div class="collision-level">
+    <div class="question-mark-icon"  (click)="presentTooltip()"></div>
+   <div class="collision-impact">CrashBoxx™ <br>Collision Impact Level</div>
+   <div class="collision-level-scale"> 
+       <div  *ngIf="crashdetailsdata.stepcolorid !== 0"class="types">
+      <div class="collision-scale-light">Very Light</div>
+      <div class="collision-scale">Very Light</div>
+      <div class="collision-scale-circle">
+         <div class="line"></div>
+      </div>
+      </div>
+
+       <div  *ngIf="crashdetailsdata.stepcolorid == 0" class="types">
+      <div class="collision-scale-bold">Very Light</div>
+      <div class="collision-scale-light">Very Light</div>
+        <div class="collision-scale-circle-bold">
+           <div class="line"></div>
+        </div>
+          </div>
+      <div  *ngIf="crashdetailsdata.stepcolorid !== 1"class="types">
+      <div class="collision-scale-light">Light</div>
+      <div class="collision-scale">Light</div>
+      <div class="collision-scale-circle">
+         <div class="line"></div>
+      </div>
+      </div>
+      <div *ngIf="crashdetailsdata.stepcolorid == 1" class="types">
+      <div class="collision-scale-bold">Light</div>
+      <div class="collision-scale-light">Light</div>
+      <div class="collision-scale-circle-bold">
+         <div class="line"></div>
+      </div>
+      </div>
+
+       <div  *ngIf="crashdetailsdata.stepcolorid !==2" class="types">
+      <div class="collision-scale-light">Moderate</div>
+      <div class="collision-scale">Moderate</div>
+        <div class="collision-scale-circle">
+           <div class="line"></div>
+        </div>
+        
+      </div>
+       <div  *ngIf="crashdetailsdata.stepcolorid ==2" class="types">
+      <div class="collision-scale-bold">Moderate</div>
+      <div class="collision-scale-light">Moderate</div>
+        <div class="collision-scale-circle-bold">
+           <div class="line"></div>
+        </div>
+      </div>
+
+       <div *ngIf="crashdetailsdata.stepcolorid !== 3" class="types">
+      <div class="collision-scale-light" >Heavy</div>
+      <div class="collision-scale" >Heavy</div>
+      <div class="collision-scale-circle">
+         <div class="line"></div>
+      </div>
+      </div>
+
+       <div  *ngIf="crashdetailsdata.stepcolorid == 3" class="types">
+      <div class="collision-scale-bold">Heavy</div>
+      <div class="collision-scale-light">Heavy</div>
+        <div class="collision-scale-circle-bold">
+           <div class="line"></div>
+        </div>
+      </div>
+
+      <div  *ngIf="crashdetailsdata.stepcolorid !== 4" class="types">
+      <div class="collision-scale-light">Very Heavy</div>
+      <div class="collision-scale">Very Heavy</div>
+      <div class="collision-scale-circle"></div>
+      </div>
+       <div  *ngIf="crashdetailsdata.stepcolorid == 4" class="types">
+      <div class="collision-scale-bold">Very Heavy</div>
+      <div class="collision-scale-light">Very Heavy</div>
+        <div class="collision-scale-circle-bold"> </div>
+      </div>
+      
+   </div>
+      <div *ngIf="crashdetailsdata.stepcolorid == 0" class="damage-level"><b>{{crashdetailsdata.level}} </b> - Likely minimal damage to the vehicle, if any. </div>
+      <div  *ngIf="crashdetailsdata.stepcolorid == 1" class="damage-level"><b>{{crashdetailsdata.level}} </b> - Light damage to the vehicle.  Possible airbag deployment.  </div>
+      <div  *ngIf="crashdetailsdata.stepcolorid == 2" class="damage-level"><b>{{crashdetailsdata.level}} </b> - Some crushing, possible structural damage. Airbags likely to have  deployed. </div>
+      <div *ngIf="crashdetailsdata.stepcolorid == 3" class="damage-level"><b>{{crashdetailsdata.level}} </b> - Structural damage to the car. Airbags very likely deployed.</div>
+      <div *ngIf="crashdetailsdata.stepcolorid == 4" class="damage-level"><b>{{crashdetailsdata.level}} </b> - Significant damage to the car. Airbags most likely deployed.</div>
+ </div>
+</div>
+</ion-content>

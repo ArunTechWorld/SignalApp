@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>Grocery_Icon Copy</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Artboard" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-777.000000, -1544.000000)" stroke-linecap="round" stroke-linejoin="round">
+        <g id="Grocery_Icon-Copy" transform="translate(776.031250, 1544.099414)" stroke="#B6B6B6">
+            <g id="Group" transform="translate(10.733203, 9.671719) scale(-1, 1) translate(-10.733203, -9.671719) translate(0.733203, 0.671719)">
+                <path d="M5.775,16.5 C5.775,17.1831 5.2206,17.7375 4.5375,17.7375 C3.8544,17.7375 3.3,17.1831 3.3,16.5 C3.3,15.8169 3.8544,15.2625 4.5375,15.2625 C5.2206,15.2625 5.775,15.8169 5.775,16.5 L5.775,16.5 Z" id="Stroke-1537"></path>
+                <path d="M14.85,16.5 C14.85,17.1831 14.2956,17.7375 13.6125,17.7375 C12.9294,17.7375 12.375,17.1831 12.375,16.5 C12.375,15.8169 12.9294,15.2625 13.6125,15.2625 C14.2956,15.2625 14.85,15.8169 14.85,16.5 L14.85,16.5 Z" id="Stroke-1538"></path>
+                <polyline id="Stroke-1539" points="19.3875 1.2375 16.9125 1.2375 13.6125 15.2625 4.5375 15.2625"></polyline>
+                <polyline id="Stroke-1540" points="14.025 13.6125 3.3 13.6125 0.825 6.1875 15.726975 6.1875"></polyline>
+                <polyline id="Stroke-1541" points="9.075 6.1875 12.375 2.8875 15.73935 6.1875"></polyline>
+                <polyline id="Stroke-1542" points="4.95 6.1875 2.475 0.669075 0.4125 1.65 2.475 6.1875"></polyline>
+                <polyline id="Stroke-1543" points="7.425 6.1875 7.425 3.7125 11.55 3.7125"></polyline>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,62 @@
+<!--
+  Generated template for the MyfamilyPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+
+<ion-content>
+  <div class="wrapper">
+    <div class="header">
+      <div class="header-text">People</div>
+      <div class="close-icon" (tap)="goToHome()">
+        <ion-img src="assets/imgs/White_Close_Button.png"></ion-img>
+      </div>
+    </div>
+    <div class="content" *ngIf="personsList.length > 0">
+      <ion-list>        
+        <ion-item class="person-item" *ngFor="let person of personsList">          
+          <!-- <ion-label> -->         
+          <div class="item-text">
+            <div class="item-title">
+              {{person.user.firstName}} {{person.user.lastName}}
+               {{person.user.id === loginUserobject.id ? ' (Me)' : ''}}
+            </div>
+            <div class="item-actions">
+              <div class="item-check" *ngIf="userIsAdmin && person.user.id !== loginUserobject.id">
+                <!-- <ion-toggle class="toggle-ios" checked={{person.user.isAdmin}} [(ngModel)]="person.user.isAdmin" (ngModelChange)="updateRole(person.user)"></ion-toggle> -->
+                <label class="switch">
+                  <input type="checkbox" checked={{person.user.isAdmin}} [(ngModel)]="person.user.isAdmin" (ngModelChange)="updateRole(person.user)" />
+                  <span class="slider round"></span>
+                </label>
+              </div>
+              <div class="item-role" [ngStyle]="{ 'padding-top': userIsAdmin && person.user.id !== loginUserobject.id ? '6px' : 0 }">
+                <span class="admin" *ngIf="person.user.isAdmin">Admin</span>
+                <span class="non-admin" *ngIf="!person.user.isAdmin">Non-Admin</span>
+              </div>             
+            </div>
+          </div>
+          <div class="item-nav" (tap)="personalDetails(person.user)">
+            <span class="right"></span>
+          </div>
+        <!-- </ion-label>     --> 
+        </ion-item>
+      </ion-list>
+      <div class="admin-content">
+        <div class="only-admins-can-add" *ngIf="userIsAdmin">
+          Only Admins can add or delete people, <br> modify car details, modify notification <br> preferences, create places, and modify the <br>
+            preferred service center.  
+        </div>
+        <div class="only-admins-can-add" *ngIf="!userIsAdmin">
+          As a non-admin, you do not have the ability <br> to add or modify family people.
+        </div>
+      </div>
+      <div class="button-container" *ngIf="userIsAdmin">
+        <button class="blue-btn" (click)="add()">ADD PERSON</button>
+      </div>
+    </div>    
+    <div class="error-message" [hidden]="!errorMessage">
+      <ion-icon name="warning"></ion-icon>{{errorMessage}}
+    </div>  
+  </div>
+</ion-content>

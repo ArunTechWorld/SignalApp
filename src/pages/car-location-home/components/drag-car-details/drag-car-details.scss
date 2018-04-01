@@ -1,0 +1,674 @@
+drag-car-details {
+    .car-drag-all-content{
+        background-color: #f6f6f6;
+        padding: 1px 0px 28px 0px;
+    }
+    .car-vin {
+        color:#666666; /* #8C8C8C*/
+        font-size: 10px;
+        line-height: 22px;
+        padding: 0px 0px 10px 0px;
+        background-color: #ffffff;
+        text-align: center;
+        text-transform: uppercase;
+        font-weight: lighter;
+            margin-top: -1px;
+    }
+    .car-drag-content{
+    height: 100%;
+    width: 100%;
+    background-color: #FFFFFF;
+    box-shadow: inset 0 1px 3px 0 rgba(193,181,181,0.5), 0 2px 5px 0 rgba(0,0,0,0.05);
+     margin: 11px 0px 11px 0px;
+     padding: 11px 16px 12px 0px;
+    }
+    .question-mark-icon{
+    background-image: url(../assets/imgs/Question_Mark_Icon.png);
+    /* height: 41.63px; */
+    width: 25px;
+    height: 25px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: 9;
+    float: right;
+    }
+    .tripwier-text{
+	color: #000000;
+	//font-family: "Neo Sans Std";
+	font-size: 18px;
+	line-height: 22px;
+	text-align: center;
+    padding-top: 23px;
+    margin-left: 30px;
+    }
+    .tripwier-button{
+        ///height: 33px;s
+        margin: 6% 21% 5% 24%;
+       // -webkit-box-shadow: inset 0 1px 3px 0 rgba(85, 85, 85, 0.5), 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+       // box-shadow: inset 0 1px 3px 0 rgba(85, 85, 85, 0.5), 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+        //ackground-image: -webkit-linear-gradient(-57deg, #fffefe 51%, transparent 0%);
+        border: solid 1px #E86056;
+    
+    .tripwier-button-on{
+        height: 32px;
+        width: 55%;
+        text-align: center;
+        background-color: #E86056;
+        color: white;
+       // background-image: -webkit-linear-gradient(196deg, #fffefe 8%, transparent 0);
+        /* background-color: #E86056; */
+        -webkit-clip-path: polygon(0% 100%, 103% 122%, 87% 0%, 0 0%);
+        clip-path: polygon(0% 100%, 103% 122%, 87% 0%, 0 0%);
+        padding-top: 8px;
+       }
+      
+    .tripwier-button-off{
+        background-color: white;
+        height: 30px;
+        width: 51%;
+        float: right;
+        text-align: center;
+        color: #E8E8E8;
+        padding: 3px;
+        padding-left: 15%;
+        /* border: 1px solid #E8E8E8; */
+        .line-bar{
+            box-sizing: border-box;
+            border: 1px solid #E8E8E8;
+            width: 1px;
+            height: 15px;
+            /* margin: 0px auto; */
+            float: left;
+            /* text-align: center; */
+            margin: 4px 0px 0px 7px;
+        }
+        
+    }
+    
+   
+
+   
+    }
+
+    .tripwier-button-black{
+        height: 37px;
+        margin: 6% 21% 5% 24%;
+        /* border: solid 1px #E86056; */
+        /* background-color: #FFFFFF; */
+        /* background-color: #B2B2B2; */
+        background-color: #B2B2B2;
+        // -webkit-box-shadow: inset 0 1px 3px 0 rgba(0, 0, 0, 0.5), 0 2px 4px 0 rgba(114, 114, 114, 0.5);
+        // box-shadow: inset 0 1px 3px 0 rgba(0, 0, 0, 0.5), 0 2px 4px 0 rgba(114, 114, 114, 0.5);
+        /* background-color: #B2B2B2; */
+        padding: 2px; 
+       // padding-left: 15%;
+        .line-bar{
+            box-sizing: border-box;
+            border: 1px solid #E8E8E8;
+            width: 1px;
+            height: 15px;
+            /* margin: 0px auto; */
+            float: left;
+            /* text-align: center; */
+            margin: 4px 0px 0px 7px;
+        }
+        
+        .tripwier-button-on-state{
+            
+            height: 33px;
+            width: 48%;
+            text-align: center;
+            /* background-color: #E86056; */
+            color: white;
+            /* background-color: #E86056; */
+            /* -webkit-clip-path: polygon(0% 100%, 103% 122%, 87% 0%, 0 0%); */
+            clip-path: polygon(0% 100%, 103% 122%, 87% 0%, 0 0%);
+            float: left;
+            background-color: white;
+            color: #E8E8E8;
+            padding-top: 6px;
+            padding-left: 12%;
+        }
+
+        .tripwier-button-off-state{
+            webkit-clip-path: polygon(17% 100%, 103% 125%, 100% 0%, 0 0%);
+            clip-path: polygon(17% 100%, 103% 125%, 100% 0%, 0 0%);
+            /* background-color: #e2dcdc; */
+            width: 52%;
+            float: right;
+            text-align: center;
+            height: 33px;
+            /* background-color: #B2B2B2; */
+            padding-top: 8px;
+            color: white;
+            //padding-left: 11%;
+        
+        }
+    
+
+    }
+
+    .car-health-content{
+    position: relative;
+    min-height: 241px;
+    width: 100%;
+    overflow: scroll;
+    background-color: #FFFFFF;
+    -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.05);
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.05);
+    padding: 11px 16px 28px 0px;
+    margin: 11px 0px 11px 0px;
+      .question-mark-icon{
+    background-image: url(../assets/imgs/Question_Mark_Icon.png);
+    /* height: 41.63px; */
+    width: 25px;
+    height: 25px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: 9;
+    float: right;
+    }
+
+    .car-health-text {
+	color: #000000;
+ //font-family: "Neo Sans Std";
+	font-size: 18px;
+	line-height: 22px;
+	text-align: center;
+    padding: 22px;
+    }
+    .car-health-image{
+    background-image: url(../assets/imgs/Car_Issue_Icon.png);
+    height: 27px;
+    width: 48px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+    }
+
+    .car-health-issue-number{
+        color: #E2231A;
+    //font-family: "Neo Sans Std";
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 14px;
+    text-align: center;
+    padding-top: 12px;
+
+    }
+    .car-health-issue-display{
+        padding: 9px 61px 17px 61px;
+    }
+    .car-health-issue{
+       height: 22px;
+    /* width: 180px; */
+    border-radius: 31px;
+    background-color: #F4F4F4;
+    // -webkit-box-shadow: 0 2px 4px 0px rgba(0, 0, 0, 0.2);
+    // box-shadow: 0 2px 4px 0px rgba(0, 0, 0, 0.2);
+    padding: 6px 10px 0px;
+    color: #E86056;
+    //font-family: "Neo Sans Std";
+    font-size: 12px;
+    line-height: 12px;
+    text-align: center;
+    float: left;
+    margin: 6px 10px 0px 10px;
+    
+    }
+
+
+    }
+
+    .miles-driven-content{
+    // height: 516px;
+	width: 100%;
+	background-color: #FFFFFF;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.05);
+    margin: 11px 0px 11px 0px;
+
+    .d3-chart {
+        width: 100%;
+        height: 350px;
+        position: relative;
+        margin-top: 75px;
+      }
+      
+      .d3-chart .axis path,
+      .d3-chart .axis line {
+        stroke:white;
+      }
+      
+      .d3-chart .axis text {
+        fill: #999;
+      }
+      
+      .bar {
+        fill: #DAE5EE
+      }
+      
+      .bar:hover {
+        fill: #37618D
+      }
+      .axis {
+        font-size: 12px;
+      }
+      .axis path,
+      .axis line {
+        fill: none;
+        shape-rendering: crispEdges;
+        stroke: #000;
+      }
+      .x.axis path {
+        display: none;
+      }
+      .y.axis text {
+        fill: red;
+      }
+        
+      .tooltip {
+        background-color: #37618D;
+       border-radius: 3px;
+        border: 0;
+        font-size: 12px;
+        font-weight: 400;
+        height: 40.72px;
+        width: 84.75px;
+        padding: 2px;
+        pointer-events: none;
+        position: absolute;
+        text-align: center;
+        width: 120px;
+        color: white;
+      }
+      
+      .fontColor {
+        color: white;
+        font-size: 15px;
+        float: left;
+     padding-left: 10px;
+      }
+      .tooltipdate {
+        color: #FFFFFF;
+	font-family: "Neo Sans Std";
+	font-size: 10px;
+	font-weight: 300;
+	line-height: 15px;
+    float: left;
+    padding-left: 10px;
+     opacity: 0.5
+      }
+      
+      .verticalLine {
+        border-left: 1.5px solid steelblue ;
+        position: absolute;
+      }
+      
+      span {
+          color: #d11515;
+        }
+      
+        .grid line {
+          stroke: lightgrey;
+          stroke-opacity: 0.7;
+          shape-rendering: crispEdges;
+        }
+      
+        .grid path {
+          stroke-width: 0;
+          
+        }
+        .grid text{
+          fill: red;
+        }
+
+    // .question-mark-icon{
+    //     background-image: url(../assets/imgs/Question_Mark_Icon.png);
+    //     /* height: 41.63px; */
+    //     width: 25px;
+    //     height: 23px;
+    //     background-size: cover;
+    //     background-repeat: no-repeat;
+    //     z-index: 9;
+    //     margin: 11px 16px 0px 0px;
+    //     float: right;
+    //     }
+    
+    .miles-driven-text{
+        color: #000000;
+       // font-family: "Neo Sans Std";
+        font-size: 18px;
+        line-height: 22px;
+        text-align: center;
+        padding-top: 22px;
+
+    }
+    
+    .arows{
+         height: 20px;
+    padding-top: 19.5px;
+    margin: 0px auto;
+    text-align: center;
+    max-width: 224px;
+         .miles-driven-push-arow-white{
+         background-image: url(../assets/imgs/push_Arrow_LightGray.png);
+        /* height: 41.63px; */
+            width: 10px;
+    height: 15px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: 9;
+   // margin: 11px 16px 0px 0px;
+    //float: left;
+    margin: 0px auto;
+    text-align: center;
+        float: right;
+
+    }
+    .miles-driven-push-arow{		
+	       background-image: url(../assets/imgs/Push_Arrow.png);		
+	    /* height: 41.63px; */		
+	    width: 10px;		
+    height: 15px;		
+	    background-size: cover;		
+	    background-repeat: no-repeat;		
+	    /* z-index: 9; */		
+	    /*margin: 0px auto;*/		
+	    float: left; 		
+	    /* text-align: center; */		
+	    transform: rotate(180deg);		
+			
+	    }		
+        .mirror{
+            float: right;
+            transform: rotate(0deg);
+        }
+    
+    }
+
+    .miles-date {		
+	    padding: 10px 0px 32px 12px;		
+        line-height: 40px;	
+            font-weight: 500;	
+	    .toatal-miles{		        
+        color: #8C8C8C;		
+        font-size: 12px;		
+	        float: left;		
+	    }		
+	   		
+	    .toatal-miles-num{		
+	      float: left;		
+	      font-size: 40px;		
+	      line-height: 22px;		
+	    }		
+	    }		
+	     .display-date{		
+	        	color: #B2B2B2;		
+	            font-size: 10px;		
+	            line-height: 22px;		
+	            padding: 8px 0px 32px 12px;		
+	        		
+	    }		
+	    .text-date{		
+	            // padding: 0px 20px 0px 15px;		
+	             color: #37618D;			 
+        }
+        .text-date-month{
+        // padding: 0px 20px 0px 50px;
+        color: #37618D;
+        }
+        .text-date-year{
+        // padding: 0px 20px 0px 60px;
+        color: #37618D;
+
+        }
+    .miles-driven-button{
+        height: 30px;
+        /* width: 330px; */
+         /*border: 0.75px solid #37618D; */
+         margin: 10px 23px 0px 40px;
+    }
+    // .tooltip {
+    //     padding: 5px;
+    //     border-radius: 5px;
+    //     box-shadow: 2px 2px 2px; 
+    
+    // }
+    .miles-driven-each_button{
+        float: left;
+        border: 0.75px solid #37618D;
+        height: 30px;
+        padding: 10px;
+        width: 23%;
+        color: #37618D;
+        //font-family: "Neo Sans Std";
+        font-size: 12px;
+        font-weight: 500;
+        line-height: 14px;
+        text-align: center;
+        /* margin: 0px 0px 0px 1px; */
+    }
+    .onclick-button {
+    background-color: #37618D;
+    color: white;
+
+    }
+
+  
+    }
+    .collision-history{
+	background-color: #FFFFFF;
+	box-shadow: 0 2px 5px 0 rgba(0,0,0,0.05);
+    padding-bottom: 10px;
+    .collision-history-text{
+         color: #000000;
+       // font-family: "Neo Sans Std";
+        font-size: 18px;
+        line-height: 22px;
+        text-align: center;
+        padding-top: 22px;
+
+    }
+    .collision-push-arow{
+         background-image: url(../assets/imgs/push_Arrow_LightGray.png);
+            width: 10px;
+    height: 15px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: 9;
+    margin: 11px 16px 0px 0px;
+    float: right;
+
+    }
+    .collision-history-bar{
+        box-sizing: border-box;
+        height: 2px;
+        /* width: 335.28px; */
+        border: 1px solid #E8E8E8;
+        margin: 12px 20px 12px 20px;
+    }
+    .collision-history-date{
+    color: #37618D;
+    font-family: "Neo Sans Std";
+    font-size: 14px;
+    line-height: 22px;
+    padding-left: 30px;
+    }
+    .collision-history-level{
+    color: #666666;
+	//font-family: "Neo Sans Std";
+	font-size: 12px;
+	line-height: 22px;
+    padding-left: 30px;
+    }
+    
+    }
+    .schedule-service-button{
+           margin: 23px 19px 0px 19px;
+           button {
+            text-transform: uppercase;
+           }
+    }
+    car-drag-tripwire-content{
+        background-color:#FFFFFF;
+        width:100%;
+        height:34.7%;
+      
+    }
+      .trip-wire-anti-theft{
+            height: 22px;
+            width: 64.53%;
+            margin:0 auto;
+            color: #000000;	
+            font-family: "Neo Sans Std";	
+            font-size: 18px;	
+            line-height: 22px;	
+            text-align: center;
+
+
+        }
+        .trip-wire-card{
+           background-color: #E2231A;
+           width:90.67%;
+           height: 195.1px;
+           margin-left: 4.67%;
+           margin-right: 4.67%;
+
+        }
+        .alarm-icon-container{
+
+            width:100%;
+            text-align: center;
+            margin-top:11.04%;
+            position: absolute;
+        }
+        .alarm-icon-white{
+            background-image: url(../assets/imgs/Alarm_Icon_White.png);
+            height: 24px;
+            width: 39px;
+            background-size: contain;
+            background-repeat: no-repeat;
+            margin: 0 auto;
+        }
+    .collisian-details-home{
+            padding-top: 10px;
+      color: #FFFFFF;
+      font-size: 14px;
+      line-height: 22px;
+      text-align: center;
+     margin-bottom: 22px;
+     position:relative;
+
+    }
+            .tripwire-details-updated{
+    height: 195px;
+    width: 90%;
+    background-color: #E2231A;
+    
+        padding-top: 15px;
+        margin: 0 auto;
+    margin-top: 10px;
+    margin-right: 11px;
+    .tripwire-details-home{
+      color: #FFFFFF;
+      height: 74px;
+      font-size: 14px;
+      line-height: 22px;
+      text-align: center;
+     //margin-bottom: 13px;
+     padding: 6px 20px;
+    }
+    .tripwire-details-time{
+      color: #FFFFFF;
+      font-size: 14px;
+      line-height: 10px;
+      text-align: center;
+     margin-bottom: 6px;
+
+    }
+    .tripwire-icon{
+         background-image: url(../assets/imgs/Alarm_Icon_White.png);
+    height: 24px;
+    width: 39px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+        }
+    }
+             .tripwire-button-red{
+      margin: 30px  0px 31px 16px;
+       .red-btn{
+        height: 30px;
+        background-color: #E2231A;
+        -webkit-box-shadow: none;
+        box-shadow: none;
+        border: 1px solid #E2231A;
+        opacity: 1;
+        box-shadow: none;
+        -webkit-transition: none;
+        transition: none;
+        color: #FFFFFF;
+        font-size: 12px;
+        font-weight: 500;
+        line-height: 14px;
+        text-align: center;
+        text-shadow: none;
+        width: 46%;
+         float: left;
+         border: 1px solid #E8E8E8;
+         margin-right: 10px;
+       }
+     }
+
+     .button-red {
+        margin: 2px 0px 20px 12px;
+        .red-btn {
+            height: 30px;
+            background-color: #E2231A;
+            -webkit-box-shadow: none;
+            box-shadow: none;
+            border: 1px solid #E2231A;
+            opacity: 1;
+            box-shadow: none;
+            -webkit-transition: none;
+            transition: none;
+            color: #FFFFFF;
+            font-size: 12px;
+            font-weight: 500;
+            line-height: 14px;
+            text-align: center;
+            text-shadow: none; //font-weight: 100;
+            width: 46%;
+            float: left;
+            border: 1px solid #E8E8E8;
+            margin-right: 10px;
+        }
+    }
+     .milesDrivenError{
+        height: 157.7px;
+        background-color: #FFFFFF;
+        box-shadow: 0 2px 5px 0 rgba(0,0,0,0.05);
+        margin-bottom: 10px;
+        .miles-driven-text{
+            color: #000000;
+           // font-family: "Neo Sans Std";
+            font-size: 18px;
+            line-height: 22px;
+            text-align: center;
+            padding-top: 22px;
+            margin-bottom: 26px;
+    
+        }
+        .errormessage{
+	        color: #E2231A;
+	        font-size: 14px;
+	        line-height: 20px;
+            text-align: center;
+            .trynow{
+                text-decoration:underline; 
+                font-weight: 600;
+            }
+        }
+    }
+}
+

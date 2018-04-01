@@ -1,0 +1,123 @@
+.lojack-menu-bar {
+    .menu-inner {
+        width: 288px;
+        background-color: #FFFFFF; // box-shadow: 0 2px 4px 0 rgba(0,0,0,0.5) !important;
+        .get-help-pane {
+          display: flex;
+    
+        .get-help-btn {
+          max-width: 190px;
+          color: #FFFFFF;
+          font-family: "Neo Sans Std";
+          font-size: 12px;
+          font-weight: 500;
+          line-height: 14px;
+          /* text-align: center; */
+          height: 30px;
+          margin: 0 auto;
+          text-align: center;
+          /* position: absolute; */
+          bottom: 0px;
+          margin-top: -20px;
+      }
+    }
+    .menu-user-info {
+        color: #FFFFFF;
+        font-size: 24px;
+        line-height: 22px;
+        text-align: center;
+        height: 176px;
+        padding-top: 66px;
+        position: relative;
+        overflow: hidden;
+        pointer-events: none;
+        &:before {
+            height: 189px;
+            background-color: #000000;
+            background-image: url(../assets/imgs/accountsetupBG.png);
+            background-size: cover;
+            content: "";
+            position: absolute;
+            width: 151%;
+            top: -15px;
+            left: -48%;
+            z-index: -1;
+            -webkit-transform: rotate(177deg);
+            transform: rotate(177deg);
+        }
+    }
+
+
+    }
+    .menu-options {
+        padding: 55.5px 0px 0px 24px;
+        ion-item {
+            margin: 0px;
+            padding: 0px;
+            border: none !important;
+            .item-inner {
+                border: none !important;
+            }
+            .indicators {
+                height: 22px;
+                width: 20px;
+                background-size: cover;
+                margin: 8px 17px 8px 0;
+            }
+            .my-profile {
+                background-image: url(../assets/imgs/menuBar/My_Profile_Button.svg);
+            }
+            .my-family {
+                background-image: url(../assets/imgs/menuBar/My_Family_Icon.svg);
+                height: 19px;
+                width: 20px;
+            }
+            .about-suredrive{
+                background-image: url(../assets/imgs/AboutsureDrive/menupanel.svg);
+                height: 20px;
+                width: 20px;
+            }
+            .car-settings {
+                background-image: url(../assets/imgs/menuBar/Car_Settings_Icon.svg);
+                width: 20px;
+                height: 18px;
+            }
+            .title {
+              color: #000;
+              font-size: 18px;
+              line-height: 22px;
+            }
+            .title-selected {
+              opacity: 0.6;
+            }
+        }
+    }
+    .menu-logout {
+        position: absolute;
+        bottom: 19px;
+        width: 100%;
+        .row {
+            position: relative;
+            width: 100%;
+            padding-left: 24px;
+        }
+        .menu-logo {
+            height: 28px;
+            width: 128px;
+            background-size: cover;
+            background-image: url(../assets/imgs/menuBar/Menu_Lojack_Logo.svg);
+        }
+        .sign-out {
+            text-align: right;
+            color: #2B648F;
+            font-size: 12px;
+            line-height: 39px;
+            text-decoration: underline;
+            margin-right: 20px;
+        }
+    }
+}
+
+.menu-content {
+    box-shadow: none;
+}

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="56px" height="56px" viewBox="0 0 56 56" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>Notification_Icon</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="36" height="36"></rect>
+        <filter x="-44.4%" y="-38.9%" width="188.9%" height="188.9%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.191632699 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <circle id="path-3" cx="22.0828727" cy="12.5645883" r="4.56458827"></circle>
+    </defs>
+    <g id="Notification_Icon" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(10.000000, 8.000000)">
+        <g>
+            <g id="Rectangle-2-Copy-7">
+                <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
+            </g>
+            <path d="M24.3442627,20.7306984 C24.0266821,20.4715433 23.8097554,20.1105774 23.7776503,19.7021769 L23.3877608,14.7834377 C23.3877608,11.6692389 20.8633132,9.14450206 17.7491144,9.14450206 C14.6352049,9.14450206 12.1104681,11.6692389 12.1104681,14.7834377 L11.7205786,19.7021769 C11.6884734,20.1105774 11.4715468,20.4715433 11.1539662,20.7306984 C10.8103544,21.0118353 10.6078896,21.4587042 10.6761491,21.9486691 C10.7701507,22.6231663 11.3954779,23.0975126 12.0766275,23.0975126 L23.4218906,23.0975126 C24.102751,23.0975126 24.7280782,22.6231663 24.8220798,21.9486691 C24.8906286,21.4587042 24.6878745,21.0118353 24.3442627,20.7306984 Z" id="Stroke-1" stroke="#E86056" stroke-width="1.2"></path>
+            <path d="M15.5799059,24.0026751 C15.5799059,25.2009779 16.5508695,26.1719415 17.7491723,26.1719415 C18.947475,26.1719415 19.9184387,25.2009779 19.9184387,24.0026751" id="Stroke-3" stroke="#E86056" stroke-width="1.2"></path>
+            <g id="Oval-7">
+                <use fill="#E86056" fill-rule="evenodd" xlink:href="#path-3"></use>
+                <circle stroke="#FFFFFF" stroke-width="1" cx="22.0828727" cy="12.5645883" r="5.06458827"></circle>
+            </g>
+        </g>
+    </g>
+</svg>

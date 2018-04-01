@@ -1,0 +1,60 @@
+collision-impact-tooltip {
+    .tooltip{
+        width: 100%;
+        padding: 45.37px 18px 0px 18px ;
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+          background: rgba(50, 50, 50, 0.5);
+      }
+             .request-modal {
+                 border-radius: 0px ;
+                background-color: #FFFFFF;
+                 box-shadow: 0 0 10px 0 rgba(0,0,0,0.19);
+                 padding-bottom: 40px;
+                     .image-pane {
+                   height:30px;
+                   width:50px;
+                   margin: auto;
+                   
+                  color: #000000;
+                  padding-top: 25px;
+                 }
+                 .text {
+              
+                    display: inline-block;
+                    float: right;
+                    fill: #000000;
+                    padding: 0px 18px 0px 0px;
+                  }
+                  .content {
+                    padding-top: 54px;
+                    padding-bottom: 22px;
+                     color: #000000;
+                    font-family: "Neo Sans Std";	
+                    font-size: 18px;
+                    line-height: 22px;
+                    text-align: center;
+      
+                }
+                .sub-content {
+                    color:#E86056;
+                    font-family: "Neo Sans Std";
+                    font-size: 14px;	
+                    line-height: 19px;
+                    text-align: center;
+                    padding: 0px  26px 13.4px 26px;
+                   }
+                   .balcktext{
+                    color:#000000;
+                    font-family: "Neo Sans Std";
+                    font-size: 14px;	
+                    line-height: 19px;
+                    text-align: center;
+                   
+
+                   }
+                }
+                
+
+}

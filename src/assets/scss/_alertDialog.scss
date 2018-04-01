@@ -1,0 +1,23 @@
+.alert-wrapper {
+  .alert-title {
+    font-size: 17px;
+    line-height: 20px;
+    font-weight: 500;
+    font-family: "Neo Sans Std";
+  }
+
+  .alert-message {
+    color: #111;
+    font-size: 10px;
+    line-height: 12px;
+  }
+
+  .alert-button {
+    /* border-top: 0px; */
+
+    .button-inner {
+      color: #007aff;
+      font-size: 17px;
+    }
+  }
+}

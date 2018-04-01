@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="44px" height="44px" viewBox="0 0 44 44" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49 (51002) - http://www.bohemiancoding.com/sketch -->
+    <title>Select_Work_Icon Copy 2</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <circle id="path-1" cx="18" cy="18" r="18"></circle>
+        <filter x="-16.7%" y="-16.7%" width="133.3%" height="133.3%" filterUnits="objectBoundingBox" id="filter-3">
+            <feOffset dx="0" dy="0" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.158769248 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Select_Work_Icon-Copy-2" transform="translate(3.000000, 3.000000)">
+            <g transform="translate(0.928571, 0.864844)">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <g id="Oval-2-Copy-20">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-3)" xlink:href="#path-1"></use>
+                    <use fill="#F4F4F4" fill-rule="evenodd" xlink:href="#path-1"></use>
+                </g>
+                <g id="Work_Icon" mask="url(#mask-2)" stroke="#2B648F" stroke-linecap="round" stroke-linejoin="round" stroke-width="0.972">
+                    <g transform="translate(8.000000, 8.500000)">
+                        <path d="M19.2108398,7.08421875 C19.2108398,5.60101875 18.0962648,4.38421875 16.7358398,4.38421875 L2.71083984,4.38421875 C1.34958984,4.38421875 0.235839844,5.60101875 0.235839844,7.08421875 L0.235839844,16.0842187 C0.235839844,17.5692187 1.34958984,18.7842187 2.71083984,18.7842187 L16.7358398,18.7842187 C18.0962648,18.7842187 19.2108398,17.5692187 19.2108398,16.0842187 L19.2108398,7.08421875 L19.2108398,7.08421875 Z" id="Stroke-5556"></path>
+                        <path d="M6.83583984,4.38421875 L6.83583984,2.58421875 C6.83583984,1.59421875 7.57751484,0.78421875 8.48583984,0.78421875 L10.9608398,0.78421875 C11.8683398,0.78421875 12.6108398,1.59421875 12.6108398,2.58421875 L12.6108398,4.38421875" id="Stroke-5557"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

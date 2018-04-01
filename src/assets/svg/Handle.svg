@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="32px" height="34px" viewBox="0 0 32 34" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>Handle</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <ellipse id="path-1" cx="15.6306354" cy="16.2204572" rx="15.8305746" ry="15.444463"></ellipse>
+        <filter x="-31.6%" y="-25.9%" width="163.2%" height="164.7%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="3" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.2 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Handle">
+            <g id="Group-2" transform="translate(0.121629, 0.436491)">
+                <g id="Oval-10" transform="translate(15.630635, 16.220457) rotate(-270.000000) translate(-15.630635, -16.220457) ">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                    <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
+                </g>
+                <g id="Menu_Icon" transform="translate(9.140978, 9.764575)" fill="#D8D8D8">
+                    <path d="M0.655505057,2.27202862 L13.7644558,2.27202862 C14.1264409,2.27202862 14.4201925,1.97447026 14.4201925,1.60516858 C14.4201925,1.23704302 14.1264409,0.938308536 13.7644558,0.938308536 L0.655505057,0.938308536 C0.293519915,0.938308536 -0.000231605169,1.23704302 -0.000231605169,1.60516858 C-0.000231605169,1.97447026 0.293519915,2.27202862 0.655505057,2.27202862" id="Fill-1"></path>
+                    <path d="M12.0844628,6.27154229 L0.575716049,6.27154229 C0.257918278,6.27154229 2.48786017e-05,6.56910065 2.48786017e-05,6.93840233 C2.48786017e-05,7.30652789 0.257918278,7.60526237 0.575716049,7.60526237 L12.0844628,7.60526237 C12.4022606,7.60526237 12.660154,7.30652789 12.660154,6.93840233 C12.660154,6.56910065 12.4022606,6.27154229 12.0844628,6.27154229" id="Fill-4"></path>
+                    <path d="M0.793029066,11.604188 C0.355197584,11.604188 -0.000103363284,11.9017463 -0.000103363284,12.271048 C-0.000103363284,12.6391736 0.355197584,12.9379081 0.793029066,12.9379081 L10.3064217,12.9379081 C10.7442532,12.9379081 11.0995542,12.6391736 11.0995542,12.271048 C11.0995542,11.9017463 10.7442532,11.604188 10.3064217,11.604188 L0.793029066,11.604188 Z" id="Fill-6"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

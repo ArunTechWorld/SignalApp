@@ -1,0 +1,321 @@
+page-notification {
+  .animate-accsetup-slider {
+    @include slide-right-animation(300ms);
+  }
+  .scroll-content {
+    padding-top: 0px !important;
+    background-color: #f6f6f6; 
+  }
+  .notificatio-page {
+    height: 50px;
+    width: 100%;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    line-height: 17px;
+    text-align: center;
+    background-color: black;
+    // padding: 18px 18px 0px 33px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    .header-text {
+      height: 14px;
+      width: 100%;
+      color: #fff;
+      font-size: 14px;
+      font-weight: bold;
+      letter-spacing: 1px;
+      line-height: 17px;
+      text-align: center;
+      text-transform: uppercase;
+      // padding-right: 22px;
+    }
+    .close-icon {
+      position: absolute;
+      top: 0;
+      right: 0;
+      display: flex;
+      height: 100%;
+      align-items: center;
+      padding: 18px;
+
+      img {
+        width: 10px;
+        height: 10px;
+      }
+    }
+  }
+  .segment-md .segment-button {
+    border-color: white !important;
+    color: white;
+    font-size: 12px;
+  }
+  .line-box {
+    box-sizing: border-box;
+    height: 2px;
+    width: 72.1px;
+    border: 2px solid #FFFFFF;
+  }
+  .text {
+    background-image: url(../assets/imgs/White_Close_Button.png);
+    /* height: 15px; */
+    /* width: 15px; */
+    /* background-repeat: no-repeat; */
+    background-size: cover;
+    /* text-align: right; */
+    /* float: right; */
+    height: 12px;
+    width: 13px;
+    right: 0;
+    display: inline-block;
+    float: right;
+  }
+  .Notification-buttons {
+    height: 40px;
+    width: 100%;
+    background-color: #000000;
+    color: white;
+    margin-top: -1px;
+  }
+  .no-notification {
+    width: 100%;
+    color: #B2B2B2;
+    font-family: "Neo Sans Std";
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    line-height: 20px;
+    text-align: center;
+    margin: 200px 0px 0px 0px;
+  }
+
+  .no-notification-erorr {
+    width: 100%;
+    color: #E2231A;;
+    font-family: "Neo Sans Std";
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    line-height: 20px;
+    text-align: center;
+    margin: 200px 0px 0px 0px;
+    .trynow{
+    text-decoration:underline; 
+    font-weight: 600;
+
+    }
+  }
+  .today {
+    color: #B2B2B2;
+    font-family: "Neo Sans Std";
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    line-height: 22px;
+    margin-bottom: 8px;
+  }
+  .yesterday {
+    color: #B2B2B2;
+    font-family: "Neo Sans Std";
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    line-height: 22px;
+    margin: 8px 0px 8px 0px;
+  }
+  .tab-title {
+    padding: 7px 0px;
+    min-width: 88px;
+    display: inline-block;
+    /* border-bottom: 1px solid red; */
+    border: none;
+  }
+  .tab-active {
+    border-bottom: 1px solid #FFFFFF;
+    opacity: 1;
+    color: #FFFFFF;
+  }
+  .tab-inactive {
+    color: #D2D4D5;
+    opacity: 0.5;
+    border: none;
+  }
+  .notification-content {
+    padding: 23px 12px 12px 14px;
+    ion-list {
+      margin: 0px;
+      .notification-item {
+        padding-top: 10px;
+        min-height: 69px;
+        background-color: #FFFFFF;
+        box-shadow: 0 0 7px 0 rgba(0, 0, 0, 0.1);
+        margin-bottom: 12px;
+        width: 100%;
+        .SDCTC_TOWING_ALERT{
+          background-image: url(../assets/imgs/Towing_Icon_White.png);
+          height: 64px;
+          width: 32px;
+          background-size: 26px;
+          background-repeat: no-repeat;
+          margin: 0;
+        }
+        .SDCTC_ICN_ALERT{
+          background-image: url(../assets/imgs/Collision_Icon_White.png);
+          height: 64px;
+          width: 32px;
+          background-size: 26px;
+          background-repeat: no-repeat;
+          margin: 0;
+        }
+        .SDCTC_TRIPWIRE_ALERT{
+          background-image: url(../assets/imgs/Alarm_Icon_White.png);
+          height: 64px;
+          width: 32px;
+          background-size: 26px;
+          background-repeat: no-repeat;
+          margin: 0;
+        }
+        .SDCTC_SPEED_ALERT{
+          background-image: url(../assets/imgs/Speed_Alert.png);
+          height: 64px;
+          width: 32px;
+          background-size: 26px;
+          background-repeat: no-repeat;
+          margin: 0;
+        }
+        .SDCTC_BATTERY_ALERT{
+          background-image: url(../assets/imgs/Alert_Battery_Icon.png);
+          height: 64px;
+          width: 32px;
+          background-size: 26px;
+          background-repeat: no-repeat;
+          margin: 0;
+        }
+        .SDCTC_DEVICE{
+          background-image: url(../assets/imgs/Gray_Notification.png);
+          height: 64px;
+          width: 32px;
+          background-size: 26px;
+          background-repeat: no-repeat;
+          margin: 0;
+        }
+        .SDCTC_BATTERY_DISCONNECT{
+          background-image: url(../assets/imgs/Alert_Battery_Icon.png);
+          height: 64px;
+          width: 32px;
+          background-size: 26px;
+          background-repeat: no-repeat;
+          margin: 0;
+        }
+        .SDCTC_DTC_DEALER_ALERT{
+          background-image: url(../assets/imgs/Car_Issue_Icon.png);
+          height: 64px;
+          width: 32px;
+          background-size: 26px;
+          background-repeat: no-repeat;
+          margin: 0;
+        }
+        .SDCTC_DTC_ALERT{
+          background-image: url(../assets/imgs/Car_Issue_Icon.png);
+          height: 64px;
+          width: 32px;
+          background-size: 26px;
+          background-repeat: no-repeat;
+          margin: 0;
+        }
+        .SDCTC_IZN_ALERT{
+          background-image: url(../assets/imgs/Arrival_Icon.png);
+          height: 64px;
+          width: 32px;
+          background-size: 26px;
+          background-repeat: no-repeat;
+          margin: 0;
+        }
+        .SDCTC_IZN_ENTRY_ALERT{
+          background-image: url(../assets/imgs/Arrival_Icon.png);
+          height: 64px;
+          width: 32px;
+          background-size: 26px;
+          background-repeat: no-repeat;
+          margin: 0;
+        }
+        .SDCTC_IZN_EXIT_ALERT{
+          background-image: url(../assets/imgs/Departure_Icon.png);
+          height: 64px;
+          width: 32px;
+          background-size: 26px;
+          background-repeat: no-repeat;
+          margin: 0;
+        }
+        .item-inner {
+          border-left: 1px solid #D2D4D5;
+          border-bottom: 0px !important;
+          margin: 10px 0px 10px 10px;
+          padding-left: 12px;
+          ion-label {
+            margin: 0;
+            .notification-title {
+              color: #000000;
+              font-family: "Neo Sans Std";
+              font-size: 18px;
+              line-height: 22px;
+              white-space: initial;
+            }
+            .date-time {
+              color: #666666;
+              font-family: "Neo Sans Std";
+              font-size: 11px;
+              line-height: 22px;
+              margin: 0px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  #wrapper {
+    width: 100%;
+    margin: 0 auto;
+    background-color: black;
+  }
+  #leftcolumn,
+  #rightcolumn {
+    float: left;
+    /* min-height: 450px; */
+    color: white;
+  }
+  #leftcolumn {
+    width: 50%;
+    background-color: #000;
+    height: 40px;
+    color: #FFFFFF;
+    font-family: "Neo Sans Std";
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    line-height: 14px;
+    text-align: center;
+  }
+  #rightcolumn {
+    width: 50%;
+    background-color: black;
+    height: 40px;
+    color: #FFFFFF;
+    font-family: "Neo Sans Std";
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    line-height: 14px;
+    text-align: center;
+  }
+  .line-2-copy {
+    box-sizing: border-box;
+    /* height: 2px; */
+    width: 72.1px;
+    border: 1px solid #FFFFFF;
+    margin: 5% 50% 0% 31%;
+  }
+}

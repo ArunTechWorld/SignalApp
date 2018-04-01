@@ -1,0 +1,44 @@
+.error-message {
+  color: #e2231a;
+  font-size: 10px;
+  line-height: 15px;
+  width: 100%;
+  padding: 15px 15px;
+  .icon {
+    height: 13.16px;
+    width: 15.08px;
+    margin-right: 2px;
+  }
+}
+
+.network-strip {
+  height: 30px;
+  background-color: #e2231a;
+  box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.19);
+  display: flex;
+  justify-content: center;
+
+  .network-icon {
+    height: 14.04px;
+    width: 15.97px;
+    color: #fff;
+    margin: 5px 5px 2px 0;
+  }
+
+  .network-message {
+    height: 22px;
+    color: #fff;
+    font-size: 12px;
+    line-height: 22px;
+    text-align: center;
+    margin-top: 4px;
+  }
+}
+
+.nav-push {
+  top: 29px;
+}
+
+.nav-pop {
+  top: 0;
+}

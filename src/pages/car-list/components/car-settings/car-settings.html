@@ -1,0 +1,225 @@
+<!-- Generated template for the CarSettingsComponent component -->
+<ion-content >
+    <div class="wrapper scroll-content">     
+      <app-api-status [statusRequests]=statusRequests *ngIf="requestCount > 0"></app-api-status>
+      <div class="header">
+        <div class="prev-icon" (tap)="moveToPreviousPage()">
+          <ion-img src="assets/imgs/Push_Arrow_White.png"></ion-img>
+        </div>
+        <div class="header-text">Car Settings</div>
+        <div class="edit-text"  (click)="gotoCarName()"> Edit </div> 
+      </div>
+     
+    <div class="car-settings-all-content">
+      <div class="image-show"><div class="imagetop"><img class="oval-4" src='{{carSettingDetail.selectedCar.asset.imageUrl}}' onError="this.src='../assets/svg/default_Car.svg'"/></div></div>
+        <ion-card class="card-design-first">
+          <div *ngIf="carSettingDetail.selectedCar.asset.name === ''; else elseBlockname" class="carname-text">
+              {{carSettingDetail.selectedCar.asset.year}} {{carSettingDetail.selectedCar.asset.make}} {{carSettingDetail.selectedCar.asset.model}}
+          </div>
+          <ng-template #elseBlockname>
+              <div  class="carname-text">
+                  {{carSettingDetail.selectedCar.asset.name}}
+            </div>
+          </ng-template>
+          <div *ngIf="carSettingDetail.selectedCar.asset.name === ''; else elseBlock" class="carname-button" >
+            <div class="carname-button-text" (click)="gotoCarName()" >Name Your Car</div> 
+          </div>
+          <ng-template #elseBlock>
+            <div class="car-name-second">
+              <div class="carname-text-second">
+                {{carSettingDetail.selectedCar.asset.year}} {{carSettingDetail.selectedCar.asset.make}} {{carSettingDetail.selectedCar.asset.model}}
+              </div>            
+            </div>
+          </ng-template>
+        <div class="member-card">
+        <div class='first-textcard'>Member Since <span class="text-span">{{carSettingDetail.memberSince}}</span></div>
+          <div class='first-textcard'>Expires <span class="text-span">{{carSettingDetail.expireOn}}</span></div>
+          <div class='first-textcard'>Device ID <span class="text-span">{{carSettingDetail.deviceEsn}}</span></div>
+        </div>
+        <div class="renew-text" *ngIf="loginUserIsAdmin; else emptyDiv">To renew your contract <a href="tel:{{lojackPhone.phone}}">{{lojackPhone.text}}</a> </div>
+        <ng-template #emptyDiv>
+          <div class="renew-text2">&nbsp;</div>
+        </ng-template>
+        </ion-card>
+        <div class="admin-section" *ngIf="loginUserIsAdmin; else nonAdminSection">
+        <ion-card class="card-design notification">
+          <div class="notification-text ">
+            Notification Settings
+          </div>
+          <div class="line"></div>
+          <div class="collision-text">CrashBoxx™ Instant Crash Notifications</div>
+         <div class="receive-notification-text">Receive a notification when the LoJack device detects a collision.</div>
+         <div class="notifyme-group" *ngFor="let ele of carSettingDetail.collisionNotification; let i = index">
+         <div class="notify-design-text">Notify {{ ele.userId == carSettingDetail.currentUserId ? "Me" : ele.firstName }}</div>
+         <div class="notify-design-toggle">
+           <!--<ion-toggle [(ngModel)]="ele.state" (ionChange)="changeInSetting(ele, 'CRASH')" class="toggler"></ion-toggle>-->
+           <label class="switch">
+              <input type="checkbox"  class="toggler" name="isAdmin" [(ngModel)]="ele.state" (ngModelChange)="changeInSetting(ele, 'CRASH');" />
+              <span class="slider round"></span>
+            </label>
+          </div>
+          <hr *ngIf ="i != (carSettingDetail.collisionNotification ? (carSettingDetail.collisionNotification.length -1):0)" class="lineIn"/>
+        </div>
+        </ion-card>
+        <ion-card class="card-design tripwire">
+              <div class="collision-text">Tripwire™ Early Warning</div>
+             <div class="receive-notification-text">Receive a notification when your vehicle moves outside the Tripwire boundary.</div>
+             <div class="notifyme-group" *ngFor="let ele of carSettingDetail.tripwireNotification; let i = index">
+             <div class="notify-design-text">Notify {{ ele.userId == carSettingDetail.currentUserId ? "Me" : ele.firstName }}</div><div class="notify-design-toggle">
+               <!--<ion-toggle [(ngModel)]="ele.state" (ionChange)="changeInSetting(ele, 'TRIPWIRE');" class="toggler"></ion-toggle>-->
+               <label class="switch">
+                  <input type="checkbox"  class="toggler" name="isAdmin" [(ngModel)]="ele.state" (ngModelChange)="changeInSetting(ele, 'TRIPWIRE');" />
+                  <span class="slider round"></span>
+                </label>
+              </div>
+             <hr *ngIf ="i != (carSettingDetail.tripwireNotification ? (carSettingDetail.tripwireNotification.length -1):0)" class="lineIn"/>
+            </div>
+        </ion-card>
+        <ion-card class="card-design speed-alert">
+         <div class="speed-title-group">
+            <div class="speed-alert-text">Speed Alert</div>
+            <!--<div class="speed-toggle">
+              <ion-toggle class="toggler" checked={{speedAlertEnabled}} [(ngModel)]="speedAlertEnabled" (ngModelChange)="enableSpeedAlert($event)">
+              </ion-toggle>
+            </div> -->
+            <!--
+              Start  
+            -->
+            <div class="speed-toggle">
+                <label class="switch">
+                  <input type="checkbox"  class="toggler" name="isAdmin" [(ngModel)]="speedAlertEnabled" (ngModelChange)="enableSpeedAlert($event)" />
+                  <span class="slider round"></span>
+                </label>
+              </div>
+<!--
+End
+            -->
+         </div>
+         <div></div>
+          <div class="receive-speed-text">Receive a notification when the car exceeds a certain speed.</div>
+          <div class="small-notif-text">After modifying the speed alert, it may take up to 15 minutes to update.</div>
+          <div class="speed-alert-user-section" [ngClass]="(speedAlertSubmitting) ? 'disable-speed-alert' : 'enable-speed-alert'" *ngIf="speedAlertEnabled">
+            <div  *ngIf="!speederror" class="car-speed">{{carSettingDetail.selectedCar.asset.speedSetting?carSettingDetail.selectedCar.asset.speedSetting.speedThreshold:'75'}} MPH</div>
+            <div *ngIf="speederror" class="no-speed-erorr" >
+              <div>We had an issue loading this data.<br> Trying again in 30 seconds. <span  class="trynow" (click)="getAssetById(carSettingDetail.selectedCar.asset.id)">TRY NOW</span></div>
+            </div>
+            <div class="carname-button" >
+             <div class="carname-button-text" (click)="openMaxSpeedSettings()" >UPDATE MAXIMUM SPEED</div> 
+            </div>
+            <div class="notifyme-group" *ngFor="let ele of carSettingDetail.speedAlertNotification; let i = index">
+              <div class="notify-design-text">Notify {{ ele.userId == carSettingDetail.currentUserId ? "Me" : ele.firstName }}</div>
+              <div class="notify-design-toggle">
+                  <label class="switch">
+                      <input type="checkbox"  class="toggler" name="isAdmin" [(ngModel)]="ele.state" (ngModelChange)="changeInSetting(ele, 'SPEED');" />
+                      <span class="slider round"></span>
+                    </label>
+               <!-- <ion-toggle [(ngModel)]="ele.state" (ionChange)="changeInSetting(ele, 'SPEED');" class="toggler"></ion-toggle>-->
+
+
+              </div>
+              <hr *ngIf ="i != (carSettingDetail.speedAlertNotification ? (carSettingDetail.speedAlertNotification.length -1):0)" class="lineIn"/>
+            </div>
+          </div>
+        </ion-card>
+        <ion-card class="card-design places">
+          <div class="places-title-text">Places</div>
+          <div class="receive-places-text">Receive a notification when this car enters or exits these geozones.</div>
+          <div class="small-notif-text">After modifying places, it may take up to 15 minutes to update.</div>
+          <div class="geozones" *ngIf="geoZonesList.length > 0">
+            <ion-list>
+              <ion-item class="place-item" *ngFor="let place of geoZonesList">
+                <div class="place-info">
+                  <div class="item-img">                
+                    <img src="{{iconsPath}}/Select_{{place.geozone.category | titlecase}}.svg" *ngIf="place.geozone.category !== null; else placeIconBlock" />
+                    <ng-template #placeIconBlock>
+                      <img src="{{iconsPath}}/Select_Location.svg" />
+                    </ng-template>
+                  </div>
+                  <div class="item-text">
+                    <div class="place-name">{{place.geozone.name}}</div>
+                    <div class="place-address" *ngIf="place.geozone.address !== null">
+                        {{getGeozoneAddress(place.geozone.address)}}
+                    </div>
+                  </div>
+                  <div class="item-nav" (tap)="placeDetails(place)">
+                    <span class="right"></span>
+                  </div>
+                </div>
+                <div class="user-info">
+                  <div class="notifyme-group" *ngFor="let ele of place.userAlerts;let last = last;" [ngClass]="{'last': last}">
+                    <div class="notify-design-text">Notify {{ ele.userId == carSettingDetail.currentUserId ? "Me" : ele.firstName }}</div>
+                    <div class="notify-design-toggle">                      
+                      <label class="switch">
+                        <input type="checkbox" class="toggler" [(ngModel)]="ele.state" (ngModelChange)="toggleGeoZones(place, ele);" />
+                        <!-- <input type="checkbox" class="toggler" [checked]="ele.state" (change)="ele.state = !ele.state;toggleGeoZones(place, ele); " /> -->
+                        <span class="slider round"></span>
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </ion-item>              
+            </ion-list>
+          </div>
+          <div class="carname-button" [ngClass]="(geoZonesList.length >= maxDeviceGeozone) ? 'disabled' : 'h'">
+            <div class="carname-button-text" (tap)="addNewPlace()">Add New Place</div> 
+          </div>
+          <div class="error-message" [hidden]="geoZonesList.length <= maxDeviceGeozone">
+            <ion-icon name="warning"></ion-icon>{{maxDeviceGeozoneMsg}}</div>
+        </ion-card>
+        <ion-card class="card-design service-center" *ngIf="carSettingDetail.preferredServiceCenter">
+          <!-- <div  *ngIf="carSettingDetail.preferredServiceCenter"> -->
+            <div class="service-text">
+              Preferred Service Center 
+            </div>
+            <div class="line"></div>
+            <div class="service-center-group">
+                <div class="service-img"><img src="assets/imgs/Preferred_Service_Center_Icon.svg" /></div>
+                <div class="serive-center-main">{{carSettingDetail.preferredServiceCenter.shopName}}</div>
+                <div class="service-text">{{carSettingDetail.preferredServiceCenter.shopAddress}} <br/> <a href="tel:{{carSettingDetail.preferredServiceCenter.shopPhone}}">{{carSettingDetail.preferredServiceCenter.shopPhone}}</a></div>
+                <div class="service-text-url"><a href="#" (click)="openURL(carSettingDetail.preferredServiceCenter.shopWebsite)">{{carSettingDetail.preferredServiceCenter.shopWebsite}}</a></div>
+            </div>
+            <hr class="line"/>
+           <!-- </div> -->
+            <div class="notifyme-group">
+                <div class="notify-design-text">Allow service center to receive data from my LoJack device </div>
+                <!-- <div class="notify-design-toggle">
+                  <ion-toggle [(ngModel)]="carSettingDetail.dtcDealer.state" (ionChange)="carSettingDetail.dtcDealer.state = changeInSetting(carSettingDetail.dtcDealer,'');" class="toggler">
+
+                </ion-toggle>
+              </div> -->
+              <div class="notify-design-toggle">
+                  <label class="switch">
+                    <input type="checkbox"  class="toggler"  [(ngModel)]="carSettingDetail.dtcDealer.state" (ngModelChange)="carSettingDetail.dtcDealer.state = changeInSetting(carSettingDetail.dtcDealer,'DEALER');" />
+                    <span class="slider round"></span>
+                  </label>
+                </div>
+
+              </div>
+               <div class="receive-notification-text">This will enable them to contact you with offers tailored to the health of your cars.</div>
+              <div class="schedule-service-button">
+                  <button class="blue-btn" (click)="openServiceRequest()">REQUEST SERVICE APPOINTMENT</button>
+                </div>
+                <div class="receive-notification-text-last">To change preferred service center<br/><a href="mailto:{{lojackEmail.email}}">{{lojackEmail.text}}</a></div>
+          </ion-card>
+          <div class="last-text"  [ngClass]="(networkError) ? 'move-up' : ''">To add or remove a car<br/>
+            <a href="tel:{{lojackPhone.phone}}">{{lojackPhone.text2}}</a>
+            </div>  
+            </div>
+            <ng-template #nonAdminSection>
+            <div class="non-admin">
+              <div class="notification-content">
+                <div class="notification-settings">
+                  Notification Settings
+                </div>
+                <div class="line2"></div>
+              </div>
+              <div class="text">
+                As a non-admin, you do not have the
+                <br> ability to modify notification settings.
+              </div>
+              <div class="line-bg"></div>
+            </div>
+            </ng-template>
+    </div>
+  </div>
+</ion-content>

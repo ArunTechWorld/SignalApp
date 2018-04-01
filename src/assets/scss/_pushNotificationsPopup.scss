@@ -1,0 +1,111 @@
+.pushnotifications-popup {
+    position: absolute;
+    width: 100%;
+    min-height: 100%;
+    overflow: hidden;
+    z-index: 10;
+    background-color: rgba(50, 50, 50, 0.5);
+        z-index: 11;
+    .tripwire-alert {
+        background-color: #E2231A;
+        box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.19);
+        .alarm-notification {
+            background-image: url(../assets/imgs/Alarm_Icon_White.svg);
+            height: 36px;
+            width: 34px;
+        }
+        .notification-forward {
+            background-image: url(../assets/imgs/Push_Arrow_White.png);
+        }
+        ion-label {
+            .date-time,
+            .notification-title {
+                color: #FFFFFF;
+            }
+        }
+    }
+    .battery-alert{
+        background-color: #FFFFFF;
+        box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.19);
+        .alarm-notification {
+            background-image: url(../assets/imgs/Alert_Battery_Icon.svg);
+               height: 24px;
+    width: 32px;
+        }
+        .notification-forward {
+            background-image: url(../assets/imgs/Push_Arrow.png);
+        }
+        ion-label {
+            .date-time {
+                color: #666666;
+            }
+            .notification-title {
+                color: #000000;
+            }
+        }
+    }
+    .arrived-alert {
+        background-color: #FFFFFF;
+        box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.19);
+        .alarm-notification {
+            background-image: url(../assets/imgs/Arrival_Icon.svg);
+            height: 36px;
+            width: 32px;
+        }
+        .notification-forward {
+            background-image: url(../assets/imgs/Push_Arrow.png);
+        }
+        ion-label {
+            .date-time {
+                color: #666666;
+            }
+            .notification-title {
+                color: #000000;
+            }
+        }
+    }
+    .popup-content {
+        // min-height: 112px;
+        position: absolute;
+        top: 0px;
+        width: 100%;
+        z-index: 10;
+        margin: 0px;
+        .alarm-notification {
+            background-size: cover;
+            /* background-color: rebeccapurple; */
+            margin: auto;
+            background-position: center
+        }
+        .notification-forward {
+            background-size: cover;
+            background-repeat: no-repeat;
+               height: 13px;
+    width: 9px;
+    margin: 9px 12px 9px 0;
+        }
+        .notification-item {
+            background: transparent;
+            padding: 22px 0px 22px 22px;
+            border: none;
+            .item-inner {
+                padding-left: 22px;
+            }
+        }
+        ion-label {
+            margin: 0px;
+            .date-time {
+                font-family: "Neo Sans Std";
+                font-size: 14px;
+                line-height: 22px;
+                font-weight: 300;
+            }
+            .notification-title {
+                font-family: "Neo Sans Std";
+                font-size: 18px;
+                line-height: 22px;
+                white-space: initial;
+            }
+        }
+    }
+}

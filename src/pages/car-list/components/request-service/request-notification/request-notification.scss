@@ -1,0 +1,32 @@
+app-request-notification {
+  background-color: rgba(50, 50, 50, 0.5);
+  width: 100%;
+  .request-modal {
+    background-color: #fff;
+    height: 150px;
+    .main {
+      display: flex;
+      // padding-top: 24px;
+      padding: 24px 36px 4px 16px;
+      .image-pane {
+        width: 74px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .content {
+        color: #000000;
+        font-size: 18px;
+        line-height: 22px;
+        padding-right: 46px;
+        padding-left: 16px;
+      }
+    }
+    .sub-content {
+      color: #666666;
+      font-size: 14px;
+      line-height: 22px;
+      padding: 4px 35px 0 73px;
+    }
+  }
+}

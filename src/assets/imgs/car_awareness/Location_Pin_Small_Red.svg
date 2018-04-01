@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="10px" height="13px" viewBox="0 0 10 13" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>Location_Pin_Small_Black</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Emergency-support-mode:-Car-details_1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-122.000000, -352.000000)" stroke-linecap="round" stroke-linejoin="round">
+        <g id="Top_Card" transform="translate(0.000000, 219.003906)" stroke="#E2231A">
+            <g id="Address" transform="translate(66.000000, 126.250000)">
+                <g id="Location_Pin_Small_Black" transform="translate(56.000000, 6.500000)">
+                    <g id="Location_Pin_Small_Blue" transform="translate(0.000000, 0.750000)">
+                        <path d="M7.24581031,11.7388021 L2.41868834,11.7388021" id="Stroke-358"></path>
+                        <path d="M2.14077638,2.07371424 L6.48385696,1.88381176 C6.71986374,1.8734923 6.92884097,2.03505417 6.97828128,2.26605492 L8.21264737,8.03340407 C8.26859096,8.29479022 8.10204686,8.55203679 7.84066072,8.60798038 C7.77388696,8.62227174 7.70484483,8.62227174 7.63807107,8.60798038 L1.87072192,7.37361428 C1.63972117,7.32417398 1.47815929,7.11519674 1.48847876,6.87918996 L1.67838123,2.53610938 C1.68934286,2.28541636 1.89008336,2.08467586 2.14077638,2.07371424 Z" id="Rectangle-11" transform="translate(4.855739, 5.251022) rotate(45.000000) translate(-4.855739, -5.251022) "></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

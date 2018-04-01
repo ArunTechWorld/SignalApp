@@ -1,0 +1,296 @@
+car-slider-card {
+    .car-card-content {
+        pointer-events: auto; // width: calc(100% - 20px);
+        box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.19);
+        margin: 0 auto;
+        color: #000000;
+        background-color: #ffffff;
+        .car-name {
+            font-size: 20px;
+            line-height: 22px;
+            text-align: center; // background-color: #ffffff;
+            padding-top: 38px;
+            margin-top: 60px;
+            padding-bottom: 7px;
+        }
+        .car-location {
+            background-color: #ffffff;
+            line-height: 22px;
+            max-width: 90%;
+            margin: 0 auto;
+            display: flex;
+            justify-content: center; // align-items: center;
+        }
+        .car-location-text {
+            font-size: 14px;
+        }
+        .card-singleline-txt {
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            padding: 0px 10px;
+        }
+        .card-singleline-txt-red{
+
+        }
+   
+        .car-location-driving {
+            background-image: url("../assets/imgs/car_awareness/Location_Pin_Small_Blue.svg");
+           
+        }
+            .car-location-parked{
+                
+             background-image: url("../assets/imgs/car_awareness/Location_Pin_Small_Black.png");
+        }
+
+         .car-location-collision{
+             background-image: url("../assets/imgs/car_awareness/Location_Pin_Small_Red.svg");
+        }
+        .car-text-parked{
+            color: #000000;
+        }
+        .car-text-breached{
+                height: 45px;
+                width: 74.5%;
+                color: #666666;
+                font-family: "Neo Sans Std";
+                font-size: 10px !important;
+                line-height: 15px;
+                text-align: center;
+          
+
+        }
+        .car-text-breached-homepage{
+            height: 53px;
+            width: 74.5%;
+            color: #666666;
+            font-family: "Neo Sans Std";
+            font-size: 10px !important;
+            line-height: 15px;
+            text-align: center;
+            padding:0% 10%;
+
+        }
+        .car-text-red{
+            color: #E43129;
+        }
+        .car-text-driving{
+             color: #1661B1;
+        }
+        .car-location-image {
+           
+            width: 13px;
+            height: 17px;
+            max-height: 100%;
+            background-size: cover;
+            display: inline-block;
+            // margin-right: 7px;
+            //margin-top: 2px;
+            margin-top: 2px;
+            line-height: 15px;
+        }
+        .car-last-updated {
+            color: #666666;
+            font-size: 9px;
+            line-height: 22px;
+            background-color: #ffffff;
+            padding-bottom: 10px;
+            text-align: center;
+        }
+        .tripwire-details-updated{
+            height: 195px;
+            width: 90%;
+            background-color: #E2231A;
+            margin: 10px 15px 10px 15px;
+                padding-top: 15px;
+            .tripwire-details-home{
+              color: #FFFFFF;
+              font-size: 14px;
+              line-height: 22px;
+              text-align: center;
+             margin-bottom: 13px;
+            }
+            .tripwire-details-time{
+              color: #FFFFFF;
+              font-size: 14px;
+              line-height: 10px;
+              text-align: center;
+             margin-bottom: 6px;
+        
+            }
+            .tripwire-icon{
+                 background-image: url(../assets/imgs/Alarm_Icon_White.png);
+            height: 24px;
+            width: 39px;
+            background-size: contain;
+            background-repeat: no-repeat;
+            margin: 0 auto;
+                }
+                .tripwire-button-red{
+                    margin: 39px  0px 31px 16px;
+                     .red-btn{
+                      height: 30px;
+                      background-color: #E2231A;
+                      -webkit-box-shadow: none;
+                      box-shadow: none;
+                      border: 1px solid #E2231A;
+                      opacity: 1;
+                      box-shadow: none;
+                      -webkit-transition: none;
+                      transition: none;
+                      color: #FFFFFF;
+                      font-size: 12px;
+                      font-weight: 500;
+                      line-height: 14px;
+                      text-align: center;
+                      text-shadow: none;
+                      font-weight: 100;
+                       width: 46%;
+                       float: left;
+                       border: 1px solid #E8E8E8;
+                       margin-right: 10px;
+                     }
+                   }
+            }
+        .collisian-details-updated {
+            height: 122px;
+            width: 90%;
+            background-color: #E2231A;
+            margin: 0% 0% 7% 5%;
+            padding-top: 15px;
+            .collisian-details-home {
+                color: #FFFFFF;
+                font-size: 14px;
+                line-height: 22px;
+                text-align: center;
+                margin-bottom: 22px;
+            }
+            .collisian-icon {
+                background-image: url(../assets/imgs/Collision_Icon_White.png);
+                height: 24px;
+                width: 39px;
+                background-size: cover;
+                background-repeat: no-repeat;
+                margin: 0 auto;
+            }
+        }
+        .button-red {
+            margin: 2px 0px 20px 12px;
+            .red-btn {
+                height: 30px;
+                background-color: #E2231A;
+                -webkit-box-shadow: none;
+                box-shadow: none;
+                border: 1px solid #E2231A;
+                opacity: 1;
+                box-shadow: none;
+                -webkit-transition: none;
+                transition: none;
+                color: #FFFFFF;
+                font-size: 12px;
+                font-weight: 500;
+                line-height: 14px;
+                text-align: center;
+                text-shadow: none; //font-weight: 100;
+                width: 46%;
+                float: left;
+                border: 1px solid #E8E8E8;
+                margin-right: 10px;
+            }
+        }
+        .isDetailUpdateBtn {
+            padding: 0px 19px 10px 19px;
+            .white-btn {
+                border: 1px solid #E8E8E8 !important;
+            }
+            .white-btn:disabled{
+                color:#E8E8E8 !important;
+            }
+            .white-btn[disabled]{
+                color:#E8E8E8 !important;
+            }
+        }
+        button[disabled].white-btn{
+            color:gray !important; 
+        }
+        .white-btn-disabled{
+            height: 46.04px;
+            background-color: #FFFFFF;
+            width: 100%;
+            -webkit-box-shadow: none;
+            box-shadow: none;
+            border: 1px solid #E8E8E8;
+            opacity: 1;
+            box-shadow: none;
+            -webkit-transition: none;
+            transition: none;
+            color:#E8E8E8 !important;
+            font-size: 12px;
+            font-weight: 500;
+            line-height: 14px;
+            text-align: center;
+            text-shadow: none;
+            
+        }
+        .car-status {
+            pointer-events: none; // width: $slider-width;
+            margin: 0 auto;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .user-car-icon {
+                pointer-events: auto;
+                box-sizing: border-box;
+                height: 86.4px;
+                width: 86.4px;
+                overflow: hidden;
+                background-color: #fff;
+                border: 2px solid #000000;
+                border-radius: 100%;
+                // padding: 2px;
+                // object-fit: cover;
+                object-fit: scale-down;
+            }
+            .car-status-text {
+                width: 100%;
+                bottom: -4px;
+                position: absolute;
+                margin: 0 auto;
+                left: 0;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                .state {
+                    height: 14.32px;
+                    border-radius: 37.2px;
+                    background-color: #000000;
+                    text-transform: uppercase;
+                    min-width: 79.35px;
+                    display: inline-block;
+                    padding: 0px 5px;
+                    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2);
+                    color: #FFFFFF;
+                    font-size: 10px;
+                    font-weight: 500;
+                    line-height: 18px;
+                    text-align: center;
+                    letter-spacing: 0.7px;
+                }
+                .stateBreach{
+                    padding: 0px 9px;
+                }
+            }
+        }
+        .car-status-full-width {
+            width: 100%;
+        }
+    }
+    .slider-full-width {
+        // width: 100%;
+        width: calc(100% - 20px);
+    }
+}

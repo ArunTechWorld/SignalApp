@@ -1,0 +1,213 @@
+speed-settings {
+.scroll-content {
+          padding-top: 0 !important;
+          padding-bottom: 0 !important;
+        }
+        
+        .wrapper {  
+          height: 100%;
+          width:100%;
+          display: flex;
+          flex-direction: column;
+          overflow: hidden;
+           .header {
+            height: 50px;
+            max-height: 53px;
+            width: 100%;
+            background-color: #000;
+            display: flex;
+            justify-content: center;
+            
+            .prev-icon {
+              padding: 16px 16px 17px 16px;
+              color: #fff;
+
+              ion-img {
+                min-width: 6px !important;
+                min-height: 10px !important;
+                max-width: 6px;
+                max-height: 10px;
+                background: transparent;
+                pointer-events: auto;
+                transform: rotate(180deg);
+              }
+            }
+
+            .header-text {
+              height: 14px;
+              width: 100%;
+              color: #fff;
+              font-size: 14px;
+              font-weight: bold;
+              letter-spacing: 1px;
+              line-height: 17px;
+              text-align: center;
+              text-transform: uppercase;
+              padding: 16px 32px 17px 0;
+            }
+          }  
+            .speed-title-group{
+              .speed-alert-text {
+                margin-top:5%;
+                width: 100%;	
+                margin-left: 4%;
+                float:left;
+                color: #000000;	
+                font-size: 18px;	
+                line-height: 22px;
+                	height: 3.3%
+              }
+              .speed-toggle{
+                margin-top: 4%;
+                float: right;
+                margin-right: 9%;
+                //border-radius: 15px;
+              }
+            }
+            .receive-speed-text{
+              width: 100%;	
+              color: #B6B6B6;	
+              
+              font-size: 14px;	
+              margin-top: 3%;
+              margin-left: 4%;
+              line-height: 18px;
+            }
+    
+          .speed-submit-button {
+            margin-top:4%;
+            margin: 37px 19px 0px 26px;
+            width:86%;
+            bottom: 5%;
+            position: absolute;
+            z-index: 999;
+          }
+          
+          
+  }
+        #slider .rs-border  {
+    border-width: 0px;
+}
+#slider .rs-border.rs-outer  {
+    border: 1px solid #aaa;
+}
+#slider .rs-range-color  {
+    background: black;
+}
+.rs-control {
+    position: relative;
+    left: 43px;
+    top: 45px !important;
+    outline: 0 none;
+}
+.metercontainer{
+
+    margin-top:20px;
+    width:340px;
+    height:294px;
+     background-size: cover;
+       background-image: url("../assets/svg/Meter.svg");
+      position:relative;
+      margin: 0 auto;
+}
+    .metercontent{
+        width: 100%;
+        margin: 0 auto;
+        position: relative;
+        padding-top: 10%;
+  }
+ 
+.rs-container{
+
+   position:absolute;
+     
+}
+
+#slider .rs-range-color  {
+    background-color: #37618D;
+}
+
+
+#slider .rs-handle  {
+   height: 28px !important;
+   width: 28px !important;
+   margin: -9px 0px 0px -3px !important;
+   transform: rotate(270deg);
+	 background-color: #FFFFFF;
+   box-shadow: 0 2px 6px 0 rgba(0,0,0,0.2);
+   background-image: url("../assets/svg/Handle.svg");
+   background-size: cover;
+}
+
+
+
+#slider .rs-tooltip  {
+    font-size: 31px;
+    color: #000000;
+    font-family: "Neo Sans Std";	
+    font-size: 64.69px;	  
+}
+
+.mph {	height: 25.96px;	
+		width: 67.89px;	color: #000000;
+		font-family: "Neo Sans Std";	
+		font-size: 16.47px;	
+		line-height: 0px;	
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+	}
+
+
+.rs-container.full.pie {
+
+    width:250px !important;
+    height: 250px !important;
+}
+#slider{
+width:250 !important;
+    height: 250 !important;
+
+}
+ #slider .rs-path-color  {
+    background-color: #DAE5EE;
+}
+  
+span.rs-seperator{
+width: 20px !important;
+    height: 14px !important;
+    margin-top: -8px !important;
+}
+  .rs-border.rs-outer{
+    border:0px !important;
+  }
+
+  .rs-overlay {
+    left: 25%;
+    width: 25%;
+}
+.rs-overlay:after {
+    display: block;
+    content: " ";
+    position: absolute;
+    background-color: #fff;
+    height: 100%;
+    width: 100%;
+    transform: rotate(-75deg);
+    transform-origin: 50% 67%;
+}
+    .overlay-hide{
+      background-color: #FFF;
+      width:80px;
+      height:40px;
+      z-index:999;
+      background-color: #FFF;
+  
+    left: 44%;
+    position: relative;
+    top: 32%;
+
+    }     
+         
+        }
+

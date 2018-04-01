@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="18px" viewBox="0 0 16 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.1 (47250) - http://www.bohemiancoding.com/sketch -->
+    <title>Arrival_Icon</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="Arrival_Icon" stroke="#37618D" stroke-width="0.75">
+            <g id="Arrival-Icon" transform="translate(0.442812, 0.500000)">
+                <path d="M10.097217,14.3184908 C12.3771516,14.5323997 13.9484579,14.9846454 13.9484579,15.5075339 C13.9484579,16.2370689 10.8982751,16.8279593 7.13472407,16.8279593 C3.37176552,16.8279593 0.320990274,16.2370689 0.320990274,15.5075339 C0.320990274,14.9859658 1.88222406,14.5357008 4.14734617,14.3204714" id="Stroke-5"></path>
+                <circle id="Oval-3" cx="7.20032353" cy="5.37537735" r="1.1358792"></circle>
+                <path d="M3.09185001,2.78342803 L9.68507904,2.49513715 C9.89748515,2.48584963 10.0855647,2.63125532 10.1300609,2.83915599 L12.0039516,11.5945666 C12.0543009,11.8298142 11.9044112,12.0613361 11.6691637,12.1116853 C11.6090673,12.1245475 11.5469294,12.1245475 11.486833,12.1116853 L2.73142234,10.2377946 C2.52352167,10.1932983 2.37811598,10.0052188 2.3874035,9.79281269 L2.67569438,3.19958366 C2.68555984,2.97395994 2.86622629,2.79329349 3.09185001,2.78342803 Z" id="Rectangle-11" transform="translate(7.200336, 7.308024) rotate(45.000000) translate(-7.200336, -7.308024) "></path>
+            </g>
+        </g>
+    </g>
+</svg>

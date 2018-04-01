@@ -1,0 +1,42 @@
+<!-- Generated template for the SpeedSettingsComponent component -->
+<ion-content >
+  <div class="wrapper scroll-content">
+<app-api-status [statusRequests]=statusRequests *ngIf="requestCount > 0"></app-api-status>  
+<div class="header">
+        <div class="prev-icon" (tap)="moveToPreviousPage()">
+          <ion-img src="assets/imgs/Push_Arrow_White.png"></ion-img>
+        </div>
+        <div class="header-text">Speed Alert Settings
+
+        </div>
+  </div>
+  <div class="speed-title-group">
+            <div class="speed-alert-text">Speed Alert</div>
+         </div>
+         <div></div>
+          <div class="receive-speed-text">Receive a notification when the car exceeds this speed:</div>
+ <div class="metercontent">
+      <div class="metercontainer">
+
+      
+<div id="slider">
+  <div class="overlay-hide">
+
+  </div>
+  
+</div>
+<div class="overlay-hide">
+    
+</div>    
+</div>
+</div>
+
+
+       <div class="speed-submit-button">
+          <button class="blue-btn" (click)="$event.stopPropagation();setSpeedLimit();">SUBMIT</button>
+        </div>
+    </div>    
+ 
+     
+  
+</ion-content>

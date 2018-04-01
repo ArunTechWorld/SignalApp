@@ -1,0 +1,57 @@
+<!-- Generated template for the AddpersonComponent component -->
+<ion-content>
+  <div class="wrapper scroll-content">
+    <div class="header">   
+      <div class="prev-icon" (tap)="moveToPreviousPage()">
+        <ion-img src="assets/imgs/Push_Arrow_White.png"></ion-img>
+      </div>
+      <div class="header-text">Add Person</div>
+    </div>
+    <div class="content">   
+      <div class="addform">
+        <form novalidate class="lojack-form" (ngSubmit)="addPerson()">
+          <ion-item class="lojack-input">
+            <ion-label floating>First Name</ion-label>
+            <ion-input type="text" #firstName name="firstName" (blur)="validateForm('firstName', $event)" [(ngModel)]="addUserObj.firstName"></ion-input>
+          </ion-item>
+          <ion-item class="lojack-input">
+            <ion-label floating>Last Name</ion-label>
+            <ion-input type="text" name="lastName" (blur)="validateForm('lastName', $event)" [(ngModel)]="addUserObj.lastName"></ion-input>
+          </ion-item>
+          <ion-item class="lojack-input" [ngClass]="{'invalid-input':(errorMessageInput),'input-icon':(isValidEmail)}">
+            <ion-label floating>Email</ion-label>
+            <ion-input type="email" name="email" (blur)="validateForm('email', $event)" (keyup)="validateForm('emailError', $event)" [(ngModel)]="addUserObj.email"></ion-input>
+            <span clear class="btn-icon" item-right *ngIf="isValidEmail">
+              <ion-icon name="checkmark" class="gray-icon"> </ion-icon>
+            </span>
+          </ion-item>
+          <div class="error-message" [hidden]="!emailError">
+            <ion-icon name="warning"></ion-icon>{{emailError}}
+          </div>
+          <ion-item class="lojack-input usercheck">           
+            <div class="item-actions">
+              <div class="item-role">
+                <div class="admin">Admin</div>                
+                <div class="question-mark-icon" (click)='presentModalAdmin()'>                 
+                </div>
+              </div>
+              <div class="item-check">
+                <label class="switch">
+                  <input type="checkbox" name="isAdmin" [(ngModel)]="addUserObj.isAdmin" (ngModelChange)="validateForm('admin', '')" />
+                  <span class="slider round"></span>
+                </label>
+              </div>
+            </div>
+          </ion-item>
+          <div class="error-message" [hidden]="!errorMessage">
+            <ion-icon name="warning"></ion-icon>{{errorMessage}}
+          </div>
+          <div class="button-container">
+            <button class="blue-btn" type="submit" [disabled]="!isValidForm || errorMessage">SEND INVITATION</button>            
+          </div>
+        </form>
+      </div>
+    </div>    
+  </div>
+</ion-content>
+

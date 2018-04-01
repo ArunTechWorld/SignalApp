@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="44px" height="31px" viewBox="0 0 44 31" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>Switch_YES Copy</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0.5" y="0" width="43" height="30" rx="15"></rect>
+        <filter x="-10.5%" y="-15.0%" width="120.9%" height="130.0%" filterUnits="objectBoundingBox" id="filter-2">
+            <feGaussianBlur stdDeviation="4" in="SourceAlpha" result="shadowBlurInner1"></feGaussianBlur>
+            <feOffset dx="0" dy="1" in="shadowBlurInner1" result="shadowOffsetInner1"></feOffset>
+            <feComposite in="shadowOffsetInner1" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0.265306122   0 0 0 0 0.265306122   0 0 0 0 0.265306122  0 0 0 0.5 0" type="matrix" in="shadowInnerInner1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="My-Family:-Admin-List" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-292.000000, -194.000000)">
+        <g id="Group" transform="translate(-1.000000, 6.762741)">
+            <g id="Switch_YES" transform="translate(293.000000, 188.003906)">
+                <g id="Group-19">
+                    <g id="Rectangle-9">
+                        <use fill="#37618D" fill-rule="evenodd" xlink:href="#path-1"></use>
+                        <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                    </g>
+                    <circle id="Oval-10" fill="#FFFFFF" cx="28" cy="15" r="13.5"></circle>
+                    <g id="Confirm_Account_Check_Icon" transform="translate(24.500000, 11.000000)" stroke="#2B648F" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                        <polyline id="Page-1" points="8.64278247 0.792176647 3.5800004 7.20782335 0.231973387 3.82710196"></polyline>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

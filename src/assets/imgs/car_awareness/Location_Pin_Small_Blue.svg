@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="12px" height="15px" viewBox="0 0 12 15" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49 (51002) - http://www.bohemiancoding.com/sketch -->
+    <title>Location_Pin_Small_Blue</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Location_Pin_Small_Blue" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M8.39007171,12.7797526 L3.56294974,12.7797526" id="Stroke-358" stroke="#1661B1"></path>
+        <path d="M3.28503778,2.57371424 L7.62811836,2.38381176 C7.86412514,2.3734923 8.07310238,2.53505417 8.12254268,2.76605492 L9.35690878,8.53340407 C9.41285236,8.79479022 9.24630826,9.05203679 8.98492212,9.10798038 C8.91814836,9.12227174 8.84910623,9.12227174 8.78233247,9.10798038 L3.01498332,7.87361428 C2.78398257,7.82417398 2.6224207,7.61519674 2.63274016,7.37918996 L2.82264264,3.03610938 C2.83360426,2.78541636 3.03434476,2.58467586 3.28503778,2.57371424 Z" id="Rectangle-11" stroke="#1661B1" transform="translate(6.000000, 5.751022) rotate(45.000000) translate(-6.000000, -5.751022) "></path>
+    </g>
+</svg>

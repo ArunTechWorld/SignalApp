@@ -1,0 +1,191 @@
+<!-- Generated template for the DragCarDetailsComponent component -->
+<div class="car-drag-all-content">
+<div class="car-vin">VIN #: {{carDetailsItem.vin}}</div>
+ <div class="car-drag-content"> <!-- [hidden]=!tripWireLoaded -->  
+    <div class="question-mark-icon" (click)="presentModalTripWire()"></div>
+    <div class="tripwier-text" >
+    <!--  Tripwire™ Early Warning-->
+    {{(carDetailsItem.tripwireBreach&&!carDetailsItem.collisionsupport)?'Tripwire™ Early Warning':'Tripwire™ Early Warning'}}
+       
+    </div>
+      <div   class="tripwire-details-updated"  *ngIf=carDetailsItem.tripwireBreach&&!carDetailsItem.collisionsupport >
+    <!--<div  *ngIf=false class="collisian-details-updated">-->
+    <div class="tripwire-icon"></div>
+    <div  class="tripwire-details-home">Your vehicle has moved outside the 
+Tripwire boundary at {{carDetailsItem.tripwireBreachData.address?carDetailsItem.tripwireBreachData.address.Street:''}} {{carDetailsItem.tripwireBreachData.date}} 
+</div>      
+<!-- <div  class="tripwire-details-time"> 
+    {{getMomentDateTime(this.carDetailsItem.tripwireBreachData.date)}} 
+</div> -->
+      
+     <div  class="tripwire-button-red">
+    <button class="red-btn" (click)="closetripbreachdetails()">DISMISS</button>
+   <button class="red-btn" (click)="tripwiresupport()">TRIPWIRE SUPPORT</button>
+    </div>
+  </div>
+  <div *ngIf=!carDetailsItem.tripwireBreach||carDetailsItem.collisionsupport>
+    <div class="tripwier-button" *ngIf=tripwireATS>
+      <div class="tripwier-button-off" (click)="tripwireATS = !tripwireATS;toggleTripwireATS()">
+      <div class="line-bar"></div>
+      <div class="line-bar"></div>
+      <div class="line-bar"></div>
+      </div>
+      <div class="tripwier-button-on">
+        ON  
+      </div>
+    </div>
+
+    <div class="tripwier-button-black" *ngIf=!tripwireATS>
+      <div class="tripwier-button-on-state" (click)="tripwireATS = !tripwireATS;toggleTripwireATS()">
+        <div class="line-bar"></div>
+        <div class="line-bar"></div>
+        <div class="line-bar"></div>
+      </div>
+      <div class="tripwier-button-off-state">
+        OFF
+      </div>
+    </div>
+    </div>
+  </div>
+    <div *ngIf=false class="car-drag-tripwire-content">
+    <div class="trip-wire-anti-theft">
+      Tripwire Anti-Theft System
+    </div>
+  
+ 
+    <!--<div class="trip-wire-card">
+        <div class="alarm-icon-container">
+      <div class="alarm-icon-white">
+
+      </div>
+
+    </div>
+            <div  class="collisian-details-home">Your vehicle has moved outside the 
+Tripwire boundary at 1267 Norfolk St.
+</div>
+          <div  class="collisian-details-home">9 A.M
+</div>
+         <div  class="button-red">
+    <button class="red-btn" (click)="closecollisiondetails()">DISMISS</button>
+   <button class="red-btn" (click)="collisionsupport()">COLLISIAN SUPPORT</button>
+    </div>
+
+
+    </div>-->
+
+  </div> 
+
+  <div  *ngIf=false  class="tripwire-details-updated">
+    <!--<div  *ngIf=false class="collisian-details-updated">-->
+    <div class="tripwire-icon"></div>
+    <div  class="tripwire-details-home">Your vehicle has moved outside the 
+Tripwire boundary at 1267 Norfolk St.
+</div>      
+<div  class="tripwire-details-time">
+  9:41 A.M
+</div>
+      
+     <div  class="tripwire-button-red">
+    <button class="red-btn" (click)="closetripbreachdetails()">DISMISS</button>
+   <button class="red-btn" (click)="tripwiresupport()">TRIPWIRE SUPPORT</button>
+    </div>
+  </div>
+
+ <div class="car-health-content">
+  <div class="question-mark-icon" (click)="presentCarhealthModal()"></div>
+  <div class="car-health-text">
+    Car Health
+  </div>
+ <div class="car-health-image"></div>
+ <div class="car-health-issue-number">
+   5 Issues Detected
+ </div>
+  <!--<div  class="car-health-issue-display">
+<div *ngFor="let carhealthhistroy of carhealth">
+  <div class="car-health-issue">
+      {{carhealthhistroy.cardefeact}}
+    </div>
+  </div>
+</div>-->
+ <div class="car-health-issue-display">
+   <div class="car-health-issue">
+     PO667
+   </div>
+   <div class="car-health-issue">
+      Battery Replacement Needed
+   </div>
+    <div class="car-health-issue">
+      C6745
+   </div>
+    <div class="car-health-issue">
+      P0461
+   </div> 
+   <div class="car-health-issue">
+      P0607
+   </div> 
+   
+ </div>
+</div>  
+
+<div class="milesDrivenError" [hidden]="!milesDrivenHasError">
+    <div class="miles-driven-text">
+        Miles Driven
+       </div>
+  <div class="errormessage">We had an issue loading this data.<br> Trying again in 30 seconds. <span  class="trynow" (click)="weekChart(0);">TRY NOW</span></div>
+</div>
+<div class="miles-driven-content" [hidden]="milesDrivenHasError">
+<!--<div class="question-mark-icon"></div>-->
+ <div class="miles-driven-text">
+  Miles Driven
+ </div>
+   
+ <div class="miles-driven-button">
+   <div class="miles-driven-each_button" (click)="weekChart(0)" [ngClass]="{'onclick-button':(stepId==0)}">WEEK</div>
+   <div class="miles-driven-each_button" (click)="monthChart(0)" [ngClass]="{'onclick-button':(stepId==1)}">MONTH</div>
+   <div class="miles-driven-each_button" (click)="yearChart(0)" [ngClass]="{'onclick-button':(stepId==2)}" >YEAR</div>
+   <div class="miles-driven-each_button" (click)="allChart(0)" [ngClass]="{'onclick-button':(stepId==3)}" >ALL</div>
+   <!-- <chart [options]="options" (selection)="onChartSelection($event)"> </chart> -->
+ </div>
+ <div *ngIf = "hasData">
+ <div *ngIf="stepId==0" class="arows">
+   <div class="text-date"> <div class="miles-driven-push-arow" (click)="weekChart(-1)"></div> {{displayDate}} <div [ngClass]="{'miles-driven-push-arow mirror': nextWeekEnable == true, 'miles-driven-push-arow-white': nextWeekEnable == false}" (click)="nextWeekEnable?weekChart(1):''"></div></div>
+  </div>
+  <div *ngIf="stepId==1" class="arows">
+    <div class="text-date-month"> <div class="miles-driven-push-arow" (click)="monthChart(-1)"></div> {{displayDate}} <div [ngClass]="{'miles-driven-push-arow mirror': nextMonthEnable == true, 'miles-driven-push-arow-white': nextMonthEnable == false}" (click)="nextMonthEnable?monthChart(1):''"></div></div>
+  </div>
+  <div *ngIf="stepId==2" class="arows">
+    <div class="text-date-year"> <div class="miles-driven-push-arow" (click)="yearChart(-1)"></div> {{displayDate}} <div [ngClass]="{'miles-driven-push-arow mirror': nextYearEnable == true, 'miles-driven-push-arow-white': nextYearEnable == false}" (click)="nextYearEnable?yearChart(1):''"></div></div>
+  </div>
+  <div *ngIf="stepId==3" class="arows">
+    <div class="text-date"><div class="miles-driven-push-arow" (click)="allChart(-1)"></div> {{displayDate}} <div [ngClass]="{'miles-driven-push-arow mirror': nextAllYearEnable == true, 'miles-driven-push-arow-white': nextAllYearEnable == false}" (click)="nextAllYearEnable?allChart(1):''"></div></div>
+  </div>
+  </div>
+    <!-- <chart [options]="chartoptions" type="chart" style="display:block" ></chart>-->
+  <div class="d3-chart" #chart></div>
+  <div class="miles-date">
+    <div class="toatal-miles">TOTAL </div>
+      <div class="toatal-miles-num"> {{totalDistance | number}}</div>
+      <div class="toatal-miles">{{distanceUnit}}</div>
+  </div>
+  <div class="display-date">{{displayDate}}</div>
+</div>
+<div class="collision-history" [hidden]="collisionHistory.length==0">
+    <div class="collision-history-text">
+       Collision History
+    </div>
+    <div *ngFor="let history of collisionHistory" (click)=collisiondetailscreen(history)>
+      <div class="collision-history-bar"></div>
+    <div class="collision-history-date">
+       <div class="collision-push-arow" ></div>
+      {{history.date}}
+    </div>
+    <div class="collision-history-level">
+       {{history.level}}
+    </div>
+    </div>
+  
+</div>
+  <div *ngIf="carDetailsItem.dealerShipInfo" class="schedule-service-button">
+      <button class="blue-btn" (click)="openServiceRequest()">Request Service appointment</button>
+  </div>
+</div>

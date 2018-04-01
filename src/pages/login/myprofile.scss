@@ -1,0 +1,146 @@
+page-myprofile {
+
+   .myprofile-page {
+    height: 50px;
+    width: 100%;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    line-height: 17px;
+    //text-align: center;
+    background-color: black;
+    padding: 22px 17px 18px 15px;
+    color: white
+  }
+  .profile-img{
+    padding: 10px 0px 36px 20px;
+      .image{
+    height: 53.72px;
+    width: 53.72px;
+    /* height: 80px; */
+    /* width: 80px; */
+    border-radius: 100%;
+    
+  }
+  .car-text{
+    color: #c6c6c6;
+    padding: 9px 0px 9px 1px;
+    }
+
+  }
+  
+  .myprofile{
+ // background-color: #F9F9F9;
+   
+   .slider-scroll-content{
+       margin-bottom: 10px;
+       padding: 0px 10px 0px 10px;
+   }
+   .myprofile-text{
+       float: left;
+    /* text-align: center; */
+    padding: 0% 11% 0% 36%;
+   }
+   .gray-shadows-icon{
+        position: relative;
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+        .gray-shadows{
+            height: 60px;
+            background-color: #F9F9F9;
+            box-shadow: 0 2px 5px 0 rgba(0,0,0,0.05);
+
+        }
+
+        .person-icon{
+        position: absolute;
+        top: 21.5px;
+        /* margin-top: -35px; */
+        margin: 0 auto;
+        text-align: center;
+        width: 100%;
+            .myprofile-icon{
+            background-image: url(../assets/imgs/Personal_Information_Icon.svg);
+            background-repeat: no-repeat;
+            height: 81px;
+            width: 81px;
+            margin: 0px auto;
+            /* background-color: white; */
+            z-index: 599999999999999999999;
+            background-size: cover;
+            background-repeat: no-repeat;
+            }
+    }
+
+   }
+
+
+   .edit-text{
+           float: right;
+   }
+  }
+ 
+   
+  .separate-bar{
+    width: 100%;
+    height: 9px;
+    background-color: #f6f6f6;
+  }
+
+  .text {
+    background-image: url(../assets/imgs/White_Close_Button.png);
+    /* height: 15px; */
+    /* width: 15px; */
+    /* background-repeat: no-repeat; */
+    background-size: cover;
+    /* text-align: right; */
+    /* float: right; */
+    height: 12px;
+    width: 13px;
+    right: 0;
+    display: inline-block;
+    float: left;
+  }
+
+  .title{
+      text-align: center;
+      background-color: white;
+    padding-top: 57px;
+    font-size: 20px;
+  }
+  .emergency-contact{
+    padding-bottom: 25px;
+  }
+   .sign-out{
+    padding: 23px 21px 19px 21px;
+    background-color: #f6f6f6;
+    }
+    .editable-mode{
+        .item-inner{
+            border-bottom:0px !important;
+             .collision-push-arow{
+                    background-image:none;
+                }
+            .input-wrapper{
+                pointer-events: none;
+               
+        }
+        }
+        
+    }
+    .collision-push-arow{
+      background-image: url(../assets/imgs/push_Arrow_gray.svg);
+         width: 10px;
+ height: 15px;
+ background-size: cover;
+ background-repeat: no-repeat;
+ z-index: 9;
+ margin: 11px 16px 0px 0px;
+ float: right;
+
+ }
+ .not-editable{
+   pointer-events: none;
+ }
+}

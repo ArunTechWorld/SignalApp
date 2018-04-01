@@ -1,0 +1,124 @@
+<div class="account-setup-success" [ngClass]="{'account-setup-hide' : hideWelcomeSlip}">
+  <div class="close-icon">
+    <div class="text" (click)="closePopUp()"></div>
+  </div>
+  <div class="information">
+    <div class="setup-success-title">Welcome to Peace of Mind.</div>
+    <div class="separator"></div>
+    <div class="setup-success-description">
+      Your account has now been created. You <br/> can now track your car’s location and get <br/>information when you need it.Most <br/>  importantly,
+      your car’s safety is now <br/>protected by SureDrive!
+    </div>
+  </div>
+</div>
+<ion-nav #mycontent [root]="rootPage"></ion-nav>
+<ion-header no-border class="menu-bar">
+  <div>
+    <img src="assets/imgs/common/Menu_Icon.png" class="header-icon menu-icon" (click)="mainMenuOpen()">
+    <img src="assets/imgs/common/Notification_Icon_circle.png" *ngIf="sharedProvider.getUnreadMessage(); else showEmptyBell" class="header-icon notification-icon" (click)="notiMenuOpen()">
+    <ng-template #showEmptyBell><img src="assets/imgs/common/Notification_Icon_Empty.png" class="header-icon notification-icon" (click)="notiMenuOpen()"></ng-template>
+  </div>
+</ion-header>
+
+<ion-content class="mapViewPane">
+   <div id="mapPane" #mapPane></div> 
+   <div *ngIf="zoom_Fit===false">
+   <div  [ngSwitch]="true" *ngFor="let item of graphicsPoint" class="multi-car-icons-place">
+    <div class="topcar-image top-img" *ngIf="item.angle === 'Top'" (tap)="redirectToLocation(item)">
+      <img class="arrow-marker" src="assets/imgs/car_awareness/Mini_Car_Arrow.png" />
+      <img class="car-img" src="assets/imgs/car_awareness/Car_small.svg"
+      /></div>
+    <div class="right car-top right-top-img" *ngIf="item.angle === 'RightTop' " (tap)="redirectToLocation(item)">
+      <img class="arrow-marker" src="assets/imgs/car_awareness/Mini_Car_Arrow.png" />
+      <img class="car-img" src="assets/imgs/car_awareness/Car_small.svg"/>
+    </div>
+    <div class="right car-middle right-middle-img" *ngIf="item.angle === 'Right' " (tap)="redirectToLocation(item)">
+      <img class="arrow-marker" src="assets/imgs/car_awareness/Mini_Car_Arrow.png" />
+      <img class="car-img" src="assets/imgs/car_awareness/Car_small.svg"
+      /></div>
+    <div class="right car-bottom right-bottom-img" *ngIf="item.angle === 'RightBottom'" (tap)="redirectToLocation(item)">
+      <img class="arrow-marker" src="assets/imgs/car_awareness/Mini_Car_Arrow.png" />
+      <img class="car-img" src="assets/imgs/car_awareness/Car_small.svg"
+      /></div>
+    <div class="below bottom-img" *ngIf="item.angle === 'Bottom' " (tap)="redirectToLocation(item)">
+      <img class="arrow-marker" src="assets/imgs/car_awareness/Mini_Car_Arrow.png" />
+      <img class="car-img" src="assets/imgs/car_awareness/Car_small.svg"
+      /></div>
+    <div class="leftcar-bottom left-bottom-img" *ngIf="item.angle === 'LeftBottom'" (tap)="redirectToLocation(item)">
+      <img class="arrow-marker" src="assets/imgs/car_awareness/Mini_Car_Arrow.png" />
+      <img class="car-img" src="assets/imgs/car_awareness/Car_small.svg"
+      /></div>
+    <div class="leftcar-middle left-middle-img" *ngIf="item.angle ==='Left'" (tap)="redirectToLocation(item)">
+      <img class="arrow-marker" src="assets/imgs/car_awareness/Mini_Car_Arrow.png" />
+      <img class="car-img" src="assets/imgs/car_awareness/Car_small.svg"
+      /></div>
+    <div class="leftcar-top left-top-img" *ngIf="item.angle ==='LeftTop'" (tap)="redirectToLocation(item)">
+      <img class="arrow-marker" src="assets/imgs/car_awareness/Mini_Car_Arrow.png" />
+      <img class="car-img" src="assets/imgs/car_awareness/Car_small.svg"
+      /></div>
+  </div> </div>
+  <div class="home-car-container" [class.car-slider-up]="networkError && !isShowDetail">
+    <div class="map-buttons">
+      <ion-img class="animated fadeIn" [src]="'assets/imgs/'+ zoom_center +'.png'"  (click)="centerMarker()" ></ion-img>
+      <ion-img  *ngIf="zoomFitEnable == true" style="margin-top: 21px;" [src]="'assets/imgs/'+ zoom_image_val +'.png'" (click)="mapLayerChange()" ></ion-img>
+      <ion-img src="assets/imgs/Map_Layers_Button.png" style="margin-top: 21px;"></ion-img>
+    </div>
+    <ion-slides #carSlider class="car-slider-container" centeredSlides
+    (ionSlideDidChange)="slideChanged()" (click)="slideTap()" (ionSlideDrag)="movingSlider('ionSlideDrag')" 
+    (ionSlideNextEnd)="slideEventComplente('ionSlideNextEnd')" 
+    (ionSlidePrevEnd)="slideEventComplente('ionSlidePrevEnd')"
+    (ionSlidePrevStart)="slideEventComplente('ionSlidePrevStart')"
+    (ionSlideNextStart)="slideEventComplente('ionSlideNextStart')"
+    (panEnd)='panEnd()' >   <!--[hidden]="currentCarItem.carName==''"   (panUp)=panUpEvent($event)-->
+      <ion-slide *ngFor="let item of carDetails">
+          <car-slider-card [carDetailsItem]=item  [iscolisionhappen]=iscolision [itemsCount]=carDetails.length [name]="name" [isShowDetail]="isShowDetail">
+        </car-slider-card>  
+      </ion-slide>
+    </ion-slides>
+  </div>
+</ion-content>
+
+<app-api-status [statusRequests]=statusRequests *ngIf="requestCount > 0"></app-api-status>
+<!--*ngIf=tripwireModal&&currentCarItem.tripwireBreach-->
+<div class="tripwiremapwarn" *ngIf=tripwireModal&&currentCarItem.tripwireBreach&&!currentCarItem.collisionsupport >
+     <div class="tripwire-icon"></div>
+  
+     For your safety, the location of your vehicle is currently hidden while it is reported stolen.
+</div>
+ <div class="car-details-header">
+  <div class="car-name">
+    <div class="label">{{(currentCarItem && currentCarItem.year && currentCarItem.make && currentCarItem.model)?currentCarItem.year +" " +currentCarItem.make + " " + currentCarItem.model :''}}</div>
+    <button class="close-ion" (click)="$event.stopPropagation();closeHeader()">
+        <img src="assets/imgs/White_Close_Button.png" />
+    </button>
+  </div>
+  <div class="car-tabs">
+    <div class="tab-label" (click)="toogleTabs(0)" [ngClass]="(!tripDetail) ? 'tab-active' : 'tab-inactive'">
+      Car details
+    </div>
+    <div class="tab-label" (click)="toogleTabs(1)" [ngClass]="(tripDetail) ? 'tab-active' : 'tab-inactive'">
+      Trip History
+    </div>
+  </div>
+</div>
+ 
+<app-car-details-drawer-comp [drawerValues]="drawerValues" [style.visibility]="'hidden'">
+<!-- <app-car-details-drawer-comp [drawerValues]="drawerValues" [style.visibility]="'hidden'">   -->
+    <!-- (panDown)=panDownDetails($event) (pan)="panDetailsCard($event)" -->
+<ion-content class="plain-bg" (ionScroll)="contentScroll($event)">
+  <div [hidden]="tripDetail">
+  <div class="car-details-space"></div>
+  <div class="car-details">
+    <car-slider-card [carDetailsItem]=currentCarItem [iscolisionhappen]=iscolision [itemsCount]=1 [name]="name" [isShowDetail]="isShowDetail">
+    </car-slider-card>
+    <drag-car-details (tripwireDismissed)="tripwireDismissed($event)" [carDetailsItem]=currentCarItem [isShowDetail]="isShowDetail" (requestRaised)="requestRaised($event)"></drag-car-details>
+  </div>
+  </div>
+  <div [hidden]="!tripDetail">
+   <trip-history (open)="onOpen($event)" *ngIf="isTripDetail" [carDetailsItem]=currentCarItem></trip-history>
+</div>
+</ion-content>
+</app-car-details-drawer-comp> 
+
+
+

@@ -1,0 +1,121 @@
+page-tripwire-breach {
+
+    .breach-text-button{
+        background-color: #E2231a;
+        //width: 100%;;
+        width: 100%;
+        height: 41px;
+          padding-top: 24px;
+        .breach-text{
+          height: 14px;
+          color: #FFFFFF;
+          font-size: 14px;
+          font-weight: bold;
+          float: left;
+          text-align: center;
+          /* padding-top: 30PX; */
+          font-size: 14px;
+          letter-spacing: 1px;
+          line-height: 17px;
+          margin-left: 28%;
+        }
+    
+         .close-button {
+        background-image: url(../assets/imgs/White_Close_Button.png);
+        background-size: cover;
+        width: 13px;
+        float: right;
+        margin-right: 17px;
+        height: 10px;
+        width: 11px;
+        margin-top: 3px;
+      }
+    }
+        .tripwire-breach {
+         background-color: #E2231a;
+        //width: 100%;
+       // height: 100%;   
+          height: 200px;
+    
+      
+      .tripwire-breach-text{
+        text-align: center;
+        color: white;
+        margin-top: 40px;
+        font-size: 30px;
+        line-height: 40px;
+    
+      }
+      .breach-time{
+        color: #FFFFFF;
+        font-size: 14px;
+        line-height: 20px;
+        text-align: center;
+        padding-top: 6px;
+        padding-bottom: 13px;
+        font-weight: 100;
+      }
+    }
+      .breachimage{
+          background-color:  #E2231a;
+          background-image: url(../assets/imgs/TripwireBreach/tripwirebreach.svg);
+    background-size: cover;
+    height: 200px;
+    width: 100%;
+    margin: 0px auto;
+    text-align: center;
+    position: absolute;
+   
+      }
+      .check-on-your-vehicle{
+        color: #666666;
+        font-family: "Neo Sans Std";	
+        font-size: 14px;	
+        line-height: 20px;	
+        text-align: center;
+        padding-top: 220px;
+      }
+      .dismissButton{
+          padding-left: 39px;
+          padding-right: 37px;
+          padding-top: 22px;
+      }
+      
+      .button-red{
+        margin: 22px 38px 0px 38px;
+         .red-button{
+          height: 46.04px;
+          background-color: #E2231A;
+          width: 100%;
+          -webkit-box-shadow: none;
+          box-shadow: none;
+          border: 1px solid #E2231A;
+          opacity: 1;
+          box-shadow: none;
+          -webkit-transition: none;
+          transition: none;
+          color: #FFFFFF;
+          font-size: 12px;
+          font-weight: 500;
+          line-height: 14px;
+          text-align: center;
+          text-shadow: none;
+          font-weight: 100;
+         }
+       }
+
+       .last-text{
+        width:100%;	
+        color: #8F8F8F;	
+            
+        font-size: 14px;	
+        line-height: 18px;	
+        text-align: center;
+        padding-bottom: 3%;
+        margin-top:3%;
+        a {
+          color: #8f8f8f;
+        }
+      }
+
+}

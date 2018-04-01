@@ -1,0 +1,9 @@
+<ion-list #timeCustomField>
+  <ng-container *ngFor="let item of serviceCenterTimes;">
+    <ion-item (click)="itemSelected(item)"
+      [ngClass]="{'item-selected' : item.isSelected, 'time-disabled' : !item.isValidTime}">
+      <span class="time-text" [ngClass]="{'time-disabled' : !item.isValidTime}">{{ item.time }}</span>
+      <!-- <span class="time-text">{{ item.time }}--{{ item.isValidTime }}</span> -->
+    </ion-item>
+  </ng-container>
+  </ion-list>

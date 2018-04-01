@@ -1,0 +1,184 @@
+<div class="account-setup-Progress-bar ">
+  <div class="progress-content" [ngClass]="(procedeAccSetup) ? 'show-progress-bar' : 'hide-progress-bar'">
+    <div class="block-strip">
+      <div *ngIf="!procedeAccSetup">
+        <div class="prev-icon">
+          <div class="back-icon" (click)="logOut()"></div>
+        </div>
+        <div class="information">
+          <div class="setup-start-title">Welcome
+            <br/> {{username}}</div>
+        </div>
+        <!-- <div class="poly-div"></div> -->
+        <div class="car-placeholder">
+          <img class="image" onerror="this.src='./assets/svg/default_Car.svg'" src= {{carImageSrc}}/>
+        </div>
+      </div>
+    </div>
+    <div class="block-content" [ngClass]="(procedeAccSetup) ? 'accsetup-blockstrip-slide' : ''">
+      <div class="static-info">
+        <div class="setup-start-subtitle">{{Carname}}</div>
+        <div class="separator"></div>
+        <div class="setup-start-description">
+          Looks like this is your first time logging in. <br/> We’ll guide you through a few steps to <br/>finish setting up your account.
+        </div>
+      </div>
+      <div class="start-button" *ngIf="!procedeAccSetup">
+        <!-- *ngIf="!procedeAccSetup"-->
+        <button class="red-btn" (click)="start()">START</button>
+      </div>
+    </div>
+  </div>
+  <div class="acc-setup-progress-bar"></div>
+</div>
+
+<div class="progress-bar">
+  <div class="{{'stepNo'+(stepID+1)}}">
+    <div class="step1"></div>
+  </div>
+  <!-- Generated template for the FirstTimeAccountSetupStepsComponent component -->
+  <div class="first-time-account-steps-container">
+  </div>
+
+  <div class="progress-buttons">
+    <button class="gray-nav-btn acc-prev-next-btn" (click)="accoutSetupSlideChanged('0')">Back</button>
+    <button  [hidden]="stepID == 6 || stepID == 4" class="red-nav-btn acc-prev-next-btn" (click)="accoutSetupSlideChanged('1')" [disabled]="disableNextBtn">
+      {{ ((stepID==5 && !accountSetupInfo.carName) || (stepID==3 && !accountSetupInfo.justInCase.firstName && !accountSetupInfo.justInCase.lasttName && !accountSetupInfo.justInCase.phoneNo))?'Skip':'Next' }}<!--(stepID==3 && !(accountSetupInfo.justInCase.firstName || accountSetupInfo.justInCase.lastName || accountSetupInfo.justInCase.phoneNo))||-->
+    </button>
+    <button  [hidden]="stepID != 4" class="red-nav-btn acc-prev-next-btn" (click)="allowNotifications()" [disabled]="disableNextBtn">Next</button>
+  </div>
+  <div class="step-image">
+    <img class="image" *ngIf="stepID<5" [src]="'assets/imgs/'+stepImage" />
+    <img class="image border-img"  *ngIf="stepID==5" src= {{carImageSrc}}/>
+  </div>
+
+  <div class="progress-form" [ngClass]="(procedeAccSetup) ? 'animate-accsetup-slider' : ''">
+    <ion-slides #slides class="slider-scroll-content">
+      <ion-slide class="slider-scroll-content">
+        <div class="title">Your Name</div>
+        <div class="sub-title">What name would you like to <br/> use for your account?</div>
+        <form novalidate class="lojack-form slider-scroll-content">
+          <ion-item class="lojack-input">
+            <ion-label floating>First Name</ion-label>
+            <ion-input  type="text" name="firstName" #firstName (keyup)="disableNextBtnFunction(0)" [(ngModel)]="accountSetupInfo.name.firstName"></ion-input>
+          </ion-item>
+          <ion-item class="lojack-input">
+            <ion-label floating>Last Name</ion-label>
+            <ion-input type="text" name="lastName" (keyup)="disableNextBtnFunction(0)" [(ngModel)]="accountSetupInfo.name.lastName"></ion-input>
+          </ion-item>
+          <div class="error-message" [hidden]="!errorMessage">
+            <ion-icon name="warning"></ion-icon>{{errorMessage}}</div>
+        </form>
+      </ion-slide>
+      <ion-slide class="slider-scroll-content">
+        <div class="title">Your Phone Number</div>
+        <div class="sub-title">What cell phone number would you like <br/> to use for your account?</div>
+        <form novalidate class="lojack-form slider-scroll-content">
+          <ion-item class="lojack-input">
+            <ion-label floating>Phone Number</ion-label>
+           <ion-input type="tel" name="phoneNo" #phoneNumber (keyup)="formatPhoneNumber($event)" [(ngModel)]="accountSetupInfo.phoneNo" maxlength=14 onselectstart="return false" onpaste="return false;" onCopy="return false" onCut="return false" onDrag="return false" onDrop="return false" autocomplete=off></ion-input>
+          </ion-item>
+          <div class="error-message" [hidden]="!errorMessage">
+            <ion-icon name="warning"></ion-icon>{{errorMessage}}</div>
+        </form>
+      </ion-slide>
+      <ion-slide class="slider-scroll-content">
+        <div class="title">Change Password</div>
+        <div class="sub-title">Let’s get you a password that’s easier to remember.<br/> Use a minimum of 8 characters and at least one symbol.</div>
+        <form novalidate class="lojack-form slider-scroll-content">
+
+          <ion-item class="lojack-input input-icon" [ngClass]="{'invalid-input':(errorMessageInput)}">
+            <ion-label floating>New Password</ion-label>
+            <ion-input #NewPassword clearOnEdit="false" type="{{passwordType}}" (keyup)="disableNextBtnFunction(2)" name="newPassword" [(ngModel)]="accountSetupInfo.password.newPassword"></ion-input>
+            <button clear class="btn-icon eye-btn" item-right (click)="showPassword()">
+              <div [ngClass]="(passwordType=='password') ? 'icon-show-password' : 'icon-hide-password'"> </div>
+            </button>
+          </ion-item>
+          <ion-item class="lojack-input input-icon" [ngClass]="{'invalid-input':(errorMessageInput)}">
+            <ion-label floating>Confirm Password</ion-label>
+            <ion-input clearOnEdit="false" type="{{passwordType}}" (keyup)="disableNextBtnFunction(2)" name="confirmPassword" [(ngModel)]="accountSetupInfo.password.confirmPassword"></ion-input>
+            <button clear class="btn-icon eye-btn" item-right (click)="showPassword()">
+              <div [ngClass]="(passwordType=='password') ? 'icon-show-password' : 'icon-hide-password'"> </div>
+            </button>
+          </ion-item>
+          <div class="error-message" [hidden]="!errorMessage">
+            <ion-icon name="warning"></ion-icon>{{errorMessage}}</div>
+        </form>
+
+      </ion-slide>
+      <ion-slide class="slider-scroll-content">
+        <div class="title">Just In Case</div>
+        <div class="sub-title">Would you like to set a secondary Emergency <br/> Contact who the LoJack emergency response team <br/> can contact if we’re unable
+          to reach you?</div>
+        <form novalidate class="lojack-form slider-scroll-content">
+          <ion-item class="lojack-input">
+            <ion-label floating>First Name</ion-label>
+            <ion-input #justInCasefirstName type="text" name="firstName" (keyup)="disableNextBtnFunction(3)" [(ngModel)]="accountSetupInfo.justInCase.firstName"></ion-input>
+          </ion-item>
+          <ion-item class="lojack-input">
+            <ion-label floating>Last Name</ion-label>
+            <ion-input type="text" name="lastName" (keyup)="disableNextBtnFunction(3)" [(ngModel)]="accountSetupInfo.justInCase.lastName"></ion-input>
+          </ion-item>
+          <ion-item class="lojack-input">
+            <ion-label floating>Phone Number</ion-label>
+             <ion-input type="tel" name="justInCasePhoneNo" (keyup)="formatPhoneNumber($event);disableNextBtnFunction(3)" [(ngModel)]="accountSetupInfo.justInCase.phoneNo" maxlength=14 onselectstart="return false" onpaste="return false;" onCopy="return false" onCut="return false" onDrag="return false" onDrop="return false" autocomplete=off></ion-input>
+          </ion-item>
+          <div class="error-message" [hidden]="!errorMessage">
+            <ion-icon name="warning"></ion-icon>{{errorMessage}}</div>
+        </form>
+      </ion-slide>
+      <ion-slide class="slider-scroll-content">
+        <div class="title">Notifications</div>
+        <div class="sub-title">We’d like to send you notifications when something <br/> goes wrong with your car, when it reaches or leaves <br/> a destination,
+          or in event of an emergency.</div>
+        <form novalidate class="lojack-form slider-scroll-content">
+          <ion-row class="notification-btns">
+            <ion-col col-6>
+              <button class="white-btn" (click)="accoutSetupSlideChanged('1')">Later</button>
+            </ion-col>
+            <ion-col col-6>
+              <button class="red-btn" (click)="allowNotifications()">Allow</button>
+            </ion-col>
+          </ion-row>
+        </form>
+      </ion-slide>
+      <ion-slide class="slider-scroll-content">
+        <div class="title">Name Your Car</div>
+        <div class="sub-title">The final step! Make your car your own by <br/> giving it a name.</div>
+        <form novalidate class="lojack-form name-car-form">
+          <ion-item class="lojack-input">
+            <ion-label stacked>Car Name</ion-label>
+            <ion-input #carName type="text" name="carName"  placeholder="{{placeHolder}}" [(ngModel)]="accountSetupInfo.carName" ></ion-input>
+          </ion-item>
+          <div class="error-message" [hidden]="!errorMessage">
+            <ion-icon name="warning"></ion-icon>{{errorMessage}}</div>
+        </form>
+      </ion-slide>
+
+      <ion-slide>
+          <div class="main">
+          <div class="titleTerms">Terms & Conditions</div>
+          <div id="termsFrame" class="terms-frame">
+          <iframe [src]="Url" style="width:100%;height:100%;border:none"></iframe>
+          </div>
+            <div class="mybuttons">
+                <div class="line"></div>
+          <form novalidate class="lojack-form">
+            <ion-row class="terms-btns">
+              <ion-col col-6>
+                <button class="gray-btn" (click)="termsConditionsPopUp()">Decline</button>
+              </ion-col>
+              <ion-col col-6>
+                 <button class= "red-btn" (click)="acceptTnC()">Accept</button>
+              </ion-col>
+            </ion-row>
+            <div class="error-message" [hidden]="!errorMessage">
+            <ion-icon name="warning"></ion-icon>{{errorMessage}}</div>
+          </form>
+        </div>
+
+      </div>
+        </ion-slide>
+    </ion-slides>
+  </div>
+</div>
